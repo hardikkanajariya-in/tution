@@ -1,0 +1,82 @@
+{
+  "stories": [
+    {
+      "id": "r1",
+      "studentName": "Arjun Mehta",
+      "exam": "CBSE Board Exams",
+      "year": 2025,
+      "track": "Board Exams",
+      "beforeScore": 72,
+      "afterScore": 98,
+      "rank": "School Topper",
+      "subject": "Mathematics",
+      "quote": "Dr. Chen's methods made mathematics visual and intuitive."
+    },
+    {
+      "id": "r2",
+      "studentName": "Priya Nair",
+      "exam": "JEE Advanced",
+      "year": 2025,
+      "track": "JEE",
+      "beforeScore": 45,
+      "afterScore": 89,
+      "rank": "AIR 342",
+      "subject": "Physics",
+      "quote": "Prof. Wright's conceptual approach was a game-changer for my JEE prep."
+    },
+    {
+      "id": "r3",
+      "studentName": "Rahul Verma",
+      "exam": "NEET",
+      "year": 2025,
+      "track": "NEET",
+      "beforeScore": 420,
+      "afterScore": 685,
+      "rank": "AIR 1,204",
+      "subject": "Biology",
+      "quote": "The 3D anatomy sessions made memorization a thing of the past."
+    },
+    {
+      "id": "r4",
+      "studentName": "Kavitha Sundaram",
+      "exam": "Science Olympiad",
+      "year": 2024,
+      "track": "Olympiad",
+      "beforeScore": 55,
+      "afterScore": 92,
+      "rank": "National Gold Medalist",
+      "subject": "Physics",
+      "quote": "The problem-solving workshops pushed me beyond my limits."
+    },
+    {
+      "id": "r5",
+      "studentName": "Marcus Johnson",
+      "exam": "SAT",
+      "year": 2024,
+      "track": "SAT / AP",
+      "beforeScore": 1180,
+      "afterScore": 1520,
+      "rank": "Top 2%",
+      "subject": "Mathematics",
+      "quote": "Structured practice and mock tests made all the difference."
+    },
+    {
+      "id": "r6",
+      "studentName": "Ananya Reddy",
+      "exam": "ICSE Board",
+      "year": 2025,
+      "track": "Board Exams",
+      "beforeScore": 68,
+      "afterScore": 95,
+      "rank": "District Topper",
+      "subject": "English",
+      "quote": "Elena's classes taught me to love literature and write with confidence."
+    }
+  ],
+  "overallStats": [
+    { "label": "Average Score Improvement", "value": "34%" },
+    { "label": "Students in Top 10%", "value": "78%" },
+    { "label": "Competitive Exam Selections", "value": "1,200+" },
+    { "label": "Perfect Score Students", "value": "89" }
+  ]
+}

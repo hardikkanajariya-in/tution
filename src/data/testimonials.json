@@ -1,0 +1,56 @@
+[
+  {
+    "id": "t1",
+    "name": "Arjun Mehta",
+    "role": "Student, Grade 12",
+    "avatar": "/images/avatar-1.jpg",
+    "rating": 5,
+    "text": "PrismTutor Studio completely transformed my approach to mathematics. Dr. Chen's visual methods made calculus intuitive and even fun. I scored 98% in my board exams!",
+    "course": "Advanced Mathematics"
+  },
+  {
+    "id": "t2",
+    "name": "Lisa Patel",
+    "role": "Parent",
+    "avatar": "/images/avatar-2.jpg",
+    "rating": 5,
+    "text": "As a parent, I was amazed by the weekly progress reports and personalized attention my daughter received. Her confidence in science has skyrocketed since joining.",
+    "course": "Biology — NEET Complete"
+  },
+  {
+    "id": "t3",
+    "name": "Ryan Torres",
+    "role": "Student, Grade 11",
+    "avatar": "/images/avatar-3.jpg",
+    "rating": 5,
+    "text": "Prof. Wright's physics classes are next-level. The virtual lab experiments make everything click. I went from struggling with mechanics to topping my class.",
+    "course": "Physics: Mechanics Mastery"
+  },
+  {
+    "id": "t4",
+    "name": "Sneha Gupta",
+    "role": "Student, Grade 10",
+    "avatar": "/images/avatar-4.jpg",
+    "rating": 4,
+    "text": "The coding course with Mr. Kumar is fantastic. I built my first Python project within a month! The step-by-step approach really works for beginners like me.",
+    "course": "Computer Science: Python & DSA"
+  },
+  {
+    "id": "t5",
+    "name": "David Kim",
+    "role": "Parent",
+    "avatar": "/images/avatar-5.jpg",
+    "rating": 5,
+    "text": "The flexible scheduling and hybrid mode options made it possible for my son to attend despite his busy extracurricular schedule. Excellent value for money.",
+    "course": "Mathematics Foundation"
+  },
+  {
+    "id": "t6",
+    "name": "Ananya Reddy",
+    "role": "Student, Grade 12",
+    "avatar": "/images/avatar-6.jpg",
+    "rating": 5,
+    "text": "Elena's creative writing workshops unlocked something in me. I've gone from hating essays to winning inter-school writing competitions. Truly life-changing!",
+    "course": "English Literature & Creative Writing"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "slug": "advanced-mathematics-grade-12",
+    "title": "Advanced Mathematics",
+    "subtitle": "Master calculus, algebra & statistics for board and competitive exams",
+    "category": "Mathematics",
+    "gradeLevel": "Grade 11-12",
+    "mode": "hybrid",
+    "duration": "12 months",
+    "schedule": "Mon, Wed, Fri · 4:00–5:30 PM",
+    "price": 299,
+    "popularity": 95,
+    "rating": 4.9,
+    "reviewCount": 284,
+    "tags": ["Calculus", "Algebra", "Statistics", "Board Prep"],
+    "thumbnail": "/images/course-math.jpg",
+    "teacherSlug": "dr-sarah-chen",
+    "description": "A comprehensive 12-month program covering all topics in advanced mathematics. From differential calculus to probability theory, this course prepares students for both board examinations and competitive entrance tests. Features weekly problem-solving workshops and monthly mock tests.",
+    "syllabus": [
+      { "module": "Differential Calculus", "topics": ["Limits & Continuity", "Derivatives", "Applications of Derivatives", "Mean Value Theorems"] },
+      { "module": "Integral Calculus", "topics": ["Indefinite Integrals", "Definite Integrals", "Applications of Integration", "Differential Equations"] },
+      { "module": "Linear Algebra", "topics": ["Matrices", "Determinants", "Systems of Equations", "Vector Spaces"] },
+      { "module": "Probability & Statistics", "topics": ["Probability Theory", "Random Variables", "Distributions", "Statistical Inference"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Monday", "time": "4:00–5:30 PM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "4:00–5:30 PM", "type": "Lecture" },
+      { "day": "Friday", "time": "4:00–5:30 PM", "type": "Problem Solving" },
+      { "day": "Saturday", "time": "10:00–11:30 AM", "type": "Doubt Session" }
+    ],
+    "faqs": [
+      { "question": "What is the prerequisite for this course?", "answer": "Students should have completed Grade 10 mathematics or equivalent." },
+      { "question": "Are recordings available?", "answer": "Yes, all live sessions are recorded and available for 30 days." },
+      { "question": "Is there a refund policy?", "answer": "Full refund within 14 days if unsatisfied." }
+    ]
+  },
+  {
+    "slug": "physics-mechanics-mastery",
+    "title": "Physics: Mechanics Mastery",
+    "subtitle": "From Newtonian mechanics to modern physics concepts",
+    "category": "Physics",
+    "gradeLevel": "Grade 11-12",
+    "mode": "online",
+    "duration": "10 months",
+    "schedule": "Tue, Thu · 5:00–6:30 PM",
+    "price": 279,
+    "popularity": 88,
+    "rating": 4.8,
+    "reviewCount": 198,
+    "tags": ["Mechanics", "Thermodynamics", "Waves", "JEE Prep"],
+    "thumbnail": "/images/course-physics.jpg",
+    "teacherSlug": "prof-james-wright",
+    "description": "Deep-dive into classical and modern physics with visual demonstrations, virtual labs, and exam-focused problem sets. Perfect for students targeting top engineering colleges.",
+    "syllabus": [
+      { "module": "Classical Mechanics", "topics": ["Kinematics", "Newton's Laws", "Work & Energy", "Rotational Motion"] },
+      { "module": "Thermodynamics", "topics": ["Laws of Thermodynamics", "Kinetic Theory", "Heat Transfer", "Entropy"] },
+      { "module": "Waves & Optics", "topics": ["Wave Motion", "Sound Waves", "Light & Optics", "Interference & Diffraction"] },
+      { "module": "Modern Physics", "topics": ["Quantum Basics", "Photoelectric Effect", "Nuclear Physics", "Semiconductors"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Tuesday", "time": "5:00–6:30 PM", "type": "Lecture" },
+      { "day": "Thursday", "time": "5:00–6:30 PM", "type": "Lab + Problems" },
+      { "day": "Saturday", "time": "2:00–3:00 PM", "type": "Doubt Session" }
+    ],
+    "faqs": [
+      { "question": "Do I need lab equipment at home?", "answer": "No, all experiments are conducted via our virtual lab platform." },
+      { "question": "Is this suitable for competitive exam prep?", "answer": "Absolutely. The syllabus aligns with JEE Main and Advanced." }
+    ]
+  },
+  {
+    "slug": "organic-chemistry-deep-dive",
+    "title": "Organic Chemistry Deep Dive",
+    "subtitle": "Reaction mechanisms, synthesis & real-world applications",
+    "category": "Chemistry",
+    "gradeLevel": "Grade 11-12",
+    "mode": "offline",
+    "duration": "8 months",
+    "schedule": "Mon, Wed · 3:00–4:30 PM",
+    "price": 259,
+    "popularity": 82,
+    "rating": 4.7,
+    "reviewCount": 156,
+    "tags": ["Organic", "Reactions", "Synthesis", "NEET Prep"],
+    "thumbnail": "/images/course-chemistry.jpg",
+    "teacherSlug": "dr-priya-sharma",
+    "description": "Unlock the beauty of organic chemistry through 3D molecular visualization and reaction mechanism animations. This course makes even the toughest reactions intuitive.",
+    "syllabus": [
+      { "module": "Fundamentals", "topics": ["Hybridization", "Isomerism", "IUPAC Nomenclature", "Electronic Effects"] },
+      { "module": "Reaction Mechanisms", "topics": ["SN1 & SN2", "Elimination Reactions", "Addition Reactions", "Rearrangements"] },
+      { "module": "Functional Groups", "topics": ["Alcohols & Ethers", "Aldehydes & Ketones", "Carboxylic Acids", "Amines"] },
+      { "module": "Biomolecules & Polymers", "topics": ["Carbohydrates", "Amino Acids", "Polymers", "Practical Chemistry"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Monday", "time": "3:00–4:30 PM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "3:00–4:30 PM", "type": "Lab Work" }
+    ],
+    "faqs": [
+      { "question": "Is this only organic chemistry?", "answer": "Yes. We have separate courses for inorganic and physical chemistry." }
+    ]
+  },
+  {
+    "slug": "english-literature-creative-writing",
+    "title": "English Literature & Creative Writing",
+    "subtitle": "Explore great works while developing your unique voice",
+    "category": "English",
+    "gradeLevel": "Grade 9-12",
+    "mode": "online",
+    "duration": "6 months",
+    "schedule": "Tue, Thu · 6:00–7:00 PM",
+    "price": 199,
+    "popularity": 75,
+    "rating": 4.9,
+    "reviewCount": 132,
+    "tags": ["Literature", "Creative Writing", "Essay Skills", "Communication"],
+    "thumbnail": "/images/course-english.jpg",
+    "teacherSlug": "ms-elena-ross",
+    "description": "From Shakespeare to contemporary fiction, develop critical analysis skills while nurturing your creative writing abilities. Perfect for students who love stories and words.",
+    "syllabus": [
+      { "module": "Classical Literature", "topics": ["Shakespeare", "Victorian Novels", "Poetry Analysis", "Drama"] },
+      { "module": "Modern Literature", "topics": ["20th Century Fiction", "Post-Colonial Writing", "Contemporary Poets", "Flash Fiction"] },
+      { "module": "Creative Writing", "topics": ["Narrative Techniques", "Character Development", "World Building", "Editing & Revision"] },
+      { "module": "Academic Writing", "topics": ["Essay Structure", "Argumentative Writing", "Research Skills", "Presentation"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Tuesday", "time": "6:00–7:00 PM", "type": "Literature Study" },
+      { "day": "Thursday", "time": "6:00–7:00 PM", "type": "Writing Workshop" }
+    ],
+    "faqs": [
+      { "question": "Do I need to buy any books?", "answer": "We provide digital copies of all required reading materials." }
+    ]
+  },
+  {
+    "slug": "biology-neet-complete",
+    "title": "Biology — NEET Complete",
+    "subtitle": "Comprehensive biology course for medical entrance preparation",
+    "category": "Biology",
+    "gradeLevel": "Grade 11-12",
+    "mode": "hybrid",
+    "duration": "14 months",
+    "schedule": "Mon, Wed, Sat · 10:00–11:30 AM",
+    "price": 349,
+    "popularity": 91,
+    "rating": 4.8,
+    "reviewCount": 267,
+    "tags": ["NEET", "Botany", "Zoology", "Medical Entrance"],
+    "thumbnail": "/images/course-biology.jpg",
+    "teacherSlug": "dr-sarah-chen",
+    "description": "The most comprehensive biology course for aspiring medical students. Covers entire NEET syllabus with 3D anatomy visualizations and chapter-wise test series.",
+    "syllabus": [
+      { "module": "Cell Biology & Genetics", "topics": ["Cell Structure", "Cell Division", "Molecular Biology", "Genetics & Evolution"] },
+      { "module": "Human Physiology", "topics": ["Digestive System", "Circulatory System", "Nervous System", "Reproductive System"] },
+      { "module": "Plant Biology", "topics": ["Plant Anatomy", "Photosynthesis", "Plant Growth", "Ecology"] },
+      { "module": "Diversity & Ecology", "topics": ["Animal Kingdom", "Plant Kingdom", "Ecosystem", "Biodiversity"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Monday", "time": "10:00–11:30 AM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "10:00–11:30 AM", "type": "Lecture" },
+      { "day": "Saturday", "time": "10:00–11:30 AM", "type": "Test & Review" }
+    ],
+    "faqs": [
+      { "question": "Does this cover both Class 11 and 12 biology?", "answer": "Yes, the 14-month course covers the complete NEET syllabus, including Class 11 and 12." }
+    ]
+  },
+  {
+    "slug": "computer-science-python-dsa",
+    "title": "Computer Science: Python & DSA",
+    "subtitle": "Learn programming fundamentals and data structures",
+    "category": "Computer Science",
+    "gradeLevel": "Grade 9-12",
+    "mode": "online",
+    "duration": "8 months",
+    "schedule": "Wed, Fri · 5:00–6:30 PM",
+    "price": 249,
+    "popularity": 86,
+    "rating": 4.9,
+    "reviewCount": 189,
+    "tags": ["Python", "DSA", "Coding", "Competitive Programming"],
+    "thumbnail": "/images/course-cs.jpg",
+    "teacherSlug": "mr-alex-kumar",
+    "description": "Start from zero and master Python programming along with essential data structures and algorithms. Includes competitive programming practice and project building.",
+    "syllabus": [
+      { "module": "Python Fundamentals", "topics": ["Variables & Types", "Control Flow", "Functions", "OOP Basics"] },
+      { "module": "Data Structures", "topics": ["Arrays & Strings", "Linked Lists", "Stacks & Queues", "Trees & Graphs"] },
+      { "module": "Algorithms", "topics": ["Sorting & Searching", "Recursion", "Dynamic Programming", "Greedy Algorithms"] },
+      { "module": "Projects", "topics": ["Web Scraper", "CLI Game", "Data Visualizer", "Portfolio Project"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Wednesday", "time": "5:00–6:30 PM", "type": "Lecture + Coding" },
+      { "day": "Friday", "time": "5:00–6:30 PM", "type": "Practice Session" }
+    ],
+    "faqs": [
+      { "question": "Do I need prior programming experience?", "answer": "No! This course starts from absolute basics." }
+    ]
+  },
+  {
+    "slug": "mathematics-foundation-grade-8-10",
+    "title": "Mathematics Foundation",
+    "subtitle": "Build a rock-solid math foundation for middle school",
+    "category": "Mathematics",
+    "gradeLevel": "Grade 8-10",
+    "mode": "offline",
+    "duration": "10 months",
+    "schedule": "Tue, Thu, Sat · 3:30–5:00 PM",
+    "price": 229,
+    "popularity": 79,
+    "rating": 4.7,
+    "reviewCount": 143,
+    "tags": ["Algebra", "Geometry", "Arithmetic", "Foundation"],
+    "thumbnail": "/images/course-math-foundation.jpg",
+    "teacherSlug": "mr-alex-kumar",
+    "description": "Perfect for students who want to strengthen their mathematical foundations. Covers number theory, geometry, algebra, and introduces pre-calculus concepts.",
+    "syllabus": [
+      { "module": "Number Theory", "topics": ["Real Numbers", "Exponents", "Surds", "Number Patterns"] },
+      { "module": "Algebra", "topics": ["Polynomials", "Linear Equations", "Quadratic Equations", "Inequalities"] },
+      { "module": "Geometry", "topics": ["Triangles", "Circles", "Coordinate Geometry", "Mensuration"] },
+      { "module": "Pre-Calculus", "topics": ["Functions", "Trigonometry Basics", "Sequences & Series", "Sets & Logic"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Tuesday", "time": "3:30–5:00 PM", "type": "Lecture" },
+      { "day": "Thursday", "time": "3:30–5:00 PM", "type": "Lecture" },
+      { "day": "Saturday", "time": "3:30–5:00 PM", "type": "Test + Revision" }
+    ],
+    "faqs": [
+      { "question": "Can this help with Olympiad preparation?", "answer": "Yes, we include Olympiad-level problem solving in our Saturday sessions." }
+    ]
+  },
+  {
+    "slug": "economics-commerce-stream",
+    "title": "Economics & Business Studies",
+    "subtitle": "Comprehensive commerce stream preparation",
+    "category": "Commerce",
+    "gradeLevel": "Grade 11-12",
+    "mode": "online",
+    "duration": "10 months",
+    "schedule": "Mon, Wed · 6:00–7:30 PM",
+    "price": 239,
+    "popularity": 72,
+    "rating": 4.6,
+    "reviewCount": 98,
+    "tags": ["Economics", "Business Studies", "Accounts", "Commerce"],
+    "thumbnail": "/images/course-economics.jpg",
+    "teacherSlug": "ms-elena-ross",
+    "description": "Master micro and macroeconomics, business studies, and accountancy with real-world case studies and interactive simulations.",
+    "syllabus": [
+      { "module": "Microeconomics", "topics": ["Demand & Supply", "Market Structures", "Consumer Theory", "Production Theory"] },
+      { "module": "Macroeconomics", "topics": ["National Income", "Money & Banking", "Government Budget", "International Trade"] },
+      { "module": "Business Studies", "topics": ["Management Principles", "Marketing", "Financial Markets", "Entrepreneurship"] },
+      { "module": "Accountancy", "topics": ["Financial Statements", "Ratio Analysis", "Partnership Accounts", "Company Accounts"] }
+    ],
+    "weeklySchedule": [
+      { "day": "Monday", "time": "6:00–7:30 PM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "6:00–7:30 PM", "type": "Case Studies" }
+    ],
+    "faqs": [
+      { "question": "Does this cover accountancy too?", "answer": "Yes, basic accountancy is included. We also offer a dedicated accountancy course." }
+    ]
+  }
+]

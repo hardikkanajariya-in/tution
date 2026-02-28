@@ -1,0 +1,88 @@
+{
+  "images": [
+    {
+      "id": "g1",
+      "title": "Annual Science Fair 2024",
+      "category": "events",
+      "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "description": "Students showcasing their innovative science projects"
+    },
+    {
+      "id": "g2",
+      "title": "Interactive Coding Workshop",
+      "category": "classroom",
+      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "description": "Hands-on coding session with real-world project exercises"
+    },
+    {
+      "id": "g3",
+      "title": "Campus Library & Study Zones",
+      "category": "campus",
+      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "description": "Modern library and collaborative self-study spaces"
+    },
+    {
+      "id": "g4",
+      "title": "National Math Olympiad Winners",
+      "category": "achievements",
+      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
+      "description": "Our students swept top honors at the National Math Olympiad"
+    },
+    {
+      "id": "g5",
+      "title": "Chemistry Lab Experiments",
+      "category": "classroom",
+      "gradient": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+      "description": "Students performing advanced chemistry experiments under expert guidance"
+    },
+    {
+      "id": "g6",
+      "title": "Annual Sports & Fun Day",
+      "category": "events",
+      "gradient": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+      "description": "A day filled with athletic events, teamwork, and celebration"
+    },
+    {
+      "id": "g7",
+      "title": "Smart Classroom Technology",
+      "category": "classroom",
+      "gradient": "linear-gradient(135deg, #fccb90 0%, #d57eeb 100%)",
+      "description": "State-of-the-art classrooms with interactive whiteboards"
+    },
+    {
+      "id": "g8",
+      "title": "Campus Aerial View",
+      "category": "campus",
+      "gradient": "linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)",
+      "description": "A bird's-eye view of our sprawling green campus"
+    },
+    {
+      "id": "g9",
+      "title": "Student Innovation Showcase",
+      "category": "events",
+      "gradient": "linear-gradient(135deg, #c471f5 0%, #fa71cd 100%)",
+      "description": "Final year students presenting capstone projects and prototypes"
+    },
+    {
+      "id": "g10",
+      "title": "Board Exam Toppers 2024",
+      "category": "achievements",
+      "gradient": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
+      "description": "Celebrating our outstanding board exam results across all streams"
+    },
+    {
+      "id": "g11",
+      "title": "Faculty Development Workshop",
+      "category": "events",
+      "gradient": "linear-gradient(135deg, #0ba360 0%, #3cba92 100%)",
+      "description": "Annual workshop on modern pedagogy and teaching methodologies"
+    },
+    {
+      "id": "g12",
+      "title": "Campus Recreation Center",
+      "category": "campus",
+      "gradient": "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
+      "description": "Indoor sports and recreation facilities for holistic development"
+    }
+  ]
+}

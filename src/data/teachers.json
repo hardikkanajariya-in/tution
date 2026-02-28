@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "dr-sarah-chen",
+    "name": "Dr. Sarah Chen",
+    "title": "Head of Mathematics & Biology",
+    "avatar": "/images/teacher-1.jpg",
+    "bio": "Dr. Chen holds a Ph.D. in Applied Mathematics from MIT and has 15 years of teaching experience. Her innovative visual teaching methods have helped over 5,000 students achieve top scores in competitive exams. She believes every student can fall in love with numbers.",
+    "specialties": ["Mathematics", "Biology", "Statistics"],
+    "experience": "15 years",
+    "achievements": ["MIT Ph.D.", "Published 12 research papers", "Best Teacher Award 2023", "5000+ students mentored"],
+    "socials": {
+      "twitter": "https://twitter.com/drsarahchen",
+      "linkedin": "https://linkedin.com/in/drsarahchen"
+    },
+    "rating": 4.9,
+    "studentCount": 5200
+  },
+  {
+    "slug": "prof-james-wright",
+    "name": "Prof. James Wright",
+    "title": "Senior Physics Faculty",
+    "avatar": "/images/teacher-2.jpg",
+    "bio": "Professor Wright spent 10 years at CERN before joining PrismTutor Studio. His ability to explain complex physics concepts through everyday analogies and visual experiments makes him one of the most sought-after physics teachers in the country.",
+    "specialties": ["Physics", "Mechanics", "Quantum Physics"],
+    "experience": "12 years",
+    "achievements": ["Ex-CERN Researcher", "National Science Award", "Author of 3 textbooks", "TEDx Speaker"],
+    "socials": {
+      "twitter": "https://twitter.com/profjwright",
+      "linkedin": "https://linkedin.com/in/profjwright"
+    },
+    "rating": 4.8,
+    "studentCount": 3800
+  },
+  {
+    "slug": "dr-priya-sharma",
+    "name": "Dr. Priya Sharma",
+    "title": "Chemistry Department Head",
+    "avatar": "/images/teacher-3.jpg",
+    "bio": "Dr. Sharma's passion for chemistry is infectious. With a background in pharmaceutical research, she brings real-world applications into every lesson. Her 3D molecular modeling sessions are legendary among students.",
+    "specialties": ["Chemistry", "Organic Chemistry", "Biochemistry"],
+    "experience": "10 years",
+    "achievements": ["Ph.D. Organic Chemistry", "Ex-Pharma Researcher", "Chemistry Olympiad Coach", "2000+ students"],
+    "socials": {
+      "linkedin": "https://linkedin.com/in/drpriyasharma"
+    },
+    "rating": 4.7,
+    "studentCount": 2100
+  },
+  {
+    "slug": "ms-elena-ross",
+    "name": "Ms. Elena Ross",
+    "title": "English & Humanities Faculty",
+    "avatar": "/images/teacher-4.jpg",
+    "bio": "Elena is a published novelist and former journalist who brings storytelling into education. Her creative writing workshops have produced award-winning student writers, and her literature classes are known for lively debates and deep analysis.",
+    "specialties": ["English", "Literature", "Creative Writing", "Commerce"],
+    "experience": "8 years",
+    "achievements": ["Published Novelist", "Journalism Award Winner", "Creative Writing Workshop Leader", "Student Writing Mentor"],
+    "socials": {
+      "twitter": "https://twitter.com/elenarosswrites",
+      "instagram": "https://instagram.com/elenarosswrites"
+    },
+    "rating": 4.9,
+    "studentCount": 1800
+  },
+  {
+    "slug": "mr-alex-kumar",
+    "name": "Mr. Alex Kumar",
+    "title": "Computer Science & Math Faculty",
+    "avatar": "/images/teacher-5.jpg",
+    "bio": "Alex transitioned from a successful career at Google to teaching the next generation of programmers. He combines industry experience with academic rigor to create courses that are both practical and intellectually stimulating.",
+    "specialties": ["Computer Science", "Python", "Data Structures", "Mathematics"],
+    "experience": "7 years",
+    "achievements": ["Ex-Google Engineer", "Open Source Contributor", "Competitive Programming Coach", "1500+ students"],
+    "socials": {
+      "twitter": "https://twitter.com/alexkumardev",
+      "linkedin": "https://linkedin.com/in/alexkumardev"
+    },
+    "rating": 4.9,
+    "studentCount": 1500
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "categories": [
+    { "slug": "mathematics", "name": "Mathematics", "icon": "Calculator", "courseCount": 12 },
+    { "slug": "physics", "name": "Physics", "icon": "Atom", "courseCount": 8 },
+    { "slug": "chemistry", "name": "Chemistry", "icon": "FlaskConical", "courseCount": 7 },
+    { "slug": "biology", "name": "Biology", "icon": "Dna", "courseCount": 9 },
+    { "slug": "english", "name": "English", "icon": "BookOpen", "courseCount": 6 },
+    { "slug": "computer-science", "name": "Computer Science", "icon": "Code", "courseCount": 5 },
+    { "slug": "commerce", "name": "Commerce", "icon": "TrendingUp", "courseCount": 4 }
+  ],
+  "gradeLevels": [
+    { "slug": "grade-6-8", "label": "Grade 6–8", "description": "Middle School Foundation" },
+    { "slug": "grade-8-10", "label": "Grade 8–10", "description": "High School Preparation" },
+    { "slug": "grade-9-12", "label": "Grade 9–12", "description": "Senior Secondary" },
+    { "slug": "grade-11-12", "label": "Grade 11–12", "description": "Board & Competitive Exam" }
+  ],
+  "examTracks": [
+    { "slug": "board-exams", "label": "Board Exams", "description": "CBSE, ICSE, State Boards" },
+    { "slug": "jee", "label": "JEE Main & Advanced", "description": "Engineering Entrance" },
+    { "slug": "neet", "label": "NEET", "description": "Medical Entrance" },
+    { "slug": "olympiad", "label": "Olympiads", "description": "National & International" },
+    { "slug": "sat-ap", "label": "SAT / AP", "description": "International Standardized Tests" }
+  ],
+  "subjectChips": [
+    "Algebra", "Calculus", "Geometry", "Statistics",
+    "Mechanics", "Thermodynamics", "Optics", "Electromagnetism",
+    "Organic Chemistry", "Inorganic Chemistry", "Physical Chemistry",
+    "Botany", "Zoology", "Genetics",
+    "Literature", "Grammar", "Creative Writing",
+    "Python", "Data Structures", "Algorithms",
+    "Economics", "Accountancy", "Business Studies"
+  ]
+}

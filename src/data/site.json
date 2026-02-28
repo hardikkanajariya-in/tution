@@ -1,0 +1,59 @@
+{
+  "brand": {
+    "name": "PrismTutor Studio",
+    "tagline": "3D-inspired learning experiences that feel effortless.",
+    "shortDescription": "Premium coaching academy offering world-class tuition across all grades, subjects, and exam tracks.",
+    "logo": "/logos/prismtutor-logo.svg",
+    "logoDark": "/logos/prismtutor-logo-dark.svg"
+  },
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Courses", "href": "/courses" },
+    { "label": "Subjects", "href": "/subjects" },
+    { "label": "Teachers", "href": "/teachers" },
+    { "label": "Pricing", "href": "/pricing" },
+    { "label": "Results", "href": "/results" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "Blog", "href": "/blog" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "socials": [
+    { "platform": "twitter", "url": "https://twitter.com/prismtutor", "label": "Twitter" },
+    { "platform": "instagram", "url": "https://instagram.com/prismtutor", "label": "Instagram" },
+    { "platform": "youtube", "url": "https://youtube.com/prismtutor", "label": "YouTube" },
+    { "platform": "linkedin", "url": "https://linkedin.com/company/prismtutor", "label": "LinkedIn" }
+  ],
+  "contact": {
+    "email": "hello@prismtutor.studio",
+    "phone": "+1 (555) 234-5678",
+    "address": "123 Learning Lane, Suite 400, San Francisco, CA 94105"
+  },
+  "locations": [
+    {
+      "name": "San Francisco HQ",
+      "address": "123 Learning Lane, Suite 400, San Francisco, CA 94105",
+      "phone": "+1 (555) 234-5678",
+      "hours": "Mon–Sat 8:00 AM – 8:00 PM"
+    },
+    {
+      "name": "New York Center",
+      "address": "456 Academic Ave, Floor 12, New York, NY 10001",
+      "phone": "+1 (555) 876-5432",
+      "hours": "Mon–Sat 9:00 AM – 9:00 PM"
+    },
+    {
+      "name": "Online Campus",
+      "address": "Available worldwide",
+      "phone": "+1 (555) 111-2222",
+      "hours": "24/7 Self-paced + Live sessions"
+    }
+  ],
+  "seo": {
+    "defaultTitle": "PrismTutor Studio — Premium Coaching Academy",
+    "titleTemplate": "%s | PrismTutor Studio",
+    "description": "Experience 3D-inspired learning with PrismTutor Studio. Premium coaching across all subjects, grades, and exam tracks.",
+    "url": "https://prismtutor.studio",
+    "ogImage": "/og/default-og.png"
+  }
+}

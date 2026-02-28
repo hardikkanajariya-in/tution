@@ -1,0 +1,83 @@
+{
+  "plans": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": 99,
+      "period": "per month",
+      "description": "Perfect for students exploring a single subject.",
+      "highlighted": false,
+      "features": [
+        { "text": "1 Subject Access", "included": true },
+        { "text": "Live Classes (2x/week)", "included": true },
+        { "text": "Recorded Sessions", "included": true },
+        { "text": "Basic Study Material", "included": true },
+        { "text": "Weekly Doubt Sessions", "included": false },
+        { "text": "Mock Test Series", "included": false },
+        { "text": "1-on-1 Mentoring", "included": false },
+        { "text": "Parent Dashboard", "included": false }
+      ],
+      "cta": "Get Started"
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": 249,
+      "period": "per month",
+      "description": "Our most popular plan for serious learners.",
+      "highlighted": true,
+      "features": [
+        { "text": "3 Subjects Access", "included": true },
+        { "text": "Live Classes (5x/week)", "included": true },
+        { "text": "Recorded Sessions", "included": true },
+        { "text": "Premium Study Material", "included": true },
+        { "text": "Weekly Doubt Sessions", "included": true },
+        { "text": "Mock Test Series", "included": true },
+        { "text": "1-on-1 Mentoring", "included": false },
+        { "text": "Parent Dashboard", "included": true }
+      ],
+      "cta": "Choose Pro"
+    },
+    {
+      "id": "elite",
+      "name": "Elite",
+      "price": 449,
+      "period": "per month",
+      "description": "Complete access with personal mentorship.",
+      "highlighted": false,
+      "features": [
+        { "text": "All Subjects Access", "included": true },
+        { "text": "Unlimited Live Classes", "included": true },
+        { "text": "Recorded Sessions", "included": true },
+        { "text": "Premium Study Material", "included": true },
+        { "text": "Daily Doubt Sessions", "included": true },
+        { "text": "Mock Test Series", "included": true },
+        { "text": "1-on-1 Mentoring", "included": true },
+        { "text": "Parent Dashboard", "included": true }
+      ],
+      "cta": "Go Elite"
+    }
+  ],
+  "comparisonTable": {
+    "headers": ["Feature", "Starter", "Pro", "Elite"],
+    "rows": [
+      ["Subjects", "1", "3", "Unlimited"],
+      ["Live Classes/Week", "2", "5", "Unlimited"],
+      ["Recorded Access", "30 days", "90 days", "Lifetime"],
+      ["Study Material", "Basic PDF", "Premium + Video", "Premium + Video + Notes"],
+      ["Doubt Sessions", "—", "Weekly", "Daily"],
+      ["Mock Tests", "—", "Monthly", "Weekly"],
+      ["1-on-1 Mentoring", "—", "—", "2 hrs/month"],
+      ["Parent Dashboard", "—", "✓", "✓"],
+      ["Progress Reports", "Monthly", "Weekly", "Daily"],
+      ["Priority Support", "—", "Email", "Phone + Email"]
+    ]
+  },
+  "billingFaqs": [
+    { "question": "Can I switch plans anytime?", "answer": "Yes, you can upgrade or downgrade your plan at any time. Changes take effect from the next billing cycle." },
+    { "question": "Is there a free trial?", "answer": "We offer a 7-day free trial for all plans. No credit card required." },
+    { "question": "What payment methods do you accept?", "answer": "We accept all major credit/debit cards, UPI, net banking, and select wallets." },
+    { "question": "Can I get a refund?", "answer": "Full refund within 14 days of subscription. Pro-rated refunds after 14 days." },
+    { "question": "Are there family discounts?", "answer": "Yes! Enroll 2 or more siblings and get 15% off each subscription." }
+  ]
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "how-visual-learning-transforms-math",
+    "title": "How Visual Learning Transforms Mathematics Education",
+    "excerpt": "Discover how 3D visualization techniques can turn abstract mathematical concepts into intuitive, memorable experiences.",
+    "tags": ["Education", "Mathematics", "Visual Learning"],
+    "publishedAt": "2025-12-15",
+    "readingTime": "6 min read",
+    "author": { "name": "Dr. Sarah Chen", "avatar": "/images/teacher-1.jpg" },
+    "cover": "/images/blog-1.jpg",
+    "featured": true,
+    "content": [
+      { "type": "paragraph", "text": "Mathematics has long been considered one of the most challenging subjects for students worldwide. But what if the problem isn't with the subject itself—it's with how we teach it?" },
+      { "type": "heading", "text": "The Power of Visual Thinking" },
+      { "type": "paragraph", "text": "Research shows that 65% of people are visual learners. Yet traditional math education relies heavily on abstract symbols and rote memorization. At PrismTutor Studio, we're changing that paradigm." },
+      { "type": "quote", "text": "When students can see a concept, they can understand it. When they can interact with it, they own it.", "author": "Dr. Sarah Chen" },
+      { "type": "heading", "text": "3D Modeling in the Classroom" },
+      { "type": "paragraph", "text": "Our 3D-inspired teaching approach uses interactive visualizations to represent mathematical concepts. Imagine rotating a 3D surface to understand partial derivatives, or watching a function transform in real-time as you adjust parameters." },
+      { "type": "list", "items": ["Interactive function graphing", "3D surface exploration", "Animated geometric proofs", "Real-time equation manipulation"] },
+      { "type": "heading", "text": "Results That Speak" },
+      { "type": "paragraph", "text": "Students who learn through our visual methods show a 34% average improvement in test scores, with 78% of our students ranking in the top 10% of their classes." },
+      { "type": "callout", "text": "Want to experience visual learning firsthand? Book a free demo session and see the difference.", "type_variant": "info" }
+    ]
+  },
+  {
+    "slug": "preparing-for-competitive-exams-2026",
+    "title": "The Ultimate Guide to Preparing for Competitive Exams in 2026",
+    "excerpt": "A comprehensive roadmap covering JEE, NEET, and Olympiad preparation strategies from our top educators.",
+    "tags": ["Exam Prep", "JEE", "NEET", "Strategy"],
+    "publishedAt": "2025-11-28",
+    "readingTime": "10 min read",
+    "author": { "name": "Prof. James Wright", "avatar": "/images/teacher-2.jpg" },
+    "cover": "/images/blog-2.jpg",
+    "featured": false,
+    "content": [
+      { "type": "paragraph", "text": "Competitive exams can feel overwhelming, but with the right strategy and timeline, success is well within reach. Here's our proven framework." },
+      { "type": "heading", "text": "Start with Self-Assessment" },
+      { "type": "paragraph", "text": "Before diving into preparation, take a diagnostic test to understand your current standing. This helps identify weak areas and plan your study schedule effectively." },
+      { "type": "heading", "text": "The 80/20 Rule of Exam Prep" },
+      { "type": "paragraph", "text": "Focus 80% of your effort on understanding concepts and 20% on practice. Too many students invert this ratio, leading to shallow understanding." },
+      { "type": "list", "items": ["Identify high-weightage topics", "Master fundamentals before advanced problems", "Practice with previous year papers", "Take weekly mock tests"] },
+      { "type": "callout", "text": "Our exam prep courses include structured mock test series with detailed performance analytics.", "type_variant": "tip" }
+    ]
+  },
+  {
+    "slug": "benefits-of-hybrid-learning",
+    "title": "Why Hybrid Learning Is the Future of Education",
+    "excerpt": "Exploring how combining online and offline learning creates the most effective educational experience.",
+    "tags": ["Education", "Hybrid Learning", "Technology"],
+    "publishedAt": "2025-11-10",
+    "readingTime": "5 min read",
+    "author": { "name": "Ms. Elena Ross", "avatar": "/images/teacher-4.jpg" },
+    "cover": "/images/blog-3.jpg",
+    "featured": false,
+    "content": [
+      { "type": "paragraph", "text": "The debate between online and offline learning misses a crucial point: the best approach combines both. Here's why hybrid learning is the future." },
+      { "type": "heading", "text": "Flexibility Meets Structure" },
+      { "type": "paragraph", "text": "Hybrid learning gives students the structure of scheduled classes with the flexibility to review and practice at their own pace." },
+      { "type": "quote", "text": "Education should adapt to the student, not the other way around.", "author": "Ms. Elena Ross" },
+      { "type": "heading", "text": "Our Hybrid Approach" },
+      { "type": "paragraph", "text": "At PrismTutor Studio, hybrid students attend core lectures in-person for hands-on learning, while accessing practice sessions, recorded content, and doubt-clearing online." }
+    ]
+  },
+  {
+    "slug": "coding-for-young-students",
+    "title": "Why Every Student Should Learn to Code (Even Non-CS Students)",
+    "excerpt": "Programming isn't just for future engineers—it's a thinking skill that enhances problem-solving across all disciplines.",
+    "tags": ["Computer Science", "Coding", "Skills"],
+    "publishedAt": "2025-10-22",
+    "readingTime": "7 min read",
+    "author": { "name": "Mr. Alex Kumar", "avatar": "/images/teacher-5.jpg" },
+    "cover": "/images/blog-4.jpg",
+    "featured": false,
+    "content": [
+      { "type": "paragraph", "text": "In 2026, coding literacy is as important as reading and writing. But the benefits of learning to code go far beyond building software." },
+      { "type": "heading", "text": "Computational Thinking" },
+      { "type": "paragraph", "text": "Programming teaches a structured approach to problem-solving that applies to science, mathematics, and even humanities. It's about breaking complex problems into manageable steps." },
+      { "type": "list", "items": ["Logical reasoning", "Pattern recognition", "Abstraction", "Algorithm design", "Debugging and persistence"] },
+      { "type": "heading", "text": "Starting with Python" },
+      { "type": "paragraph", "text": "Python is the perfect first language—readable, powerful, and used in everything from web development to scientific research. Our course starts from zero and builds confidence through projects." }
+    ]
+  }
+]
