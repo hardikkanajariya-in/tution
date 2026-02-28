@@ -174,6 +174,7 @@ export default function CourseDetailPage() {
             src={course.thumbnail}
             alt={course.title}
             className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -184,7 +185,7 @@ export default function CourseDetailPage() {
                 <ModeIcon size={14} className="mr-1" /> {course.mode}
               </Badge>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 leading-tight text-balance">
               {course.title}
             </h1>
             <p className="text-white/80 text-lg md:text-xl mb-6 max-w-2xl">{course.subtitle}</p>
@@ -202,21 +203,21 @@ export default function CourseDetailPage() {
       </Reveal>
 
       {/* ── Two-column layout ────────────────────────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-20 grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24 grid grid-cols-1 lg:grid-cols-3 gap-10">
         {/* ── LEFT COLUMN (2/3) ──────────────────────────────── */}
-        <div className="lg:col-span-2 space-y-10">
+        <div className="lg:col-span-2 space-y-14">
           {/* About */}
           <Reveal>
-            <section>
-              <h2 className="text-2xl font-bold text-text-primary mb-4">About This Course</h2>
+            <section aria-label="About this course">
+              <h2 className="text-2xl font-bold text-text-primary mb-4 text-balance">About This Course</h2>
               <p className="text-text-secondary leading-relaxed">{course.description}</p>
             </section>
           </Reveal>
 
           {/* What You'll Learn */}
           <Reveal delay={0.05}>
-            <section>
-              <h2 className="text-2xl font-bold text-text-primary mb-4">What You&apos;ll Learn</h2>
+            <section aria-label="What you will learn">
+              <h2 className="text-2xl font-bold text-text-primary mb-4 text-balance">What You&apos;ll Learn</h2>
               <div className="grid sm:grid-cols-2 gap-3">
                 {course.tags.map((tag) => (
                   <div
@@ -235,8 +236,8 @@ export default function CourseDetailPage() {
 
           {/* Syllabus */}
           <Reveal delay={0.1}>
-            <section>
-              <h2 className="text-2xl font-bold text-text-primary mb-4">Syllabus</h2>
+            <section aria-label="Course syllabus">
+              <h2 className="text-2xl font-bold text-text-primary mb-4 text-balance">Syllabus</h2>
               <div className="space-y-3">
                 {course.syllabus.map((mod, i) => (
                   <SyllabusModule key={i} module={mod} index={i} />
@@ -247,8 +248,8 @@ export default function CourseDetailPage() {
 
           {/* Schedule */}
           <Reveal delay={0.15}>
-            <section>
-              <h2 className="text-2xl font-bold text-text-primary mb-4">Weekly Schedule</h2>
+            <section aria-label="Weekly schedule">
+              <h2 className="text-2xl font-bold text-text-primary mb-4 text-balance">Weekly Schedule</h2>
               <Card glass className="overflow-hidden" padding="none">
                 <table className="w-full text-sm">
                   <thead>
@@ -283,8 +284,8 @@ export default function CourseDetailPage() {
 
           {/* FAQs */}
           <Reveal delay={0.2}>
-            <section>
-              <h2 className="text-2xl font-bold text-text-primary mb-4">Frequently Asked Questions</h2>
+            <section aria-label="Frequently asked questions">
+              <h2 className="text-2xl font-bold text-text-primary mb-4 text-balance">Frequently Asked Questions</h2>
               <Accordion items={faqItems} />
             </section>
           </Reveal>
@@ -374,7 +375,7 @@ export default function CourseDetailPage() {
 
       {/* ── Related courses ──────────────────────────────────── */}
       {relatedCourses.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 pb-20">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24" aria-label="Related courses">
           <Reveal>
             <h2 className="text-2xl font-bold text-text-primary mb-6">Related Courses</h2>
           </Reveal>
@@ -382,7 +383,7 @@ export default function CourseDetailPage() {
             {relatedCourses.map((rc, i) => (
               <Reveal key={rc.slug} delay={i * 0.08}>
                 <Link href={`/courses/${rc.slug}`}>
-                  <Card tilt className="group cursor-pointer hover:shadow-elevated transition-shadow h-full">
+                  <Card tilt className="group cursor-pointer card-interactive h-full">
                     <div className="h-36 rounded-xl mb-4 relative overflow-hidden">
                       <img
                         src={rc.thumbnail}

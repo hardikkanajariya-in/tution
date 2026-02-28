@@ -135,11 +135,11 @@ export default function CoursesPage() {
   return (
     <main className="min-h-screen bg-surface-primary">
       {/* Header */}
-      <section className="relative overflow-hidden bg-gradient-brand py-20">
+      <section className="relative overflow-hidden bg-brand-600 dark:bg-brand-700 py-20 md:py-28 lg:py-32" aria-label="Courses overview">
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10" />
-        <div className="container mx-auto px-4 relative z-10 text-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <Reveal>
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Our Courses</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 text-balance">Our Courses</h1>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
@@ -149,11 +149,11 @@ export default function CoursesPage() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         {/* ─── Search + Sort + View Toggle ──────────── */}
         <div className="flex flex-col md:flex-row gap-4 mb-8">
           <div className="relative flex-1">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-text-muted" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-text-muted" aria-hidden="true" />
             <Input
               placeholder="Search courses, subjects, tags…"
               value={searchInput}
@@ -164,7 +164,7 @@ export default function CoursesPage() {
 
           <div className="flex items-center gap-3">
             <div className="relative">
-              <SlidersHorizontal className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-text-muted pointer-events-none" />
+              <SlidersHorizontal className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-text-muted pointer-events-none" aria-hidden="true" />
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as SortKey)}
@@ -213,7 +213,7 @@ export default function CoursesPage() {
         <div className="space-y-4 mb-10">
           {/* Category chips */}
           <div className="flex flex-wrap gap-2 items-center">
-            <Filter className="h-4 w-4 text-text-muted mr-1" />
+            <Filter className="h-4 w-4 text-text-muted mr-1" aria-hidden="true" />
             {categories.map((cat) => (
               <button
                 key={cat.slug}
@@ -313,7 +313,7 @@ export default function CoursesPage() {
                   <Card
                     padding="none"
                     className={cn(
-                      'group hover:shadow-elevated transition-shadow duration-300 overflow-hidden',
+                      'group card-interactive duration-250 ease-out-expo overflow-hidden',
                       view === 'list' && 'md:flex md:flex-row'
                     )}
                   >
@@ -422,7 +422,7 @@ export default function CoursesPage() {
               'shadow-elevated backdrop-blur-xl'
             )}
           >
-            <div className="container mx-auto px-4 py-4 flex items-center justify-between gap-4">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
               <div className="flex items-center gap-3 flex-1 min-w-0">
                 <GitCompare className="h-5 w-5 text-brand-500 shrink-0" />
                 <div className="flex flex-wrap gap-2 min-w-0">

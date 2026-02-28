@@ -32,11 +32,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
-      <body className="min-h-screen flex flex-col font-sans">
+      <body className="min-h-screen flex flex-col font-sans bg-surface-primary text-text-primary">
         <ThemeProvider>
           <ToastProvider>
+            {/* Skip to content — accessibility (keyboard users) */}
+            <a href="#main-content" className="skip-link">
+              Skip to main content
+            </a>
             <Navbar />
-            <main className="flex-1 pt-16">{children}</main>
+            <main id="main-content" className="flex-1 pt-16" role="main">
+              {children}
+            </main>
             <Footer />
           </ToastProvider>
         </ThemeProvider>

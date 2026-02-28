@@ -27,7 +27,7 @@ export default function PricingPage() {
 
   const getPrice = (price: number) => {
     const p = annual ? Math.round(price * 12 * 0.8) : price;
-    return `$${p}`;
+    return `₹${p.toLocaleString('en-IN')}`;
   };
 
   const handleEnroll = (planName: string) => {
@@ -53,12 +53,12 @@ export default function PricingPage() {
   return (
     <main className="min-h-screen bg-surface-primary">
       {/* Header */}
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16">
+      <section className="pt-28 pb-12 md:pt-36 md:pb-16" aria-label="Pricing overview">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-text-primary">
-                Simple, Transparent <span className="text-gradient">Pricing</span>
+              <h1 className="text-4xl md:text-5xl font-extrabold text-text-primary text-balance">
+                Simple, Transparent <span className="text-brand-600 dark:text-brand-400">Pricing</span>
               </h1>
               <p className="mt-4 text-lg text-text-secondary">
                 Pick the plan that fits your learning goals. No hidden fees, cancel anytime.
@@ -99,7 +99,7 @@ export default function PricingPage() {
       </section>
 
       {/* Pricing Cards */}
-      <section className="pb-16 md:pb-24">
+      <section className="pb-16 md:pb-24" aria-label="Pricing plans">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
             {plans.map((plan, i) => {
@@ -114,7 +114,7 @@ export default function PricingPage() {
                     <div
                       className={cn(
                         'h-full rounded-2xl',
-                        isPopular && 'p-[2px] bg-gradient-to-br from-brand-400 via-purple-500 to-pink-500'
+                        isPopular && 'p-[2px] bg-brand-500'
                       )}
                     >
                       <Card
@@ -134,7 +134,7 @@ export default function PricingPage() {
                           <div className={cn(
                             'inline-flex items-center justify-center w-12 h-12 rounded-xl mb-4',
                             isPopular
-                              ? 'bg-gradient-to-br from-brand-400 to-purple-500 text-white'
+                              ? 'bg-brand-500 text-white'
                               : 'bg-surface-tertiary text-brand-500'
                           )}>
                             {planIcons[plan.id] ?? <Zap className="h-6 w-6" />}
@@ -152,7 +152,7 @@ export default function PricingPage() {
                           </div>
                           {annual && (
                             <p className="text-xs text-text-muted mt-1 line-through">
-                              ${plan.price * 12}/year
+                              ₹{(plan.price * 12).toLocaleString('en-IN')}/year
                             </p>
                           )}
                         </div>
@@ -194,12 +194,12 @@ export default function PricingPage() {
       </section>
 
       {/* Comparison Table */}
-      <section className="py-16 md:py-24 bg-surface-secondary">
+      <section className="py-20 md:py-28 bg-surface-secondary" aria-label="Compare plans">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
-                Compare <span className="text-gradient">Plans</span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary text-balance">
+                Compare <span className="text-brand-600 dark:text-brand-400">Plans</span>
               </h2>
               <p className="mt-3 text-text-secondary">See exactly what you get with each plan.</p>
             </div>
@@ -264,7 +264,7 @@ export default function PricingPage() {
       </section>
 
       {/* Custom Plan CTA */}
-      <section className="py-16 md:py-20">
+      <section className="py-20 md:py-24" aria-label="Custom plan">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <Card className="text-center bg-gradient-to-br from-brand-50 to-purple-50 dark:from-brand-950/30 dark:to-purple-950/20 border-brand-200 dark:border-brand-800/40" padding="lg">
@@ -286,12 +286,12 @@ export default function PricingPage() {
       </section>
 
       {/* Billing FAQs */}
-      <section className="py-16 md:py-24 bg-surface-secondary">
+      <section className="py-20 md:py-28 bg-surface-secondary" aria-label="Billing FAQ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
-                Billing <span className="text-gradient">FAQ</span>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary text-balance">
+                Billing <span className="text-brand-600 dark:text-brand-400">FAQ</span>
               </h2>
               <p className="mt-3 text-text-secondary">Common questions about plans and billing.</p>
             </div>
@@ -305,7 +305,7 @@ export default function PricingPage() {
       </section>
 
       {/* Money-back Guarantee Banner */}
-      <section className="py-12 md:py-16">
+      <section className="py-16 md:py-20" aria-label="Money-back guarantee">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">

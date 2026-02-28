@@ -81,15 +81,15 @@ export default function TeachersPage() {
   return (
     <main className="min-h-screen pb-24">
       {/* ─── Page Header ────────────────────────────── */}
-      <section className="relative overflow-hidden py-20 lg:py-28">
+      <section className="relative overflow-hidden py-20 md:py-28 lg:py-32" aria-label="Teachers overview">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-purple-50/40 dark:from-brand-950/30 dark:to-purple-950/20" />
-        <div className="container relative z-10 mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <Badge variant="brand" size="md" className="mb-4">
                 <Award className="mr-1.5 h-3.5 w-3.5" /> Meet the Team
               </Badge>
-              <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl text-balance">
                 Our Expert Instructors
               </h1>
               <p className="mt-4 text-lg text-text-secondary">
@@ -140,12 +140,12 @@ export default function TeachersPage() {
       </section>
 
       {/* ─── Filters ────────────────────────────────── */}
-      <section className="container mx-auto max-w-6xl px-4">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Filter teachers">
         <Reveal delay={0.1}>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             {/* Search */}
             <div className="relative flex-1">
-              <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted" />
+              <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted" aria-hidden="true" />
               <Input
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
@@ -205,7 +205,7 @@ export default function TeachersPage() {
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
               >
-                <Card className="group flex h-full flex-col hover:shadow-elevated">
+                <Card className="group flex h-full flex-col card-interactive">
                   {/* Avatar + basic info */}
                   <div className="flex items-start gap-4">
                     <img

@@ -11,8 +11,9 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ className, label, error, id, ...props }, ref) => {
     const inputId = id || label?.toLowerCase().replace(/\s+/g, '-');
+    const errorId = error ? `${inputId}-error` : undefined;
     return (
-      <div className="space-y-1.5">
+      <div className="space-y-2">
         {label && (
           <label htmlFor={inputId} className="block text-sm font-medium text-text-primary">
             {label}
@@ -21,11 +22,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           id={inputId}
+          aria-invalid={error ? true : undefined}
+          aria-describedby={errorId}
           className={cn(
-            'w-full rounded-xl border bg-surface-primary dark:bg-surface-secondary px-4 py-2.5 text-sm',
+            'w-full rounded-xl border bg-surface-primary dark:bg-surface-secondary px-4 py-3 text-sm min-h-[44px]',
             'text-text-primary placeholder:text-text-muted',
-            'transition-colors duration-200',
+            'transition-all duration-200 ease-out-expo',
             'focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent',
+            'hover:border-brand-300 dark:hover:border-brand-400',
             error
               ? 'border-red-400 dark:border-red-500'
               : 'border-gray-200 dark:border-white/10',
@@ -33,7 +37,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
           {...props}
         />
-        {error && <p className="text-xs text-red-500">{error}</p>}
+        {error && <p id={errorId} className="text-xs text-red-500 flex items-center gap-1" role="alert">{error}</p>}
       </div>
     );
   }
@@ -48,8 +52,9 @@ interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
   ({ className, label, error, id, ...props }, ref) => {
     const inputId = id || label?.toLowerCase().replace(/\s+/g, '-');
+    const errorId = error ? `${inputId}-error` : undefined;
     return (
-      <div className="space-y-1.5">
+      <div className="space-y-2">
         {label && (
           <label htmlFor={inputId} className="block text-sm font-medium text-text-primary">
             {label}
@@ -58,11 +63,14 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
         <textarea
           ref={ref}
           id={inputId}
+          aria-invalid={error ? true : undefined}
+          aria-describedby={errorId}
           className={cn(
-            'w-full rounded-xl border bg-surface-primary dark:bg-surface-secondary px-4 py-2.5 text-sm',
-            'text-text-primary placeholder:text-text-muted min-h-[100px] resize-y',
-            'transition-colors duration-200',
+            'w-full rounded-xl border bg-surface-primary dark:bg-surface-secondary px-4 py-3 text-sm',
+            'text-text-primary placeholder:text-text-muted min-h-[120px] resize-y',
+            'transition-all duration-200 ease-out-expo',
             'focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent',
+            'hover:border-brand-300 dark:hover:border-brand-400',
             error
               ? 'border-red-400 dark:border-red-500'
               : 'border-gray-200 dark:border-white/10',
@@ -70,7 +78,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
           )}
           {...props}
         />
-        {error && <p className="text-xs text-red-500">{error}</p>}
+        {error && <p id={errorId} className="text-xs text-red-500 flex items-center gap-1" role="alert">{error}</p>}
       </div>
     );
   }

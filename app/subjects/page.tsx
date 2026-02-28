@@ -49,10 +49,10 @@ export default function SubjectsPage() {
   return (
     <main className="min-h-screen pb-24">
       {/* ── Header ──────────────────────────────── */}
-      <section className="pt-32 pb-16 text-center px-4">
+      <section className="pt-32 pb-20 text-center px-4" aria-label="Subjects overview">
         <Reveal>
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-brand-500 to-purple-500 bg-clip-text text-transparent">
-            Explore Subjects
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary text-balance">
+            Explore <span className="text-brand-600 dark:text-brand-400">Subjects</span>
           </h1>
           <p className="mt-4 text-text-secondary max-w-2xl mx-auto text-lg">
             Discover our diverse catalogue spanning sciences, humanities, and technology — each crafted
@@ -62,9 +62,9 @@ export default function SubjectsPage() {
       </section>
 
       {/* ── Category Cards ──────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="All subjects">
         <Reveal>
-          <h2 className="text-2xl font-semibold mb-6">All Subjects</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-balance">All Subjects</h2>
         </Reveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -82,7 +82,7 @@ export default function SubjectsPage() {
                   >
                     <Card
                       glass
-                      className="hover:scale-[1.02] cursor-pointer overflow-hidden !rounded-l-none"
+                      className="card-interactive cursor-pointer overflow-hidden !rounded-l-none"
                     >
                       <div className="flex items-start gap-4">
                         <div
@@ -113,9 +113,9 @@ export default function SubjectsPage() {
       </section>
 
       {/* ── Grade Levels ────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 mt-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20" aria-label="Grade levels">
         <Reveal>
-          <h2 className="text-2xl font-semibold mb-6">Grade Levels</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-balance">Grade Levels</h2>
         </Reveal>
 
         <div className="flex flex-wrap gap-4">
@@ -146,9 +146,9 @@ export default function SubjectsPage() {
       </section>
 
       {/* ── Exam Tracks ─────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 mt-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20" aria-label="Exam tracks">
         <Reveal>
-          <h2 className="text-2xl font-semibold mb-6">Exam Tracks</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-balance">Exam Tracks</h2>
         </Reveal>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -157,7 +157,7 @@ export default function SubjectsPage() {
               <Link href="/courses">
                 <Card
                   glass
-                  className="group hover:scale-[1.02] cursor-pointer"
+                  className="group card-interactive cursor-pointer"
                 >
                   <div className="flex items-center gap-3">
                     <Trophy className="w-5 h-5 text-amber-500" />
@@ -177,9 +177,9 @@ export default function SubjectsPage() {
       </section>
 
       {/* ── Quick Chips ─────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 mt-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20" aria-label="Popular topics">
         <Reveal>
-          <h2 className="text-2xl font-semibold mb-6">Popular Topics</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-balance">Popular Topics</h2>
         </Reveal>
 
         <Reveal delay={0.1}>
@@ -201,7 +201,7 @@ export default function SubjectsPage() {
       </section>
 
       {/* ── Stats Row ───────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 mt-20">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 mb-8" aria-label="Statistics">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {stats.map((s, i) => {
             const Icon = s.icon;

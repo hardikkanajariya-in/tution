@@ -60,18 +60,18 @@ export function Modal({ isOpen, onClose, title, children, className, size = 'md'
             )}
           >
             {title && (
-              <div className="flex items-center justify-between p-5 border-b border-white/10 dark:border-white/5">
+              <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-white/5">
                 <h2 className="text-lg font-semibold text-text-primary">{title}</h2>
                 <button
                   onClick={onClose}
-                  className="p-1.5 rounded-lg hover:bg-surface-secondary dark:hover:bg-surface-tertiary transition-colors"
+                  className="p-2 rounded-lg hover:bg-surface-secondary dark:hover:bg-surface-tertiary transition-colors duration-200 min-h-[36px] min-w-[36px] flex items-center justify-center"
                   aria-label="Close dialog"
                 >
-                  <X className="h-5 w-5 text-text-muted" />
+                  <X className="h-5 w-5 text-text-muted" aria-hidden="true" />
                 </button>
               </div>
             )}
-            <div className={cn(!title && 'pt-5', 'p-5')}>{children}</div>
+            <div className={cn(!title && 'pt-6', 'p-6')}>{children}</div>
           </motion.div>
         </div>
       )}

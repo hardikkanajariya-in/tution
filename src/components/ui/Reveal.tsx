@@ -12,10 +12,10 @@ interface RevealProps {
 
 export function Reveal({ children, className, delay = 0, direction = 'up' }: RevealProps) {
   const directionMap = {
-    up: { y: 30, x: 0 },
-    down: { y: -30, x: 0 },
-    left: { y: 0, x: 30 },
-    right: { y: 0, x: -30 },
+    up: { y: 24, x: 0 },
+    down: { y: -24, x: 0 },
+    left: { y: 0, x: 24 },
+    right: { y: 0, x: -24 },
   };
   const { x, y } = directionMap[direction];
 
@@ -23,8 +23,8 @@ export function Reveal({ children, className, delay = 0, direction = 'up' }: Rev
     <motion.div
       initial={{ opacity: 0, x, y }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
-      viewport={{ once: true, margin: '-60px' }}
-      transition={{ duration: 0.5, delay, ease: 'easeOut' }}
+      viewport={{ once: true, margin: '-80px' }}
+      transition={{ duration: 0.5, delay, ease: [0.16, 1, 0.3, 1] }}
       className={className}
     >
       {children}

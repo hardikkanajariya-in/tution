@@ -29,15 +29,15 @@ export function PopularCoursesSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-surface-secondary">
+    <section className="section-padding bg-surface-secondary" aria-label="Popular courses">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="flex items-end justify-between mb-10">
+          <div className="flex items-end justify-between mb-12">
             <div>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
-                Popular <span className="text-gradient">Courses</span>
+              <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-text-primary text-balance">
+                Popular <span className="text-brand-600 dark:text-brand-400">Courses</span>
               </h2>
-              <p className="mt-2 text-text-secondary">
+              <p className="mt-4 text-lg text-text-secondary">
                 Hand-picked by thousands of students.
               </p>
             </div>
@@ -54,7 +54,7 @@ export function PopularCoursesSection() {
 
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 snap-x snap-mandatory"
+          className="flex gap-8 overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 snap-x snap-mandatory"
         >
           {sorted.map((course, i) => (
             <Reveal key={course.slug} delay={i * 0.05} direction="left">
@@ -77,7 +77,7 @@ export function PopularCoursesSection() {
                       {course.mode}
                     </Badge>
                     <span className="flex items-center gap-1 text-xs text-text-muted">
-                      <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                      <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" aria-hidden="true" />
                       {course.rating}
                     </span>
                   </div>
@@ -94,7 +94,7 @@ export function PopularCoursesSection() {
                   </div>
 
                   <div className="mt-4 pt-3 border-t border-white/10 dark:border-white/5 flex items-center justify-between">
-                    <span className="text-lg font-bold text-brand-500">${course.price}</span>
+                    <span className="text-lg font-bold text-brand-500">₹{course.price.toLocaleString('en-IN')}</span>
                     <span className="text-xs text-text-muted">{course.duration}</span>
                   </div>
                 </Card>

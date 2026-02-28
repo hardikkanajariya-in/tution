@@ -47,16 +47,17 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+          'fixed top-0 left-0 right-0 z-50 transition-all duration-350 ease-out-expo',
           scrolled
             ? 'glass-strong shadow-soft py-2'
             : 'bg-transparent py-4'
         )}
+        role="banner"
       >
-        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 shrink-0" aria-label="PrismTutor Studio Home">
-            <span className="text-xl font-bold text-gradient">PrismTutor</span>
-            <span className="text-xl font-light text-text-secondary">Studio</span>
+        <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between" aria-label="Main navigation">
+          <Link href="/" className="flex items-center gap-2.5 shrink-0 group" aria-label="PrismTutor Studio Home">
+            <span className="text-xl font-bold text-gradient transition-opacity group-hover:opacity-80">PrismTutor</span>
+            <span className="text-xl font-light text-text-secondary transition-opacity group-hover:opacity-80">Studio</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-1">

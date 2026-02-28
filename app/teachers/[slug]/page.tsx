@@ -147,7 +147,7 @@ export default function TeacherDetailPage() {
   return (
     <main className="min-h-screen pb-24">
       {/* ── Breadcrumbs ─────────────────────────────────────── */}
-      <div className="container mx-auto max-w-6xl px-4 pt-6">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-6">
         <nav className="flex items-center gap-1.5 text-sm text-text-muted" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-brand-500 transition-colors">Home</Link>
           <ChevronRight className="h-3.5 w-3.5" />
@@ -158,11 +158,11 @@ export default function TeacherDetailPage() {
       </div>
 
       {/* ── Hero Section ────────────────────────────────────── */}
-      <section className="relative mt-4 overflow-hidden">
+      <section className="relative mt-4 overflow-hidden" aria-label="Teacher profile">
         <div className="absolute inset-0 opacity-10" style={{ background: bgGradient }} />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface-primary dark:to-surface-primary" />
 
-        <div className="container relative z-10 mx-auto max-w-6xl px-4 py-16 lg:py-24">
+        <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <Reveal>
             <div className="flex flex-col items-center text-center">
               {/* Avatar */}
@@ -176,11 +176,12 @@ export default function TeacherDetailPage() {
                   src={teacher.avatar}
                   alt={teacher.name}
                   className="w-full h-full object-cover"
+                  loading="eager"
                 />
               </motion.div>
 
               {/* Name & title */}
-              <h1 className="mt-6 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl lg:text-5xl">
+              <h1 className="mt-6 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl lg:text-5xl text-balance">
                 {teacher.name}
               </h1>
               <p className="mt-2 text-lg text-text-secondary">{teacher.title}</p>
@@ -233,11 +234,11 @@ export default function TeacherDetailPage() {
         </div>
       </section>
 
-      <div className="container mx-auto max-w-6xl px-4 space-y-16 mt-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16 mt-8">
         {/* ── Bio Section ───────────────────────────────────── */}
         <Reveal>
           <Card glass padding="lg" className="mx-auto max-w-3xl">
-            <h2 className="text-xl font-bold text-text-primary mb-4">About</h2>
+            <h2 className="text-xl font-bold text-text-primary mb-4 text-balance">About</h2>
             <p className="text-text-secondary leading-relaxed text-[15px]">{teacher.bio}</p>
           </Card>
         </Reveal>
@@ -273,7 +274,7 @@ export default function TeacherDetailPage() {
                 >
                   <Card
                     glass
-                    className="flex items-center gap-4 hover:shadow-elevated transition-shadow"
+                    className="flex items-center gap-4 card-interactive"
                   >
                     <div className={cn(
                       'flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br text-white',
@@ -308,7 +309,7 @@ export default function TeacherDetailPage() {
                     <Link href={`/courses/${course.slug}`} className="group block h-full">
                       <Card
                         padding="none"
-                        className="flex h-full flex-col overflow-hidden hover:shadow-elevated transition-shadow"
+                        className="flex h-full flex-col overflow-hidden card-interactive"
                       >
                         {/* Course thumbnail */}
                         <div className="h-36 overflow-hidden">

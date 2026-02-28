@@ -179,7 +179,7 @@ export default function BlogPostPage() {
     <main className="min-h-screen pb-20">
       {/* ── Breadcrumbs ──────────────────────────────── */}
       <Reveal>
-        <nav className="max-w-4xl mx-auto px-4 pt-28 pb-4 flex items-center gap-2 text-sm text-text-tertiary">
+        <nav className="max-w-4xl mx-auto px-4 pt-28 pb-4 flex items-center gap-2 text-sm text-text-tertiary" aria-label="Breadcrumb">
           <Link href="/" className="hover:text-brand-500 transition-colors">Home</Link>
           <ChevronRight size={14} />
           <Link href="/blog" className="hover:text-brand-500 transition-colors">Blog</Link>
@@ -201,6 +201,7 @@ export default function BlogPostPage() {
               src={post.cover}
               alt={post.title}
               className="w-full h-full object-cover"
+              loading="eager"
             />
             <div className="absolute inset-0 bg-black/20 flex items-end p-8">
               <Badge variant="brand" size="md">{post.tags[0]}</Badge>
@@ -212,7 +213,7 @@ export default function BlogPostPage() {
       {/* ── Article header ───────────────────────────── */}
       <Reveal>
         <header className="max-w-3xl mx-auto px-4 mb-10">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-primary leading-tight mb-6">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-text-primary leading-tight mb-6 text-balance">
             {post.title}
           </h1>
 
@@ -241,7 +242,7 @@ export default function BlogPostPage() {
       </Reveal>
 
       {/* ── Article body ─────────────────────────────── */}
-      <article className="max-w-3xl mx-auto px-4">
+      <article className="max-w-3xl mx-auto px-4" aria-label="Article content">
         {content.map((block, i) => (
           <Reveal key={i}>
             <ContentRenderer block={block} index={i} />
@@ -298,7 +299,7 @@ export default function BlogPostPage() {
 
       {/* ── Related posts ────────────────────────────── */}
       {related.length > 0 && (
-        <section className="max-w-4xl mx-auto px-4 mt-16">
+        <section className="max-w-4xl mx-auto px-4 mt-16" aria-label="Related posts">
           <Reveal>
             <h2 className="text-2xl font-bold text-text-primary mb-6">Related Posts</h2>
           </Reveal>
@@ -309,7 +310,7 @@ export default function BlogPostPage() {
               return (
                 <Reveal key={rp.slug}>
                   <Link href={`/blog/${rp.slug}`}>
-                    <Card padding="none" className="overflow-hidden group hover:shadow-lg transition-shadow">
+                    <Card padding="none" className="overflow-hidden group card-interactive duration-250 ease-out-expo">
                       <img
                         src={rp.cover}
                         alt={rp.title}

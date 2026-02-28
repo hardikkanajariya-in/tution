@@ -71,7 +71,7 @@ function StatCard({ label, target, suffix, icon: Icon }: {
         <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 transition-transform group-hover:scale-110">
           <Icon size={24} />
         </div>
-        <p className="text-3xl font-bold bg-gradient-to-r from-brand-500 to-purple-500 bg-clip-text text-transparent">
+        <p className="text-3xl font-bold text-brand-600 dark:text-brand-400">
           {value.toLocaleString()}{suffix}
         </p>
         <p className="mt-1 text-sm text-text-secondary">{label}</p>
@@ -180,16 +180,16 @@ export default function ResultsPage() {
   return (
     <main className="min-h-screen">
       {/* ── Hero header ──────────────────────────────────────── */}
-      <section className="relative overflow-hidden pt-32 pb-16 text-center">
+      <section className="relative overflow-hidden pt-32 pb-20 text-center" aria-label="Results overview">
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-50/60 via-transparent to-transparent dark:from-brand-950/30" />
         <div className="absolute top-20 left-1/2 -translate-x-1/2 -z-10 h-72 w-72 rounded-full bg-brand-400/20 blur-[100px]" />
         <Reveal>
           <Badge variant="brand" size="md" className="mb-4 inline-flex items-center gap-1.5">
             <Trophy size={14} /> Student Achievements
           </Badge>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-text-primary">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-text-primary text-balance">
             Our Results{' '}
-            <span className="bg-gradient-to-r from-brand-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="text-brand-600 dark:text-brand-400">
               Speak
             </span>
           </h1>
@@ -201,7 +201,7 @@ export default function ResultsPage() {
       </section>
 
       {/* ── Stats banner ─────────────────────────────────────── */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Key statistics" role="region">
         <Reveal>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {STATS.map((s) => (
@@ -212,7 +212,7 @@ export default function ResultsPage() {
       </section>
 
       {/* ── Filter bar ───────────────────────────────────────── */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-16">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-16" aria-label="Filter by exam">
         <Reveal>
           <div className="flex flex-wrap items-center gap-2">
             {exams.map((exam) => (
@@ -234,7 +234,7 @@ export default function ResultsPage() {
       </section>
 
       {/* ── Success stories grid ─────────────────────────────── */}
-      <section className="mx-auto max-w-6xl px-4 sm:px-6 mt-10 pb-20">
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-10 pb-24" aria-label="Student success stories">
         <AnimatePresence mode="popLayout">
           <div className="grid md:grid-cols-2 gap-6">
             {filtered.map((story, i) => (
@@ -251,11 +251,11 @@ export default function ResultsPage() {
       </section>
 
       {/* ── Aggregate improvement section ────────────────────── */}
-      <section className="bg-surface-secondary/50 dark:bg-surface-secondary/20 py-20">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+      <section className="bg-surface-secondary/50 dark:bg-surface-secondary/20 py-20 md:py-28" aria-label="Overall impact">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <h2 className="text-center text-3xl font-bold text-text-primary mb-12">
-              Overall <span className="bg-gradient-to-r from-brand-500 to-purple-500 bg-clip-text text-transparent">Impact</span>
+            <h2 className="text-center text-3xl font-bold text-text-primary mb-12 text-balance">
+              Overall <span className="text-brand-600 dark:text-brand-400">Impact</span>
             </h2>
           </Reveal>
 
@@ -266,7 +266,7 @@ export default function ResultsPage() {
                 <TrendingUp size={32} className="mx-auto mb-3 text-emerald-500" />
                 <p className="text-sm text-text-secondary mb-2">Average Score Improvement</p>
                 <div ref={improvementCounter.ref}>
-                  <p className="text-6xl font-extrabold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent">
+                  <p className="text-6xl font-extrabold text-emerald-600 dark:text-emerald-400">
                     {improvementCounter.value}%
                   </p>
                 </div>
@@ -280,7 +280,7 @@ export default function ResultsPage() {
                 <Award size={32} className="mx-auto mb-3 text-brand-500" />
                 <p className="text-sm text-text-secondary mb-4">Success Rate</p>
                 <div ref={successCounter.ref} className="relative mx-auto h-36 w-36">
-                  <svg viewBox="0 0 120 120" className="h-full w-full -rotate-90">
+                    <svg viewBox="0 0 120 120" className="h-full w-full -rotate-90" role="img" aria-label="Success rate 96%">
                     <circle cx="60" cy="60" r="52" fill="none" stroke="currentColor"
                       className="text-surface-tertiary" strokeWidth="10" />
                     <motion.circle
@@ -324,10 +324,10 @@ export default function ResultsPage() {
       </section>
 
       {/* ── CTA section ──────────────────────────────────────── */}
-      <section className="py-20">
+      <section className="py-20 md:py-28" aria-label="Call to action">
         <Reveal>
           <div className="mx-auto max-w-3xl px-4 sm:px-6 text-center">
-            <div className="rounded-3xl bg-gradient-to-r from-brand-500 to-purple-600 p-10 shadow-xl shadow-brand-500/20">
+            <div className="rounded-3xl bg-brand-600 dark:bg-brand-700 p-10 shadow-xl shadow-brand-500/20">
               <h2 className="text-3xl font-bold text-white">Start Your Success Story</h2>
               <p className="mt-3 text-white/80">
                 Join thousands of students who transformed their scores with our expert-led courses.

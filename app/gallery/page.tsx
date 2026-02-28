@@ -72,14 +72,14 @@ export default function GalleryPage() {
   return (
     <main className="min-h-screen pb-24">
       {/* ── Header ──────────────────────────────── */}
-      <section className="pt-32 pb-16 text-center px-4">
+      <section className="pt-32 pb-20 text-center px-4" aria-label="Gallery overview">
         <Reveal>
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 text-sm font-medium mb-6">
-            <Camera className="h-4 w-4" />
+            <Camera className="h-4 w-4" aria-hidden="true" />
             Photo Gallery
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-brand-500 to-purple-500 bg-clip-text text-transparent">
-            Life at PrismTutor
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary text-balance">
+            Life at <span className="text-brand-600 dark:text-brand-400">PrismTutor</span>
           </h1>
           <p className="mt-4 text-text-secondary max-w-2xl mx-auto text-lg">
             A visual journey through our vibrant campus life, events, classrooms, and celebrations of student achievement.
@@ -88,10 +88,10 @@ export default function GalleryPage() {
       </section>
 
       {/* ── Category Filter ─────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4 mb-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10" aria-label="Category filter">
         <Reveal delay={0.1}>
           <div className="flex flex-wrap items-center justify-center gap-3">
-            <Filter className="h-4 w-4 text-text-muted mr-1" />
+            <Filter className="h-4 w-4 text-text-muted mr-1" aria-hidden="true" />
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -111,15 +111,15 @@ export default function GalleryPage() {
       </section>
 
       {/* ── Image Counter ───────────────────────── */}
-      <div className="max-w-6xl mx-auto px-4 mb-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 flex items-center justify-between">
         <p className="text-sm text-text-muted flex items-center gap-2">
-          <Grid3X3 className="h-4 w-4" />
+          <Grid3X3 className="h-4 w-4" aria-hidden="true" />
           Showing {filtered.length} of {images.length}
         </p>
       </div>
 
       {/* ── Masonry Grid ────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-4">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Photo gallery">
         <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 [column-fill:_balance]">
           <AnimatePresence mode="popLayout">
             {filtered.map((img, idx) => (

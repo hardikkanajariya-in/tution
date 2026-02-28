@@ -53,20 +53,20 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen overflow-x-hidden">
       {/* ─── Hero ──────────────────────────────────── */}
-      <section className="relative py-28 md:py-36 overflow-hidden">
+      <section className="relative py-28 md:py-36 overflow-hidden" aria-label="About hero">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-600 via-purple-600 to-brand-700 dark:from-brand-900 dark:via-purple-900 dark:to-brand-950" />
         <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-purple-400/10 blur-3xl animate-pulse delay-1000" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-400/5 blur-3xl" />
 
-        <div className="container relative z-10 mx-auto px-4 text-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <Reveal>
             <Badge className="mb-6 bg-white/15 text-white border-white/20 backdrop-blur-sm">
               <Globe className="w-3.5 h-3.5 mr-1.5" /> Est. 2018
             </Badge>
           </Reveal>
           <Reveal delay={0.1}>
-            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight text-balance">
               About <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-300">{siteData.brand.name}</span>
             </h1>
           </Reveal>
@@ -79,8 +79,8 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Mission & Vision ──────────────────────── */}
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-28" aria-label="Mission and vision">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Reveal>
               <Card glass className="h-full relative overflow-hidden group">
@@ -115,12 +115,12 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Our Story Timeline ────────────────────── */}
-      <section className="py-20 md:py-28 bg-surface-secondary/50 dark:bg-white/[0.02]">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-28 bg-surface-secondary/50 dark:bg-white/[0.02]" aria-label="Our journey">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center mb-16">
               <Badge className="mb-4">Our Journey</Badge>
-              <h2 className="text-3xl md:text-4xl font-extrabold">The Story So Far</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-balance">The Story So Far</h2>
             </div>
           </Reveal>
 
@@ -152,12 +152,12 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Core Values ───────────────────────────── */}
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-28" aria-label="Core values">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center mb-16">
               <Badge className="mb-4">What We Stand For</Badge>
-              <h2 className="text-3xl md:text-4xl font-extrabold">Core Values</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-balance">Core Values</h2>
             </div>
           </Reveal>
 
@@ -178,12 +178,12 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Leadership Team ───────────────────────── */}
-      <section className="py-20 md:py-28 bg-surface-secondary/50 dark:bg-white/[0.02]">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-28 bg-surface-secondary/50 dark:bg-white/[0.02]" aria-label="Leadership team">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center mb-16">
               <Badge className="mb-4">Meet Our Leaders</Badge>
-              <h2 className="text-3xl md:text-4xl font-extrabold">Leadership Team</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-balance">Leadership Team</h2>
               <p className="text-muted-foreground mt-3 max-w-lg mx-auto">
                 Our leadership combines decades of academic expertise with a passion for innovation.
               </p>
@@ -194,7 +194,7 @@ export default function AboutPage() {
             {leaders.map((t, i) => (
               <Reveal key={t.slug} delay={i * 0.12}>
                 <Link href={`/teachers/${t.slug}`} className="block group">
-                  <Card glass className="text-center h-full hover:shadow-xl transition-shadow">
+                  <Card glass className="text-center h-full card-interactive">
                     <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden shadow-lg">
                       <img
                         src={t.avatar}
@@ -237,12 +237,12 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Stats ─────────────────────────────────── */}
-      <section className="py-20 md:py-28">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-28" aria-label="Our impact">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center mb-16">
               <Badge className="mb-4">By The Numbers</Badge>
-              <h2 className="text-3xl md:text-4xl font-extrabold">Our Impact</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-balance">Our Impact</h2>
             </div>
           </Reveal>
 
@@ -268,13 +268,13 @@ export default function AboutPage() {
       </section>
 
       {/* ─── Campus / Location ─────────────────────── */}
-      <section className="py-20 md:py-28 bg-surface-secondary/50 dark:bg-white/[0.02]">
-        <div className="container mx-auto px-4">
+      <section className="py-20 md:py-28 bg-surface-secondary/50 dark:bg-white/[0.02]" aria-label="Campus location">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-center">
             <Reveal>
               <div>
                 <Badge className="mb-4">Our Campus</Badge>
-                <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Visit Us</h2>
+                <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-balance">Visit Us</h2>
                 <div className="space-y-5">
                   <div className="flex items-start gap-3">
                     <div className="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center shrink-0 mt-0.5">
@@ -323,12 +323,12 @@ export default function AboutPage() {
       </section>
 
       {/* ─── CTA ───────────────────────────────────── */}
-      <section className="py-20 md:py-28 relative overflow-hidden">
+      <section className="py-20 md:py-28 relative overflow-hidden" aria-label="Call to action">
         <div className="absolute inset-0 bg-gradient-to-r from-brand-600 via-purple-600 to-brand-700 dark:from-brand-900 dark:via-purple-900 dark:to-brand-950" />
         <div className="absolute top-0 left-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-400/10 rounded-full blur-3xl" />
 
-        <div className="container relative z-10 mx-auto px-4 text-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <Reveal>
             <Rocket className="w-12 h-12 text-white/80 mx-auto mb-6" />
             <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">

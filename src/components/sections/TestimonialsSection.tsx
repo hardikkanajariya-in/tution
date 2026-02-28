@@ -27,14 +27,14 @@ export function TestimonialsSection() {
   const t = testimonials[active];
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="section-padding" aria-label="Student testimonials">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
-              What Students <span className="text-gradient">Say</span>
+          <div className="section-heading">
+            <h2 className="text-balance">
+              What Students <span className="text-brand-600 dark:text-brand-400">Say</span>
             </h2>
-            <p className="mt-3 text-text-secondary">
+            <p>
               Hear from the learners who transformed their journey with us.
             </p>
           </div>
@@ -43,7 +43,7 @@ export function TestimonialsSection() {
         <Reveal delay={0.1}>
           <div className="relative max-w-3xl mx-auto" role="region" aria-label="Testimonials" aria-roledescription="carousel">
             <Card glass padding="lg" className="text-center">
-              <Quote className="w-10 h-10 mx-auto text-brand-300 mb-4" />
+              <Quote className="w-10 h-10 mx-auto text-brand-300 mb-4" aria-hidden="true" />
 
               <p className="text-lg md:text-xl text-text-primary leading-relaxed italic">
                 &ldquo;{t.text}&rdquo;
@@ -89,7 +89,7 @@ export function TestimonialsSection() {
                     aria-label={`Testimonial ${i + 1}`}
                     onClick={() => setActive(i)}
                     className={cn(
-                      'w-2.5 h-2.5 rounded-full transition-all duration-300',
+                      'w-2.5 h-2.5 rounded-full transition-all duration-250 ease-out',
                       i === active
                         ? 'bg-brand-500 w-6'
                         : 'bg-brand-200 dark:bg-brand-300 hover:bg-brand-300'

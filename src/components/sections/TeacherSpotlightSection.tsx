@@ -11,20 +11,20 @@ import { Star, Users } from 'lucide-react';
 
 export function TeacherSpotlightSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="section-padding" aria-label="Meet our teachers">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
-              Meet Our <span className="text-gradient">Teachers</span>
+          <div className="section-heading">
+            <h2 className="text-balance">
+              Meet Our <span className="text-brand-600 dark:text-brand-400">Teachers</span>
             </h2>
-            <p className="mt-3 text-text-secondary">
+            <p>
               Award-winning educators who make every concept click.
             </p>
           </div>
         </Reveal>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {teachers.map((teacher, i) => (
             <Reveal key={teacher.slug} delay={i * 0.1}>
               <Link href={`/teachers/${teacher.slug}`}>
@@ -33,7 +33,7 @@ export function TeacherSpotlightSection() {
                   transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                   className="perspective-container"
                 >
-                  <Card className="h-full group hover:shadow-elevated transition-shadow">
+                  <Card className="h-full group card-interactive">
                     {/* Avatar */}
                     <div className="w-20 h-20 mx-auto rounded-full mb-4 overflow-hidden">
                       <img
@@ -58,11 +58,11 @@ export function TeacherSpotlightSection() {
 
                       <div className="flex items-center justify-center gap-4 mt-4 text-sm text-text-muted">
                         <span className="flex items-center gap-1">
-                          <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+                          <Star className="w-4 h-4 fill-amber-400 text-amber-400" aria-hidden="true" />
                           {teacher.rating}
                         </span>
                         <span className="flex items-center gap-1">
-                          <Users className="w-4 h-4" />
+                          <Users className="w-4 h-4" aria-hidden="true" />
                           {teacher.studentCount.toLocaleString()}
                         </span>
                       </div>

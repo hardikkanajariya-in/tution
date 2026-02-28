@@ -86,15 +86,15 @@ export default function BlogPage() {
   return (
     <main className="min-h-screen pb-24">
       {/* ─── Page Header ────────────────────────────── */}
-      <section className="relative overflow-hidden py-20 lg:py-28">
+      <section className="relative overflow-hidden py-20 md:py-28 lg:py-32" aria-label="Blog overview">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-purple-50/40 dark:from-brand-950/30 dark:to-purple-950/20" />
-        <div className="container relative z-10 mx-auto max-w-6xl px-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
               <Badge variant="brand" size="md" className="mb-4">
                 <BookOpen className="mr-1.5 h-3.5 w-3.5" /> Blog
               </Badge>
-              <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl text-balance">
                 PrismTutor Blog
               </h1>
               <p className="mt-4 text-lg text-text-secondary">
@@ -105,7 +105,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <div className="container mx-auto max-w-6xl px-4">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ─── Featured Post ──────────────────────────── */}
         <Reveal delay={0.1}>
           <Link href={`/blog/${featured.slug}`} className="group block">
@@ -116,7 +116,7 @@ export default function BlogPage() {
                     src={featured.cover}
                     alt={featured.title}
                     className="w-full h-full object-cover"
-                    loading="lazy"
+                    loading="eager"
                   />
                 </div>
                 <div className="flex flex-col justify-center p-6 md:p-10">
@@ -159,7 +159,7 @@ export default function BlogPage() {
         <Reveal delay={0.15}>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <div className="relative flex-1">
-              <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted" />
+              <Search className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-text-muted" aria-hidden="true" />
               <Input
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
@@ -227,7 +227,7 @@ export default function BlogPage() {
                 transition={{ duration: 0.3, delay: idx * 0.05 }}
               >
                 <Link href={`/blog/${post.slug}`} className="group block h-full">
-                  <Card padding="none" className="flex h-full flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                  <Card padding="none" className="flex h-full flex-col overflow-hidden card-interactive duration-250 ease-out-expo">
                     {/* Cover image */}
                     <div className="aspect-[16/9] relative overflow-hidden">
                       <img

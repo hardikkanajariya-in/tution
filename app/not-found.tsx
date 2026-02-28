@@ -64,7 +64,7 @@ export default function NotFoundPage() {
         {/* 404 Number */}
         <Reveal>
           <motion.h1
-            className="text-[10rem] md:text-[14rem] font-black leading-none select-none text-transparent bg-clip-text bg-gradient-to-br from-brand-500 via-purple-500 to-brand-600"
+            className="text-[10rem] md:text-[14rem] font-black leading-none select-none text-brand-500/20 dark:text-brand-400/20"
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ type: 'spring', stiffness: 100, damping: 12 }}

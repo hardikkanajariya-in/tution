@@ -28,13 +28,13 @@ export function NewsletterSection() {
   };
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
+    <section className="section-padding" aria-label="Newsletter and call to action">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-20">
         {/* CTA band */}
         <Reveal>
-          <div className="relative rounded-3xl bg-gradient-brand p-px overflow-hidden">
+          <div className="relative rounded-3xl border-2 border-brand-200 dark:border-brand-800 overflow-hidden">
             <div className="rounded-3xl bg-surface-primary dark:bg-surface-secondary p-10 md:p-16 text-center noise-overlay">
-              <Sparkles className="w-10 h-10 mx-auto text-brand-500 mb-4" />
+              <Sparkles className="w-10 h-10 mx-auto text-brand-500 mb-4" aria-hidden="true" />
               <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
                 {cta.headline}
               </h2>
@@ -62,7 +62,8 @@ export function NewsletterSection() {
 
             <form
               onSubmit={handleSubmit}
-              className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+              className="mt-8 flex flex-col sm:flex-row gap-4 max-w-md mx-auto"
+              aria-label="Newsletter subscription"
             >
               <Input
                 type="email"
@@ -74,7 +75,7 @@ export function NewsletterSection() {
                 aria-label="Email address"
               />
               <Button type="submit" variant="gradient" loading={loading}>
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4" aria-hidden="true" />
                 {newsletter.buttonLabel}
               </Button>
             </form>

@@ -14,20 +14,20 @@ export function PricingPreviewSection() {
   const { plans } = pricingData;
 
   return (
-    <section className="py-16 md:py-24 bg-surface-secondary">
+    <section className="section-padding bg-surface-secondary" aria-label="Pricing plans">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
-              Simple, Transparent <span className="text-gradient">Pricing</span>
+          <div className="section-heading">
+            <h2 className="text-balance">
+              Simple, Transparent <span className="text-brand-600 dark:text-brand-400">Pricing</span>
             </h2>
-            <p className="mt-3 text-text-secondary">
+            <p>
               Pick the plan that fits your learning goals. Upgrade anytime.
             </p>
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
           {plans.map((plan, i) => (
             <Reveal key={plan.id} delay={i * 0.1}>
               <motion.div
@@ -52,7 +52,7 @@ export function PricingPreviewSection() {
                     <h3 className="text-xl font-bold text-text-primary">{plan.name}</h3>
                     <p className="text-sm text-text-secondary mt-1">{plan.description}</p>
                     <p className="mt-4">
-                      <span className="text-4xl font-extrabold text-text-primary">${plan.price}</span>
+                      <span className="text-4xl font-extrabold text-text-primary">₹{plan.price.toLocaleString('en-IN')}</span>
                       <span className="text-text-muted text-sm ml-1">/{plan.period.replace('per ', '')}</span>
                     </p>
                   </div>
@@ -61,9 +61,9 @@ export function PricingPreviewSection() {
                     {plan.features.map((f) => (
                       <li key={f.text} className="flex items-start gap-2 text-sm">
                         {f.included ? (
-                          <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                          <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" aria-hidden="true" />
                         ) : (
-                          <X className="w-4 h-4 text-text-muted mt-0.5 shrink-0" />
+                          <X className="w-4 h-4 text-text-muted mt-0.5 shrink-0" aria-hidden="true" />
                         )}
                         <span className={cn(f.included ? 'text-text-primary' : 'text-text-muted')}>
                           {f.text}

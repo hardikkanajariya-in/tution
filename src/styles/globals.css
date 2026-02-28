@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ──────────────────────────────────────────────────────────
+   DESIGN SYSTEM — following 60-30-10 color rule,
+   Laws of UX, Fitts's Law, Hick's Law, visual hierarchy,
+   proper spacing, accessibility (WCAG 2.1 AA), and
+   Erik Kennedy's 7 Rules for Gorgeous UI.
+   ────────────────────────────────────────────────────────── */
+
 @layer base {
   :root {
+    /* ── 60% Primary palette (backgrounds, large surfaces) ── */
     --brand-50: #f5f3ff;
     --brand-100: #ede9fe;
     --brand-200: #ddd6fe;
@@ -15,20 +23,53 @@
     --brand-800: #5b21b6;
     --brand-900: #4c1d95;
 
+    /* ── 10% Accent palette (CTAs, highlights) ── */
     --accent-pink: #ec4899;
     --accent-blue: #3b82f6;
     --accent-purple: #8b5cf6;
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
 
+    /* ── Surface colors (60% rule — neutral canvases) ── */
     --surface-primary: #ffffff;
     --surface-secondary: #f8f7ff;
     --surface-tertiary: #f1f0fb;
+    --surface-elevated: #ffffff;
 
-    --text-primary: #1a1a2e;
-    --text-secondary: #4a4a6a;
-    --text-muted: #9191ab;
+    /* ── Text (contrast ratios ≥ 4.5:1 for WCAG AA) ── */
+    --text-primary: #111827;
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
 
+    /* ── Borders ── */
+    --border-default: #e5e7eb;
+    --border-subtle: #f3f4f6;
+
+    /* ── Shadows (light comes from the sky — Rule 1) ── */
+    --shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.08), 0 1px 2px -1px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+    --shadow-brand: 0 4px 14px -2px rgba(139,92,246,0.25);
+
+    /* ── Spacing scale (generous whitespace — Rule 3) ── */
+    --section-py: 5rem;
+    --section-py-lg: 7rem;
+
+    /* ── Transitions (Doherty Threshold < 400ms) ── */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --duration-fast: 150ms;
+    --duration-normal: 250ms;
+    --duration-slow: 350ms;
+
+    /* ── Typography (consistent scale) ── */
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+    /* ── Focus ring (accessibility) ── */
+    --ring-color: rgba(139,92,246,0.5);
+    --ring-offset: 2px;
   }
 
   .dark {
@@ -46,18 +87,37 @@
     --accent-pink: #f472b6;
     --accent-blue: #60a5fa;
     --accent-purple: #a78bfa;
+    --accent-emerald: #34d399;
+    --accent-amber: #fbbf24;
 
     --surface-primary: #0f0f1a;
     --surface-secondary: #1a1a2e;
     --surface-tertiary: #252540;
+    --surface-elevated: #1e1e3a;
 
-    --text-primary: #f0f0f5;
-    --text-secondary: #b0b0c8;
-    --text-muted: #6b6b85;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --text-muted: #9ca3af;
+
+    --border-default: rgba(255,255,255,0.08);
+    --border-subtle: rgba(255,255,255,0.04);
+
+    --shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.3);
+    --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.4), 0 1px 2px -1px rgba(0,0,0,0.4);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4), 0 2px 4px -2px rgba(0,0,0,0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5), 0 4px 6px -4px rgba(0,0,0,0.4);
+    --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.5), 0 8px 10px -6px rgba(0,0,0,0.4);
+    --shadow-brand: 0 4px 14px -2px rgba(139,92,246,0.35);
+
+    --ring-color: rgba(167,139,250,0.5);
   }
 
+  /* ── Smooth scroll + reduced motion respect ── */
   html {
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -75,36 +135,68 @@
   body {
     @apply bg-surface-primary text-text-primary antialiased;
     font-family: var(--font-sans);
+    line-height: 1.6;
+    letter-spacing: -0.011em;
   }
 
+  /* ── Selection ── */
   ::selection {
     background-color: #8b5cf64d;
+    color: #1a1a2e;
+  }
+  .dark ::selection {
+    color: #f9fafb;
+  }
+
+  /* ── Focus visible for keyboard accessibility ── */
+  *:focus-visible {
+    outline: 2px solid var(--ring-color);
+    outline-offset: var(--ring-offset);
+    border-radius: 4px;
+  }
+
+  /* ── Heading hierarchy (Rule: Design hierarchy) ── */
+  h1 { @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]; }
+  h2 { @apply text-3xl sm:text-4xl font-bold tracking-tight leading-[1.15]; }
+  h3 { @apply text-xl sm:text-2xl font-semibold leading-snug; }
+  h4 { @apply text-lg font-semibold leading-snug; }
+
+  /* ── Body text readability ── */
+  p { @apply leading-relaxed; }
+
+  /* ── Image defaults ── */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
 @layer components {
+  /* ── Glass morphism ── */
   .glass {
-    background-color: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
   }
   .dark .glass {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.06);
     border-color: rgba(255, 255, 255, 0.1);
   }
 
   .glass-strong {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(40px) saturate(200%);
+    -webkit-backdrop-filter: blur(40px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
   }
   .dark .glass-strong {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.15);
+    background-color: rgba(30, 30, 58, 0.92);
+    border-color: rgba(255, 255, 255, 0.12);
   }
 
+  /* ── Gradient border ── */
   .gradient-border {
     position: relative;
     background: var(--surface-primary);
@@ -122,6 +214,7 @@
     mask-composite: exclude;
   }
 
+  /* ── Noise overlay ── */
   .noise-overlay {
     position: relative;
   }
@@ -135,31 +228,39 @@
     border-radius: inherit;
   }
 
+  /* ── 3D perspective ── */
   .perspective-container {
     perspective: 1000px;
     transform-style: preserve-3d;
   }
 
   .tilt-card {
-    transition: transform 0.3s ease;
+    transition: transform var(--duration-normal) var(--ease-out);
     transform-style: preserve-3d;
   }
   .tilt-card:hover {
-    transform: rotateY(-5deg) rotateX(5deg) translateZ(10px);
+    transform: rotateY(-3deg) rotateX(3deg) translateZ(8px);
   }
 
+  /* ── Shadows (light from sky — subtle bottom shadows) ── */
   .shadow-soft {
-    box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07), 0 10px 20px -2px rgba(0,0,0,0.04);
+    box-shadow: var(--shadow-md);
   }
 
   .shadow-glow {
-    box-shadow: 0 0 40px -10px rgba(139,92,246,0.3);
+    box-shadow: var(--shadow-brand);
   }
 
+  .shadow-elevated {
+    box-shadow: var(--shadow-xl);
+  }
+
+  /* ── Text gradient (used sparingly — hero title, brand logo only) ── */
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-500 via-accent-blue to-accent-pink;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 to-brand-400;
   }
 
+  /* ── Shimmer loading ── */
   .shimmer {
     background: linear-gradient(90deg, transparent 25%, rgba(139,92,246,0.08) 50%, transparent 75%);
     background-size: 200% 100%;
@@ -170,9 +271,50 @@
     @apply bg-brand-100 dark:bg-brand-200 rounded animate-pulse;
   }
 
+  /* ── Floating blobs ── */
   .floating-blob {
-    @apply absolute rounded-full blur-3xl opacity-20 dark:opacity-10;
+    @apply absolute rounded-full blur-3xl;
+    opacity: 0.15;
     animation: blob 7s infinite;
+  }
+  .dark .floating-blob {
+    opacity: 0.08;
+  }
+
+  /* ── Section spacing (generous whitespace — Rule 3: Double your whitespace) ── */
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+  .section-padding-sm {
+    @apply py-14 md:py-20;
+  }
+
+  /* ── Section headings (consistent hierarchy) ── */
+  .section-heading {
+    @apply text-center max-w-2xl mx-auto mb-14 md:mb-16;
+  }
+  .section-heading h2 {
+    @apply text-3xl sm:text-4xl font-bold tracking-tight text-text-primary;
+  }
+  .section-heading p {
+    @apply mt-4 text-lg text-text-secondary max-w-xl mx-auto leading-relaxed;
+  }
+
+  /* ── Card hover lift (light from sky — shadow grows on hover) ── */
+  .card-interactive {
+    transition: transform var(--duration-normal) var(--ease-out),
+                box-shadow var(--duration-normal) var(--ease-out);
+  }
+  .card-interactive:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  /* ── Skip to content (accessibility) ── */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999]
+           focus:px-4 focus:py-2 focus:bg-brand-500 focus:text-white focus:rounded-lg
+           focus:font-medium focus:text-sm;
   }
 }
 
@@ -183,5 +325,35 @@
   }
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
+  }
+
+  /* ── Custom scrollbar ── */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(139,92,246,0.3) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(139,92,246,0.3);
+    border-radius: 3px;
+  }
+
+  /* ── Text balance for headings ── */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* ── Container query helper ── */
+  .container-narrow {
+    @apply mx-auto max-w-5xl px-4 sm:px-6 lg:px-8;
+  }
+  .container-wide {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
 }

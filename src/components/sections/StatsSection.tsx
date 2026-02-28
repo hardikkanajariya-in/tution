@@ -44,14 +44,14 @@ export function StatsSection() {
   const inView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section className="py-16 md:py-24 bg-surface-secondary">
+    <section className="section-padding bg-surface-secondary" aria-label="Key statistics">
       <div ref={ref} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {homeData.stats.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 0.1}>
               <Card glass className="text-center">
                 <motion.p
-                  className="text-3xl md:text-4xl font-extrabold text-gradient bg-gradient-brand"
+                  className="text-3xl md:text-4xl font-extrabold text-brand-600 dark:text-brand-400"
                   initial={{ scale: 0.8 }}
                   whileInView={{ scale: 1 }}
                   viewport={{ once: true }}

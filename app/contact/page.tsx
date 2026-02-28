@@ -96,11 +96,11 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen pt-28 pb-20 px-4">
-      <div className="max-w-6xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-20">
         {/* ── Header ── */}
         <Reveal>
           <div className="text-center max-w-2xl mx-auto space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-text-primary">
+            <h1 className="text-4xl md:text-5xl font-bold text-text-primary text-balance">
               Get in Touch
             </h1>
             <p className="text-text-secondary text-lg">
@@ -111,12 +111,12 @@ export default function ContactPage() {
         </Reveal>
 
         {/* ── Two-column layout ── */}
-        <div className="grid lg:grid-cols-5 gap-10">
+        <div className="grid lg:grid-cols-5 gap-12">
           {/* Left — Contact form */}
           <Reveal className="lg:col-span-3" delay={0.1}>
             <Card glass className="p-6 md:p-8">
               <h2 className="text-xl font-semibold text-text-primary mb-6 flex items-center gap-2">
-                <MessageCircle className="h-5 w-5 text-brand-500" />
+                <MessageCircle className="h-5 w-5 text-brand-500" aria-hidden="true" />
                 Send us a Message
               </h2>
 
@@ -129,6 +129,8 @@ export default function ContactPage() {
                     value={form.name}
                     onChange={handleChange}
                     error={errors.name}
+                    aria-invalid={!!errors.name}
+                    aria-describedby={errors.name ? 'name-error' : undefined}
                   />
                   <Input
                     label="Email"
@@ -138,6 +140,8 @@ export default function ContactPage() {
                     value={form.email}
                     onChange={handleChange}
                     error={errors.email}
+                    aria-invalid={!!errors.email}
+                    aria-describedby={errors.email ? 'email-error' : undefined}
                   />
                 </div>
 
@@ -188,6 +192,8 @@ export default function ContactPage() {
                   onChange={handleChange}
                   error={errors.message}
                   rows={5}
+                  aria-invalid={!!errors.message}
+                  aria-describedby={errors.message ? 'message-error' : undefined}
                 />
 
                 <Button
@@ -281,7 +287,7 @@ export default function ContactPage() {
         {/* ── FAQ quick link ── */}
         <Reveal delay={0.3}>
           <Card glass className="p-6 md:p-8 text-center space-y-4">
-            <HelpCircle className="h-8 w-8 text-brand-500 mx-auto" />
+            <HelpCircle className="h-8 w-8 text-brand-500 mx-auto" aria-hidden="true" />
             <h3 className="text-xl font-semibold text-text-primary">
               Have questions?
             </h3>
