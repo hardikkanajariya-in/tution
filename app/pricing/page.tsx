@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Check, X, Shield, Zap, Crown, ArrowRight, HelpCircle } from 'lucide-react';
+import { Check, X, Shield, Zap, Crown, ArrowRight, HelpCircle, Sparkles, IndianRupee } from 'lucide-react';
 import { Button, Card, Badge, Accordion, Modal, Input, Reveal } from '@/components/ui';
 import { useToast } from '@/components/ui/Toast';
 import { cn } from '@/lib/utils';
@@ -13,6 +13,12 @@ const planIcons: Record<string, React.ReactNode> = {
   starter: <Zap className="h-6 w-6" />,
   pro: <Crown className="h-6 w-6" />,
   elite: <Shield className="h-6 w-6" />,
+};
+
+const planGradients: Record<string, string> = {
+  starter: 'from-sky-500 to-blue-600',
+  pro: 'from-brand-500 to-amber-500',
+  elite: 'from-violet-500 to-purple-600',
 };
 
 export default function PricingPage() {
@@ -51,16 +57,26 @@ export default function PricingPage() {
   };
 
   return (
-    <main className="min-h-screen bg-surface-primary">
-      {/* Header */}
-      <section className="pt-28 pb-12 md:pt-36 md:pb-16" aria-label="Pricing overview">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <main className="min-h-screen overflow-hidden">
+      {/* ═══ Hero ═══ */}
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden" aria-label="Pricing overview">
+        <div className="floating-blob w-80 h-80 bg-brand-400 -top-10 -left-24" aria-hidden="true" />
+        <div className="floating-blob w-96 h-96 bg-accent-amber top-20 -right-40" style={{ animationDelay: '2s' }} aria-hidden="true" />
+        <div className="floating-blob w-60 h-60 bg-accent-pink bottom-0 left-1/3" style={{ animationDelay: '4s' }} aria-hidden="true" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-4xl md:text-5xl font-extrabold text-text-primary text-balance">
-                Simple, Transparent <span className="text-brand-600 dark:text-brand-400">Pricing</span>
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-sm font-medium mb-6">
+                <IndianRupee className="w-4 h-4" />
+                <span>Transparent Pricing · No Hidden Fees</span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]">
+                <span className="text-text-primary">Plans That Fit</span>
+                <br />
+                <span className="text-gradient">Every Learner</span>
               </h1>
-              <p className="mt-4 text-lg text-text-secondary">
+              <p className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
                 Pick the plan that fits your learning goals. No hidden fees, cancel anytime.
               </p>
             </div>
@@ -68,111 +84,129 @@ export default function PricingPage() {
 
           {/* Billing Toggle */}
           <Reveal delay={0.1}>
-            <div className="flex items-center justify-center gap-3 mt-10">
-              <span className={cn('text-sm font-medium', !annual ? 'text-text-primary' : 'text-text-muted')}>
+            <div className="flex items-center justify-center gap-4 mt-10">
+              <span className={cn('text-sm font-semibold transition-colors', !annual ? 'text-text-primary' : 'text-text-muted')}>
                 Monthly
               </span>
               <button
                 onClick={() => setAnnual(!annual)}
                 className={cn(
-                  'relative w-14 h-7 rounded-full transition-colors duration-300',
+                  'relative w-16 h-8 rounded-full transition-colors duration-300 shadow-inner',
                   annual ? 'bg-brand-500' : 'bg-surface-tertiary'
                 )}
                 aria-label="Toggle annual billing"
               >
                 <motion.div
                   layout
-                  className="absolute top-1 left-1 w-5 h-5 bg-white rounded-full shadow-md"
-                  animate={{ x: annual ? 28 : 0 }}
+                  className="absolute top-1 left-1 w-6 h-6 bg-white rounded-full shadow-md"
+                  animate={{ x: annual ? 32 : 0 }}
                   transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                 />
               </button>
-              <span className={cn('text-sm font-medium', annual ? 'text-text-primary' : 'text-text-muted')}>
+              <span className={cn('text-sm font-semibold transition-colors', annual ? 'text-text-primary' : 'text-text-muted')}>
                 Annual
               </span>
               {annual && (
-                <Badge variant="success" size="sm">Save 20%</Badge>
+                <Badge variant="success" size="sm" className="animate-in fade-in-0 zoom-in-95">
+                  <Sparkles className="w-3 h-3 mr-0.5" /> Save 20%
+                </Badge>
               )}
             </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Pricing Cards */}
-      <section className="pb-16 md:pb-24" aria-label="Pricing plans">
+      {/* ═══ Pricing Cards ═══ */}
+      <section className="pb-20 md:pb-28" aria-label="Pricing plans">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+          <div className="grid md:grid-cols-3 gap-8 lg:gap-10 items-stretch">
             {plans.map((plan, i) => {
               const isPopular = plan.highlighted;
+              const gradient = planGradients[plan.id] ?? 'from-brand-500 to-amber-500';
               return (
-                <Reveal key={plan.id} delay={i * 0.1}>
+                <Reveal key={plan.id} delay={i * 0.12}>
                   <motion.div
-                    whileHover={{ y: -6, scale: 1.02 }}
+                    whileHover={{ y: -8, scale: 1.02 }}
                     transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-                    className={cn('h-full', isPopular && 'z-10')}
+                    className={cn('h-full', isPopular && 'z-10 md:-mt-4 md:mb-[-16px]')}
                   >
                     <div
                       className={cn(
-                        'h-full rounded-2xl',
-                        isPopular && 'p-[2px] bg-brand-500'
+                        'h-full rounded-3xl overflow-hidden',
+                        isPopular
+                          ? 'p-[2.5px] bg-gradient-to-br from-brand-400 via-brand-500 to-amber-500 shadow-xl shadow-brand-500/20'
+                          : ''
                       )}
                     >
-                      <Card
-                        className={cn(
-                          'h-full flex flex-col relative',
-                          isPopular && 'shadow-brand !rounded-[14px]'
-                        )}
-                        padding="lg"
-                      >
+                      <div className={cn(
+                        'h-full flex flex-col relative rounded-3xl overflow-hidden',
+                        'bg-surface-primary dark:bg-surface-secondary',
+                        !isPopular && 'border border-border-primary shadow-elevated'
+                      )}>
+                        {/* Gradient Header Band */}
+                        <div className={cn('h-2 w-full bg-gradient-to-r', gradient)} />
+
                         {isPopular && (
-                          <Badge variant="brand" className="absolute -top-3 left-1/2 -translate-x-1/2 shadow-md">
-                            Most Popular
-                          </Badge>
+                          <div className="absolute top-5 right-4">
+                            <Badge variant="brand" className="shadow-md">
+                              <Sparkles className="w-3 h-3 mr-1" /> Most Popular
+                            </Badge>
+                          </div>
                         )}
 
-                        <div className="text-center mb-6">
+                        <div className="px-6 pt-6 pb-0 text-center">
                           <div className={cn(
-                            'inline-flex items-center justify-center w-12 h-12 rounded-xl mb-4',
-                            isPopular
-                              ? 'bg-brand-500 text-white'
-                              : 'bg-surface-tertiary text-brand-500'
+                            'inline-flex items-center justify-center w-14 h-14 rounded-2xl mb-4 bg-gradient-to-br text-white shadow-lg',
+                            gradient
                           )}>
                             {planIcons[plan.id] ?? <Zap className="h-6 w-6" />}
                           </div>
                           <h3 className="text-xl font-bold text-text-primary">{plan.name}</h3>
-                          <p className="text-sm text-text-secondary mt-1">{plan.description}</p>
+                          <p className="text-sm text-text-secondary mt-1.5">{plan.description}</p>
 
-                          <div className="mt-5">
-                            <span className="text-4xl font-extrabold text-text-primary">
+                          <div className="mt-6 pb-6 border-b border-border-primary">
+                            <motion.span
+                              key={`${plan.id}-${annual}`}
+                              initial={{ opacity: 0, y: 10 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              className="text-4xl lg:text-5xl font-extrabold text-text-primary"
+                            >
                               {getPrice(plan.price)}
-                            </span>
-                            <span className="text-text-muted text-sm ml-1">
+                            </motion.span>
+                            <span className="text-text-muted text-sm ml-1.5">
                               /{annual ? 'year' : 'month'}
                             </span>
+                            {annual && (
+                              <p className="text-xs text-text-muted mt-1 line-through">
+                                ₹{(plan.price * 12).toLocaleString('en-IN')}/year
+                              </p>
+                            )}
                           </div>
-                          {annual && (
-                            <p className="text-xs text-text-muted mt-1 line-through">
-                              ₹{(plan.price * 12).toLocaleString('en-IN')}/year
-                            </p>
-                          )}
                         </div>
 
-                        <ul className="space-y-3 flex-1">
+                        <ul className="space-y-3 flex-1 px-6 pt-6">
                           {plan.features.map((f) => (
-                            <li key={f.text} className="flex items-start gap-2.5 text-sm">
+                            <li key={f.text} className="flex items-start gap-3 text-sm">
                               {f.included ? (
-                                <Check className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                                <div className="flex items-center justify-center w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/30 shrink-0 mt-0.5">
+                                  <Check className="w-3 h-3 text-green-600 dark:text-green-400" />
+                                </div>
                               ) : (
-                                <X className="w-4 h-4 text-text-muted/50 mt-0.5 shrink-0" />
+                                <div className="flex items-center justify-center w-5 h-5 rounded-full bg-surface-tertiary shrink-0 mt-0.5">
+                                  <X className="w-3 h-3 text-text-muted/50" />
+                                </div>
                               )}
-                              <span className={cn(f.included ? 'text-text-primary' : 'text-text-muted line-through')}>
+                              <span className={cn(
+                                f.included ? 'text-text-primary' : 'text-text-muted line-through',
+                                'leading-snug'
+                              )}>
                                 {f.text}
                               </span>
                             </li>
                           ))}
                         </ul>
 
-                        <div className="mt-8">
+                        <div className="px-6 pb-6 pt-8">
                           <Button
                             variant={isPopular ? 'gradient' : 'outline'}
                             className="w-full"
@@ -180,10 +214,10 @@ export default function PricingPage() {
                             onClick={() => handleEnroll(plan.name)}
                           >
                             {plan.cta}
-                            <ArrowRight className="w-4 h-4 ml-1" />
+                            <ArrowRight className="w-4 h-4 ml-1.5" />
                           </Button>
                         </div>
-                      </Card>
+                      </div>
                     </div>
                   </motion.div>
                 </Reveal>
@@ -193,31 +227,39 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Comparison Table */}
+      {/* ═══ Comparison Table ═══ */}
       <section className="py-20 md:py-28 bg-surface-secondary" aria-label="Compare plans">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary text-balance">
-                Compare <span className="text-brand-600 dark:text-brand-400">Plans</span>
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-sm font-medium mb-4">
+                Feature Breakdown
+              </div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
+                Compare <span className="text-gradient">Plans</span>
               </h2>
               <p className="mt-3 text-text-secondary">See exactly what you get with each plan.</p>
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <Card className="overflow-hidden" padding="none">
+            <div className="glass rounded-3xl overflow-hidden border border-border-primary shadow-elevated">
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="sticky top-0 bg-surface-tertiary/80 backdrop-blur-sm border-b border-white/10 dark:border-white/5">
+                    <tr className="bg-gradient-to-r from-brand-500/10 via-brand-400/5 to-transparent border-b border-border-primary">
                       {comparisonTable.headers.map((h, idx) => (
                         <th
                           key={h}
                           className={cn(
-                            'px-5 py-4 font-semibold text-text-primary whitespace-nowrap',
+                            'px-6 py-5 font-bold text-text-primary whitespace-nowrap',
                             idx === 0 ? 'text-left' : 'text-center'
                           )}
                         >
+                          {idx > 0 && (
+                            <span className="block text-xs text-brand-500 font-medium mb-1">
+                              {idx === 1 ? '⚡' : idx === 2 ? '👑' : '🛡️'}
+                            </span>
+                          )}
                           {h}
                         </th>
                       ))}
@@ -228,8 +270,8 @@ export default function PricingPage() {
                       <tr
                         key={rIdx}
                         className={cn(
-                          'border-b border-white/5 transition-colors hover:bg-surface-tertiary/40',
-                          rIdx % 2 === 0 ? 'bg-transparent' : 'bg-surface-secondary/50'
+                          'border-b border-border-primary/50 transition-colors hover:bg-brand-50/30 dark:hover:bg-brand-950/20',
+                          rIdx % 2 === 0 ? 'bg-transparent' : 'bg-surface-secondary/40'
                         )}
                       >
                         {row.map((cell, cIdx) => {
@@ -239,16 +281,18 @@ export default function PricingPage() {
                             <td
                               key={cIdx}
                               className={cn(
-                                'px-5 py-3.5',
+                                'px-6 py-4',
                                 cIdx === 0 ? 'text-left font-medium text-text-primary' : 'text-center'
                               )}
                             >
                               {isCheck ? (
-                                <Check className="w-5 h-5 text-green-500 mx-auto" />
+                                <div className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/30">
+                                  <Check className="w-3.5 h-3.5 text-green-600 dark:text-green-400" />
+                                </div>
                               ) : isDash ? (
-                                <X className="w-4 h-4 text-text-muted/40 mx-auto" />
+                                <X className="w-4 h-4 text-text-muted/30 mx-auto" />
                               ) : (
-                                <span className={cn(cIdx === 0 ? '' : 'text-text-secondary')}>{cell}</span>
+                                <span className={cn(cIdx === 0 ? '' : 'text-text-secondary font-medium')}>{cell}</span>
                               )}
                             </td>
                           );
@@ -258,40 +302,48 @@ export default function PricingPage() {
                   </tbody>
                 </table>
               </div>
-            </Card>
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Custom Plan CTA */}
+      {/* ═══ Custom Plan CTA Banner ═══ */}
       <section className="py-20 md:py-24" aria-label="Custom plan">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <Card className="text-center bg-brand-50 dark:bg-brand-950/30 border-brand-200 dark:border-brand-800/40" padding="lg">
-              <HelpCircle className="w-10 h-10 text-brand-500 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold text-text-primary">Need a Custom Plan?</h3>
-              <p className="mt-2 text-text-secondary max-w-md mx-auto">
-                Have specific requirements or need a plan for a school/institution? Let&apos;s talk.
-              </p>
-              <div className="mt-6">
-                <Link href="/contact">
-                  <Button variant="gradient" size="lg">
-                    Contact Us <ArrowRight className="w-4 h-4 ml-1" />
-                  </Button>
-                </Link>
+            <div className="relative rounded-3xl bg-gradient-to-br from-brand-500 to-amber-500 p-8 md:p-12 overflow-hidden text-white text-center">
+              <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm mx-auto mb-5">
+                  <HelpCircle className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl md:text-3xl font-bold">Need a Custom Plan?</h3>
+                <p className="mt-3 text-white/80 max-w-md mx-auto">
+                  Have specific requirements or need a plan for a school/institution? Let&apos;s talk.
+                </p>
+                <div className="mt-8">
+                  <Link href="/contact">
+                    <Button variant="secondary" size="lg" className="bg-white text-brand-600 hover:bg-white/90 border-0 shadow-lg">
+                      Contact Us <ArrowRight className="w-4 h-4 ml-1.5" />
+                    </Button>
+                  </Link>
+                </div>
               </div>
-            </Card>
+            </div>
           </Reveal>
         </div>
       </section>
 
-      {/* Billing FAQs */}
+      {/* ═══ Billing FAQs ═══ */}
       <section className="py-20 md:py-28 bg-surface-secondary" aria-label="Billing FAQ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="text-center max-w-2xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary text-balance">
-                Billing <span className="text-brand-600 dark:text-brand-400">FAQ</span>
+            <div className="text-center max-w-2xl mx-auto mb-14">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-sm font-medium mb-4">
+                Got Questions?
+              </div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary">
+                Billing <span className="text-gradient">FAQ</span>
               </h2>
               <p className="mt-3 text-text-secondary">Common questions about plans and billing.</p>
             </div>
@@ -304,17 +356,17 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Money-back Guarantee Banner */}
+      {/* ═══ Money-back Guarantee ═══ */}
       <section className="py-16 md:py-20" aria-label="Money-back guarantee">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center sm:text-left">
-              <div className="flex items-center justify-center w-14 h-14 rounded-full bg-green-100 dark:bg-green-900/30 shrink-0">
-                <Shield className="w-7 h-7 text-green-600 dark:text-green-400" />
+            <div className="glass rounded-3xl p-8 md:p-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-center sm:text-left border border-border-primary shadow-elevated">
+              <div className="flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-500 text-white shrink-0 shadow-lg">
+                <Shield className="w-8 h-8" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-text-primary">14-Day Money-Back Guarantee</h3>
-                <p className="text-text-secondary text-sm mt-1">
+                <p className="text-text-secondary text-sm mt-1.5 max-w-md">
                   Not satisfied? Get a full refund within 14 days — no questions asked.
                 </p>
               </div>

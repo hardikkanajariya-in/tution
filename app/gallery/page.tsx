@@ -70,37 +70,44 @@ export default function GalleryPage() {
   const currentImage = lightbox !== null ? filtered[lightbox] : null;
 
   return (
-    <main className="min-h-screen pb-24">
-      {/* ── Header ──────────────────────────────── */}
-      <section className="pt-32 pb-20 text-center px-4" aria-label="Gallery overview">
-        <Reveal>
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 text-sm font-medium mb-6">
-            <Camera className="h-4 w-4" aria-hidden="true" />
-            Photo Gallery
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-text-primary text-balance">
-            Life at <span className="text-brand-600 dark:text-brand-400">Vidyaan</span>
-          </h1>
-          <p className="mt-4 text-text-secondary max-w-2xl mx-auto text-lg">
-            A visual journey through our vibrant campus life, events, classrooms, and celebrations of student achievement.
-          </p>
-        </Reveal>
+    <main className="min-h-screen pb-24 overflow-hidden">
+      {/* ── Hero ──────────────────────────────── */}
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden" aria-label="Gallery overview">
+        <div className="floating-blob w-80 h-80 bg-brand-400 -top-10 -left-24" aria-hidden="true" />
+        <div className="floating-blob w-96 h-96 bg-accent-pink top-20 -right-40" style={{ animationDelay: '2s' }} aria-hidden="true" />
+        <div className="floating-blob w-60 h-60 bg-accent-amber bottom-0 left-1/3" style={{ animationDelay: '4s' }} aria-hidden="true" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Reveal>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-sm font-medium mb-6">
+              <Camera className="h-4 w-4" aria-hidden="true" />
+              Photo Gallery
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]">
+              <span className="text-text-primary">Life at</span>{' '}
+              <span className="text-gradient">Vidyaan</span>
+            </h1>
+            <p className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
+              A visual journey through our vibrant campus life, events, classrooms, and celebrations of student achievement.
+            </p>
+          </Reveal>
+        </div>
       </section>
 
       {/* ── Category Filter ─────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10" aria-label="Category filter">
         <Reveal delay={0.1}>
-          <div className="flex flex-wrap items-center justify-center gap-3">
+          <div className="glass rounded-2xl p-4 border border-border-primary shadow-elevated flex flex-wrap items-center justify-center gap-3">
             <Filter className="h-4 w-4 text-text-muted mr-1" aria-hidden="true" />
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => { setActive(cat); setLightbox(null); }}
                 className={cn(
-                  'px-4 py-2 rounded-full text-sm font-medium transition-all duration-200',
+                  'px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border',
                   active === cat
-                    ? 'bg-brand-500 text-white shadow-md shadow-brand-500/25'
-                    : 'bg-surface-secondary text-text-secondary hover:bg-surface-tertiary hover:text-text-primary'
+                    ? 'bg-gradient-to-r from-brand-500 to-amber-500 text-white border-transparent shadow-lg shadow-brand-500/25'
+                    : 'border-border-primary bg-surface-primary dark:bg-surface-secondary text-text-secondary hover:text-text-primary hover:border-brand-300 dark:hover:border-brand-700'
                 )}
               >
                 {categoryLabels[cat]}
@@ -132,27 +139,27 @@ export default function GalleryPage() {
                 transition={{ duration: 0.35, delay: idx * 0.04 }}
                 className="mb-4 break-inside-avoid"
               >
-                <button
-                  onClick={() => openLightbox(idx)}
-                  className="group relative block w-full rounded-2xl overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
-                  aria-label={`View ${img.title}`}
-                >
-                  {/* Gallery image */}
-                  <img
-                    src={img.image}
-                    alt={img.title}
-                    className={cn('w-full object-cover transition-transform duration-500 group-hover:scale-105', aspectByIndex(idx))}
-                    loading="lazy"
-                  />
+                <motion.div whileHover={{ y: -4 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }}>
+                  <button
+                    onClick={() => openLightbox(idx)}
+                    className="group relative block w-full rounded-3xl overflow-hidden shadow-elevated border border-border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
+                    aria-label={`View ${img.title}`}
+                  >
+                    {/* Gallery image */}
+                    <img
+                      src={img.image}
+                      alt={img.title}
+                      className={cn('w-full object-cover transition-transform duration-500 group-hover:scale-110', aspectByIndex(idx))}
+                      loading="lazy"
+                    />
 
-                  {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex flex-col items-start justify-end p-4 opacity-0 group-hover:opacity-100">
-                    <div className="backdrop-blur-md bg-white/10 rounded-xl p-3 w-full border border-white/20">
-                      <Badge variant="brand" className="mb-1.5">{categoryLabels[img.category]}</Badge>
-                      <p className="text-white text-sm font-semibold leading-snug">{img.title}</p>
+                    {/* Hover overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-start justify-end p-5">
+                      <Badge variant="brand" className="mb-2 shadow-md">{categoryLabels[img.category]}</Badge>
+                      <p className="text-white text-sm font-semibold leading-snug drop-shadow-lg">{img.title}</p>
                     </div>
-                  </div>
-                </button>
+                  </button>
+                </motion.div>
               </motion.div>
             ))}
           </AnimatePresence>

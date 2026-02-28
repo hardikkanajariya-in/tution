@@ -95,30 +95,46 @@ export default function ContactPage() {
   const { contact, socials } = siteData;
 
   return (
-    <main className="min-h-screen pt-28 pb-20 px-4">
-      <div className="max-w-7xl mx-auto space-y-20">
-        {/* ── Header ── */}
-        <Reveal>
-          <div className="text-center max-w-2xl mx-auto space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-text-primary text-balance">
-              Get in Touch
+    <main className="min-h-screen overflow-hidden pb-20">
+      {/* ═══ Hero ═══ */}
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden" aria-label="Contact overview">
+        <div className="floating-blob w-80 h-80 bg-brand-400 -top-10 -left-24" aria-hidden="true" />
+        <div className="floating-blob w-96 h-96 bg-accent-amber top-20 -right-40" style={{ animationDelay: '2s' }} aria-hidden="true" />
+        <div className="floating-blob w-60 h-60 bg-accent-pink bottom-0 left-1/3" style={{ animationDelay: '4s' }} aria-hidden="true" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Reveal>
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-sm font-medium mb-6">
+              <MessageCircle className="w-4 h-4" />
+              <span>We&apos;re Here to Help</span>
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.08]">
+              <span className="text-text-primary">Get in</span>{' '}
+              <span className="text-gradient">Touch</span>
             </h1>
-            <p className="text-text-secondary text-lg">
+            <p className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
               Have a question or want to learn more? We&apos;d love to hear from you.
               Fill out the form below and our team will respond promptly.
             </p>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
+      </section>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
 
         {/* ── Two-column layout ── */}
         <div className="grid lg:grid-cols-5 gap-12">
           {/* Left — Contact form */}
           <Reveal className="lg:col-span-3" delay={0.1}>
-            <Card glass className="p-6 md:p-8">
-              <h2 className="text-xl font-semibold text-text-primary mb-6 flex items-center gap-2">
-                <MessageCircle className="h-5 w-5 text-brand-500" aria-hidden="true" />
-                Send us a Message
-              </h2>
+            <div className="rounded-3xl overflow-hidden border border-border-primary bg-surface-primary dark:bg-surface-secondary shadow-elevated">
+              <div className="h-1.5 w-full bg-gradient-to-r from-brand-500 to-amber-500" />
+              <div className="p-6 md:p-8">
+                <h2 className="text-xl font-bold text-text-primary mb-6 flex items-center gap-2">
+                  <div className="flex items-center justify-center w-9 h-9 rounded-xl bg-gradient-to-br from-brand-500 to-amber-500 text-white shadow-md">
+                    <MessageCircle className="h-4 w-4" aria-hidden="true" />
+                  </div>
+                  Send us a Message
+                </h2>
 
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
@@ -207,7 +223,8 @@ export default function ContactPage() {
                   {loading ? 'Sending…' : 'Send Message'}
                 </Button>
               </form>
-            </Card>
+              </div>
+            </div>
           </Reveal>
 
           {/* Right — Contact info cards */}
@@ -217,90 +234,100 @@ export default function ContactPage() {
               title="Email"
               value={contact.email}
               href={`mailto:${contact.email}`}
+              gradient="from-blue-500 to-cyan-500"
             />
             <InfoCard
               icon={<Phone className="h-5 w-5" />}
               title="Phone"
               value={contact.phone}
               href={`tel:${contact.phone.replace(/\s/g, '')}`}
+              gradient="from-emerald-500 to-teal-500"
             />
             <InfoCard
               icon={<MapPin className="h-5 w-5" />}
               title="Address"
               value={contact.address}
+              gradient="from-brand-500 to-amber-500"
             />
             <InfoCard
               icon={<Clock className="h-5 w-5" />}
               title="Office Hours"
               value="Mon–Sat: 8:00 AM – 8:00 PM"
+              gradient="from-violet-500 to-purple-500"
             />
 
             {/* Social links */}
-            <Card glass className="p-5">
-              <p className="text-sm font-medium text-text-secondary mb-3">
-                Follow us
-              </p>
-              <div className="flex items-center gap-3">
-                {socials.map((s) => (
-                  <a
-                    key={s.platform}
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={s.label}
-                    className={cn(
-                      'p-2.5 rounded-xl bg-surface-secondary dark:bg-white/5',
-                      'text-text-secondary hover:text-brand-500 hover:bg-brand-50 dark:hover:bg-brand-500/10',
-                      'transition-colors duration-200',
-                    )}
-                  >
-                    {socialIcons[s.platform] ?? <Mail className="h-5 w-5" />}
-                  </a>
-                ))}
+            <motion.div whileHover={{ y: -3 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }}>
+              <div className="rounded-3xl overflow-hidden border border-border-primary bg-surface-primary dark:bg-surface-secondary shadow-elevated p-5">
+                <p className="text-sm font-semibold text-text-primary mb-3">
+                  Follow us
+                </p>
+                <div className="flex items-center gap-3">
+                  {socials.map((s) => (
+                    <a
+                      key={s.platform}
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={s.label}
+                      className={cn(
+                        'p-3 rounded-2xl bg-surface-secondary dark:bg-white/5',
+                        'text-text-secondary hover:text-white hover:bg-gradient-to-br hover:from-brand-500 hover:to-amber-500',
+                        'transition-all duration-200 shadow-sm hover:shadow-md',
+                      )}
+                    >
+                      {socialIcons[s.platform] ?? <Mail className="h-5 w-5" />}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </Card>
+            </motion.div>
           </Reveal>
         </div>
 
         {/* ── Map placeholder ── */}
         <Reveal delay={0.25}>
-          <div
-            className={cn(
-              'relative w-full h-64 rounded-2xl overflow-hidden',
-              'bg-gradient-to-br from-brand-400/20 via-brand-500/10 to-brand-600/20',
-              'border border-white/10 dark:border-white/5',
-              'flex items-center justify-center',
-            )}
-          >
-            <div className="text-center space-y-2">
-              <span className="text-4xl">📍</span>
-              <p className="text-lg font-semibold text-text-primary">
-                Our Location
-              </p>
-              <p className="text-sm text-text-secondary max-w-xs">
-                {contact.address}
-              </p>
+          <div className="relative w-full h-72 rounded-3xl overflow-hidden border border-border-primary shadow-elevated">
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-500/20 via-amber-500/10 to-brand-600/20" />
+            <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
+            <div className="relative h-full flex items-center justify-center text-center">
+              <div>
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-500 to-amber-500 text-white shadow-lg mb-4">
+                  <MapPin className="w-7 h-7" />
+                </div>
+                <p className="text-lg font-bold text-text-primary">
+                  Our Location
+                </p>
+                <p className="text-sm text-text-secondary max-w-xs mt-1">
+                  {contact.address}
+                </p>
+              </div>
             </div>
           </div>
         </Reveal>
 
-        {/* ── FAQ quick link ── */}
+        {/* ── FAQ quick link CTA ── */}
         <Reveal delay={0.3}>
-          <Card glass className="p-6 md:p-8 text-center space-y-4">
-            <HelpCircle className="h-8 w-8 text-brand-500 mx-auto" aria-hidden="true" />
-            <h3 className="text-xl font-semibold text-text-primary">
-              Have questions?
-            </h3>
-            <p className="text-text-secondary max-w-md mx-auto">
-              Browse our frequently asked questions for quick answers about
-              courses, enrollment, and pricing.
-            </p>
-            <Link href="/pricing">
-              <Button variant="outline" size="md" className="mt-2">
-                Check our FAQ
-              </Button>
-            </Link>
-          </Card>
+          <div className="relative rounded-3xl bg-gradient-to-br from-brand-500 to-amber-500 p-8 md:p-12 overflow-hidden text-white text-center">
+            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '20px 20px' }} />
+            <div className="relative">
+              <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm mx-auto mb-4">
+                <HelpCircle className="w-7 h-7 text-white" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-bold">
+                Have questions?
+              </h3>
+              <p className="text-white/80 max-w-md mx-auto mt-3">
+                Browse our frequently asked questions for quick answers about
+                courses, enrollment, and pricing.
+              </p>
+              <Link href="/pricing">
+                <Button variant="secondary" size="lg" className="mt-8 bg-white text-brand-600 hover:bg-white/90 border-0 shadow-lg">
+                  Check our FAQ
+                </Button>
+              </Link>
+            </div>
+          </div>
         </Reveal>
       </div>
     </main>
@@ -313,11 +340,13 @@ function InfoCard({
   title,
   value,
   href,
+  gradient = 'from-brand-500 to-amber-500',
 }: {
   icon: React.ReactNode;
   title: string;
   value: string;
   href?: string;
+  gradient?: string;
 }) {
   const content = href ? (
     <a
@@ -331,14 +360,16 @@ function InfoCard({
   );
 
   return (
-    <Card glass className="p-5 flex items-start gap-4">
-      <div className="p-2.5 rounded-xl bg-brand-500/10 text-brand-500 shrink-0">
-        {icon}
+    <motion.div whileHover={{ y: -3 }} transition={{ type: 'spring', stiffness: 300, damping: 20 }}>
+      <div className="rounded-3xl overflow-hidden border border-border-primary bg-surface-primary dark:bg-surface-secondary shadow-elevated p-5 flex items-start gap-4">
+        <div className={cn('p-2.5 rounded-xl bg-gradient-to-br text-white shadow-md shrink-0', gradient)}>
+          {icon}
+        </div>
+        <div>
+          <p className="text-sm text-text-secondary font-medium">{title}</p>
+          <p className="text-sm font-semibold mt-0.5">{content}</p>
+        </div>
       </div>
-      <div>
-        <p className="text-sm text-text-secondary">{title}</p>
-        <p className="text-sm font-medium mt-0.5">{content}</p>
-      </div>
-    </Card>
+    </motion.div>
   );
 }
