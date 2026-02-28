@@ -228,7 +228,7 @@ export default function AboutPage() {
                     </div>
                     <div>
                       <h2 className="text-2xl font-bold text-text-primary">Our Vision</h2>
-                      <p className="text-xs text-text-muted uppercase tracking-wider font-medium mt-0.5">Where we're heading</p>
+                      <p className="text-xs text-text-muted uppercase tracking-wider font-medium mt-0.5">Where we&apos;re heading</p>
                     </div>
                   </div>
                   <p className="text-text-secondary leading-relaxed">
