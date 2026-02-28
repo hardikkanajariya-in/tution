@@ -35,12 +35,12 @@ const BG_GRADIENTS = [
 ];
 
 const CATEGORY_GRADIENTS: Record<string, string> = {
-  Mathematics: 'from-indigo-500 to-blue-600',
+  Mathematics: 'from-blue-500 to-sky-600',
   Physics: 'from-orange-500 to-red-500',
   Chemistry: 'from-emerald-500 to-green-600',
   Biology: 'from-lime-500 to-green-500',
   English: 'from-pink-500 to-rose-500',
-  'Computer Science': 'from-violet-500 to-indigo-500',
+  'Computer Science': 'from-sky-500 to-blue-500',
   Commerce: 'from-amber-500 to-yellow-600',
 };
 

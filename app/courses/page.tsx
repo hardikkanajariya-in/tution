@@ -39,7 +39,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   Chemistry: 'bg-emerald-500',
   Biology: 'bg-lime-500',
   English: 'bg-pink-500',
-  'Computer Science': 'bg-violet-500',
+  'Computer Science': 'bg-sky-500',
   Commerce: 'bg-amber-500',
 };
 

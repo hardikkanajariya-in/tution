@@ -67,9 +67,9 @@ const config: Config = {
         '4xl': '2rem',
       },
       backgroundImage: {
-        'gradient-brand': 'linear-gradient(135deg, var(--accent-purple), var(--accent-blue), var(--accent-pink))',
+        'gradient-brand': 'linear-gradient(135deg, var(--brand-600), var(--brand-500), var(--accent-amber))',
         'gradient-subtle': 'linear-gradient(135deg, var(--brand-50), var(--brand-100))',
-        'gradient-dark': 'linear-gradient(135deg, #1a1a2e, #16213e)',
+        'gradient-dark': 'linear-gradient(135deg, #1A1510, #231B13)',
         'gradient-radial': 'radial-gradient(ellipse at center, var(--brand-100), transparent 70%)',
       },
       boxShadow: {
