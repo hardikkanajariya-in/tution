@@ -15,14 +15,14 @@ import blogData from '@/data/blog.json';
 
 /* ── Gradient palettes ──────────────────────────────────────── */
 const COVER_GRADIENTS = [
-  'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  'linear-gradient(135deg, #EA580C 0%, #D97706 100%)',
   'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
   'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-  'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
+  'linear-gradient(135deg, #D97706 0%, #F59E0B 100%)',
 ];
 
 const AVATAR_GRADIENTS = [
-  'from-brand-500 to-purple-600',
+  'from-brand-500 to-amber-600',
   'from-rose-500 to-orange-500',
   'from-emerald-500 to-teal-500',
   'from-blue-500 to-cyan-500',

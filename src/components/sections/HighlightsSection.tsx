@@ -17,12 +17,12 @@ export function HighlightsSection() {
   const { highlights } = homeData;
 
   return (
-    <section className="section-padding" aria-label="Why PrismTutor">
+    <section className="section-padding" aria-label="Why Vidyaan">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="section-heading">
             <h2 className="text-balance">
-              Why <span className="text-brand-600 dark:text-brand-400">PrismTutor</span>?
+              Why <span className="text-brand-600 dark:text-brand-400">Vidyaan</span>?
             </h2>
             <p>
               Six pillars that make our learning experience truly exceptional.

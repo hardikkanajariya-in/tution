@@ -10,14 +10,14 @@ import blogData from '@/data/blog.json';
 
 /* ── Gradient palette for cover placeholders ────────────────── */
 const COVER_GRADIENTS = [
-  'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  'linear-gradient(135deg, #EA580C 0%, #D97706 100%)',
   'linear-gradient(135deg, #f97316 0%, #ef4444 100%)',
   'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-  'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
+  'linear-gradient(135deg, #D97706 0%, #F59E0B 100%)',
 ];
 
 const AVATAR_GRADIENTS = [
-  'from-brand-500 to-purple-600',
+  'from-brand-500 to-amber-600',
   'from-rose-500 to-orange-500',
   'from-emerald-500 to-teal-500',
   'from-blue-500 to-cyan-500',
@@ -87,7 +87,7 @@ export default function BlogPage() {
     <main className="min-h-screen pb-24">
       {/* ─── Page Header ────────────────────────────── */}
       <section className="relative overflow-hidden py-20 md:py-28 lg:py-32" aria-label="Blog overview">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-purple-50/40 dark:from-brand-950/30 dark:to-purple-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-amber-50/40 dark:from-brand-950/30 dark:to-amber-950/20" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
@@ -95,7 +95,7 @@ export default function BlogPage() {
                 <BookOpen className="mr-1.5 h-3.5 w-3.5" /> Blog
               </Badge>
               <h1 className="text-4xl font-bold tracking-tight text-text-primary sm:text-5xl lg:text-6xl text-balance">
-                PrismTutor Blog
+                Vidyaan Blog
               </h1>
               <p className="mt-4 text-lg text-text-secondary">
                 Insights, study tips, and educational resources to help you excel in your academic journey.

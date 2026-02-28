@@ -34,7 +34,7 @@ export default function NotFoundPage() {
       {/* ─── Background ──────────────────────────── */}
       <div className="absolute inset-0 bg-gradient-to-br from-surface-primary via-surface-secondary to-surface-primary" />
       <Blob className="w-80 h-80 bg-brand-400 top-10 -left-20" delay={0} />
-      <Blob className="w-96 h-96 bg-purple-400 bottom-10 -right-20" delay={2} />
+      <Blob className="w-96 h-96 bg-amber-400 bottom-10 -right-20" delay={2} />
       <Blob className="w-64 h-64 bg-amber-300 top-1/3 right-1/4" delay={4} />
 
       {/* ─── Floating Shapes ─────────────────────── */}
@@ -43,7 +43,7 @@ export default function NotFoundPage() {
         delay={0}
       />
       <FloatingShape
-        className="top-[25%] right-[15%] w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/30"
+        className="top-[25%] right-[15%] w-8 h-8 rounded-full bg-amber-500/20 border border-amber-500/30"
         delay={1.5}
       />
       <FloatingShape
@@ -112,7 +112,7 @@ export default function NotFoundPage() {
                 className={cn(
                   'rounded-md shadow-lg',
                   i === 0 && 'w-6 h-16 bg-gradient-to-t from-brand-400 to-brand-300 -rotate-6',
-                  i === 1 && 'w-7 h-20 bg-gradient-to-t from-purple-400 to-purple-300',
+                  i === 1 && 'w-7 h-20 bg-gradient-to-t from-amber-500 to-amber-400',
                   i === 2 && 'w-6 h-14 bg-gradient-to-t from-amber-400 to-amber-300 rotate-6'
                 )}
                 animate={{ y: [0, -6, 0] }}

@@ -64,7 +64,7 @@ export function HeroSection() {
                   <div className="w-full h-full rounded-3xl overflow-hidden">
                     <img
                       src={hero.heroImage}
-                      alt="Students collaborating in a bright, modern classroom at PrismTutor Studio"
+                      alt="Students learning in a vibrant classroom at Vidyaan Academy"
                       className="w-full h-full object-cover"
                       loading="eager"
                     />

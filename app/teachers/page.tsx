@@ -10,12 +10,12 @@ import teachersData from '@/data/teachers.json';
 
 /* ─── Gradient palette for avatar placeholders ──────────────── */
 const GRADIENTS = [
-  'from-brand-500 to-purple-600',
+  'from-brand-500 to-amber-600',
   'from-rose-500 to-orange-500',
   'from-emerald-500 to-teal-500',
   'from-blue-500 to-cyan-500',
   'from-amber-500 to-yellow-400',
-  'from-fuchsia-500 to-pink-500',
+  'from-red-500 to-rose-500',
 ];
 
 export default function TeachersPage() {
@@ -82,7 +82,7 @@ export default function TeachersPage() {
     <main className="min-h-screen pb-24">
       {/* ─── Page Header ────────────────────────────── */}
       <section className="relative overflow-hidden py-20 md:py-28 lg:py-32" aria-label="Teachers overview">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-purple-50/40 dark:from-brand-950/30 dark:to-purple-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-50/60 via-transparent to-amber-50/40 dark:from-brand-950/30 dark:to-amber-950/20" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">

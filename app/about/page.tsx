@@ -27,7 +27,7 @@ import resultsData from '@/data/results.json';
 
 /* ─── Constants ──────────────────────────────────── */
 const GRADIENTS = [
-  'from-brand-500 to-purple-600',
+  'from-brand-500 to-amber-600',
   'from-rose-500 to-orange-500',
   'from-emerald-500 to-teal-500',
 ];
@@ -56,7 +56,7 @@ export default function AboutPage() {
       <section className="relative py-28 md:py-36 overflow-hidden" aria-label="About hero">
         <div className="absolute inset-0 bg-brand-600 dark:bg-brand-900" />
         <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white/10 blur-3xl animate-pulse" />
-        <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-purple-400/10 blur-3xl animate-pulse delay-1000" />
+        <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-amber-400/10 blur-3xl animate-pulse delay-1000" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-400/5 blur-3xl" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
@@ -98,9 +98,9 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={0.15}>
               <Card glass className="h-full relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-500/10 to-transparent rounded-bl-full" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-amber-500/10 to-transparent rounded-bl-full" />
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-amber-500 flex items-center justify-center">
                     <Eye className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-2xl font-bold">Our Vision</h2>
@@ -165,7 +165,7 @@ export default function AboutPage() {
             {VALUES.map((v, i) => (
               <Reveal key={v.title} delay={i * 0.1}>
                 <Card glass className="text-center h-full group hover:scale-[1.03] transition-transform">
-                  <div className={cn('w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center bg-gradient-to-br', i === 0 && 'from-amber-500/20 to-orange-500/20', i === 1 && 'from-brand-500/20 to-purple-500/20', i === 2 && 'from-rose-500/20 to-pink-500/20', i === 3 && 'from-emerald-500/20 to-teal-500/20')}>
+                  <div className={cn('w-14 h-14 rounded-2xl mx-auto mb-4 flex items-center justify-center bg-gradient-to-br', i === 0 && 'from-amber-500/20 to-orange-500/20', i === 1 && 'from-brand-500/20 to-amber-500/20', i === 2 && 'from-rose-500/20 to-pink-500/20', i === 3 && 'from-emerald-500/20 to-teal-500/20')}>
                     <v.icon className={cn('w-7 h-7', v.color)} />
                   </div>
                   <h3 className="text-lg font-bold mb-2">{v.title}</h3>
@@ -286,8 +286,8 @@ export default function AboutPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Phone className="w-5 h-5 text-purple-500" />
+                    <div className="w-10 h-10 rounded-xl bg-brand-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                      <Phone className="w-5 h-5 text-brand-500" />
                     </div>
                     <div>
                       <p className="font-semibold text-sm">Phone</p>
@@ -309,11 +309,11 @@ export default function AboutPage() {
 
             <Reveal delay={0.15}>
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-brand-100 dark:bg-brand-900/40 flex items-center justify-center shadow-xl">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(139,92,246,0.3),transparent_60%)]" />
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(244,63,94,0.2),transparent_50%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(249,115,22,0.2),transparent_60%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(217,119,6,0.15),transparent_50%)]" />
                 <div className="relative text-center p-8">
                   <MapPin className="w-12 h-12 text-brand-500 mx-auto mb-3" />
-                  <p className="font-bold text-lg">San Francisco HQ</p>
+                  <p className="font-bold text-lg">Bengaluru HQ</p>
                   <p className="text-sm text-muted-foreground mt-1">Mon – Sat, 8 AM – 8 PM</p>
                 </div>
               </div>
@@ -326,7 +326,7 @@ export default function AboutPage() {
       <section className="py-20 md:py-28 relative overflow-hidden" aria-label="Call to action">
         <div className="absolute inset-0 bg-brand-600 dark:bg-brand-900" />
         <div className="absolute top-0 left-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-400/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-amber-400/10 rounded-full blur-3xl" />
 
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <Reveal>

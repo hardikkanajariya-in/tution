@@ -17,29 +17,29 @@ import coursesData from '@/data/courses.json';
 
 /* ── Gradient palette (mirrors teachers list page) ──────────── */
 const GRADIENTS = [
-  'from-brand-500 to-purple-600',
+  'from-brand-500 to-amber-600',
   'from-rose-500 to-orange-500',
   'from-emerald-500 to-teal-500',
   'from-blue-500 to-cyan-500',
   'from-amber-500 to-yellow-400',
-  'from-fuchsia-500 to-pink-500',
+  'from-red-500 to-rose-500',
 ];
 
 const BG_GRADIENTS = [
-  'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+  'linear-gradient(135deg, #EA580C 0%, #D97706 100%)',
   'linear-gradient(135deg, #f43f5e 0%, #f97316 100%)',
   'linear-gradient(135deg, #10b981 0%, #14b8a6 100%)',
   'linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%)',
   'linear-gradient(135deg, #f59e0b 0%, #facc15 100%)',
-  'linear-gradient(135deg, #d946ef 0%, #ec4899 100%)',
+  'linear-gradient(135deg, #e11d48 0%, #ec4899 100%)',
 ];
 
 const CATEGORY_GRADIENTS: Record<string, string> = {
-  Mathematics: 'from-indigo-500 to-purple-600',
+  Mathematics: 'from-indigo-500 to-blue-600',
   Physics: 'from-orange-500 to-red-500',
   Chemistry: 'from-emerald-500 to-green-600',
   Biology: 'from-lime-500 to-green-500',
-  English: 'from-pink-500 to-purple-500',
+  English: 'from-pink-500 to-rose-500',
   'Computer Science': 'from-violet-500 to-indigo-500',
   Commerce: 'from-amber-500 to-yellow-600',
 };

@@ -20,7 +20,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     setMounted(true);
-    const stored = localStorage.getItem('prismtutor-theme');
+    const stored = localStorage.getItem('vidyaan-theme');
     if (stored === 'dark' || stored === 'light') {
       setTheme(stored);
       document.documentElement.classList.toggle('dark', stored === 'dark');
@@ -34,7 +34,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const next = theme === 'light' ? 'dark' : 'light';
     setTheme(next);
     document.documentElement.classList.toggle('dark', next === 'dark');
-    localStorage.setItem('prismtutor-theme', next);
+    localStorage.setItem('vidyaan-theme', next);
   };
 
   if (!mounted) return <>{children}</>;

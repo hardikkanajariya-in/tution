@@ -55,9 +55,9 @@ export function Navbar() {
         role="banner"
       >
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between" aria-label="Main navigation">
-          <Link href="/" className="flex items-center gap-2.5 shrink-0 group" aria-label="PrismTutor Studio Home">
-            <span className="text-xl font-bold text-gradient transition-opacity group-hover:opacity-80">PrismTutor</span>
-            <span className="text-xl font-light text-text-secondary transition-opacity group-hover:opacity-80">Studio</span>
+          <Link href="/" className="flex items-center gap-2.5 shrink-0 group" aria-label="Vidyaan Academy Home">
+            <span className="text-xl font-bold text-gradient transition-opacity group-hover:opacity-80">Vidyaan</span>
+            <span className="text-xl font-light text-text-secondary transition-opacity group-hover:opacity-80">Academy</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-1">

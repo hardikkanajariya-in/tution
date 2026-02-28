@@ -79,7 +79,7 @@ export default function GalleryPage() {
             Photo Gallery
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-text-primary text-balance">
-            Life at <span className="text-brand-600 dark:text-brand-400">PrismTutor</span>
+            Life at <span className="text-brand-600 dark:text-brand-400">Vidyaan</span>
           </h1>
           <p className="mt-4 text-text-secondary max-w-2xl mx-auto text-lg">
             A visual journey through our vibrant campus life, events, classrooms, and celebrations of student achievement.

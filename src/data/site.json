@@ -1,10 +1,10 @@
 {
   "brand": {
-    "name": "PrismTutor Studio",
-    "tagline": "India's most trusted coaching academy for CBSE, ICSE, JEE & NEET.",
-    "shortDescription": "Premium coaching academy offering expert tuition across all boards, subjects, and competitive exam tracks across India.",
-    "logo": "/logos/prismtutor-logo.svg",
-    "logoDark": "/logos/prismtutor-logo-dark.svg"
+    "name": "Vidyaan Academy",
+    "tagline": "ज्ञान से सफलता तक — India's most trusted coaching for CBSE, ICSE, JEE & NEET.",
+    "shortDescription": "Bharat ka apna coaching academy — expert tuition across all boards, subjects, and competitive exam tracks, rooted in Indian values and modern teaching.",
+    "logo": "/logos/vidyaan-logo.svg",
+    "logoDark": "/logos/vidyaan-logo-dark.svg"
   },
   "nav": [
     { "label": "Home", "href": "/" },
@@ -19,13 +19,13 @@
     { "label": "Contact", "href": "/contact" }
   ],
   "socials": [
-    { "platform": "twitter", "url": "https://twitter.com/prismtutor", "label": "Twitter" },
-    { "platform": "instagram", "url": "https://instagram.com/prismtutor", "label": "Instagram" },
-    { "platform": "youtube", "url": "https://youtube.com/prismtutor", "label": "YouTube" },
-    { "platform": "linkedin", "url": "https://linkedin.com/company/prismtutor", "label": "LinkedIn" }
+    { "platform": "twitter", "url": "https://twitter.com/vidyaanacademy", "label": "Twitter" },
+    { "platform": "instagram", "url": "https://instagram.com/vidyaanacademy", "label": "Instagram" },
+    { "platform": "youtube", "url": "https://youtube.com/vidyaanacademy", "label": "YouTube" },
+    { "platform": "linkedin", "url": "https://linkedin.com/company/vidyaanacademy", "label": "LinkedIn" }
   ],
   "contact": {
-    "email": "hello@prismtutor.in",
+    "email": "hello@vidyaan.in",
     "phone": "+91 80 4567 8901",
     "address": "No. 42, 3rd Cross, Koramangala 4th Block, Bengaluru, Karnataka 560034"
   },
@@ -50,10 +50,10 @@
     }
   ],
   "seo": {
-    "defaultTitle": "PrismTutor Studio - Best Coaching for CBSE, ICSE, JEE & NEET in India",
-    "titleTemplate": "%s | PrismTutor Studio",
-    "description": "India's premier coaching academy for CBSE, ICSE, JEE, NEET and Olympiad preparation. Expert faculty from IITs & AIIMS with proven results.",
-    "url": "https://prismtutor.in",
+    "defaultTitle": "Vidyaan Academy — Bharat ka Apna Coaching for CBSE, ICSE, JEE & NEET",
+    "titleTemplate": "%s | Vidyaan Academy",
+    "description": "India's premier coaching academy for CBSE, ICSE, JEE, NEET and Olympiad preparation. Expert faculty from IITs & AIIMS. ज्ञान से सफलता तक.",
+    "url": "https://vidyaan.in",
     "ogImage": "/og/default-og.png"
   }
 }

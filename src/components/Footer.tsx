@@ -40,8 +40,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-10">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <span className="text-xl font-bold text-gradient transition-opacity group-hover:opacity-80">PrismTutor</span>
-              <span className="text-xl font-light text-text-secondary transition-opacity group-hover:opacity-80">Studio</span>
+              <span className="text-xl font-bold text-gradient transition-opacity group-hover:opacity-80">Vidyaan</span>
+              <span className="text-xl font-light text-text-secondary transition-opacity group-hover:opacity-80">Academy</span>
             </Link>
             <p className="mt-5 text-sm text-text-secondary max-w-xs leading-relaxed">
               {siteData.brand.tagline}

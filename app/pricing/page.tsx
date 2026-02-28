@@ -267,7 +267,7 @@ export default function PricingPage() {
       <section className="py-20 md:py-24" aria-label="Custom plan">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
-            <Card className="text-center bg-gradient-to-br from-brand-50 to-purple-50 dark:from-brand-950/30 dark:to-purple-950/20 border-brand-200 dark:border-brand-800/40" padding="lg">
+            <Card className="text-center bg-brand-50 dark:bg-brand-950/30 border-brand-200 dark:border-brand-800/40" padding="lg">
               <HelpCircle className="w-10 h-10 text-brand-500 mx-auto mb-4" />
               <h3 className="text-2xl font-bold text-text-primary">Need a Custom Plan?</h3>
               <p className="mt-2 text-text-secondary max-w-md mx-auto">

@@ -11,47 +11,47 @@
 
 @layer base {
   :root {
-    /* ── 60% Primary palette (backgrounds, large surfaces) ── */
-    --brand-50: #f5f3ff;
-    --brand-100: #ede9fe;
-    --brand-200: #ddd6fe;
-    --brand-300: #c4b5fd;
-    --brand-400: #a78bfa;
-    --brand-500: #8b5cf6;
-    --brand-600: #7c3aed;
-    --brand-700: #6d28d9;
-    --brand-800: #5b21b6;
-    --brand-900: #4c1d95;
+    /* ── 60% Primary palette — Indian Saffron / Kesari ── */
+    --brand-50: #FFF7ED;
+    --brand-100: #FFEDD5;
+    --brand-200: #FED7AA;
+    --brand-300: #FDBA74;
+    --brand-400: #FB923C;
+    --brand-500: #F97316;
+    --brand-600: #EA580C;
+    --brand-700: #C2410C;
+    --brand-800: #9A3412;
+    --brand-900: #7C2D12;
 
     /* ── 10% Accent palette (CTAs, highlights) ── */
-    --accent-pink: #ec4899;
-    --accent-blue: #3b82f6;
-    --accent-purple: #8b5cf6;
-    --accent-emerald: #10b981;
-    --accent-amber: #f59e0b;
+    --accent-pink: #BE123C;
+    --accent-blue: #1E40AF;
+    --accent-purple: #7E22CE;
+    --accent-emerald: #059669;
+    --accent-amber: #D97706;
 
-    /* ── Surface colors (60% rule — neutral canvases) ── */
+    /* ── Surface colors — warm Indian tones ── */
     --surface-primary: #ffffff;
-    --surface-secondary: #f8f7ff;
-    --surface-tertiary: #f1f0fb;
+    --surface-secondary: #FFFBF5;
+    --surface-tertiary: #FFF5EA;
     --surface-elevated: #ffffff;
 
-    /* ── Text (contrast ratios ≥ 4.5:1 for WCAG AA) ── */
-    --text-primary: #111827;
-    --text-secondary: #374151;
-    --text-muted: #6b7280;
+    /* ── Text (warm grays for Indian warmth) ── */
+    --text-primary: #1C1410;
+    --text-secondary: #44372D;
+    --text-muted: #78685C;
 
     /* ── Borders ── */
-    --border-default: #e5e7eb;
-    --border-subtle: #f3f4f6;
+    --border-default: #E8DDD2;
+    --border-subtle: #F0E8DF;
 
-    /* ── Shadows (light comes from the sky — Rule 1) ── */
-    --shadow-xs: 0 1px 2px 0 rgba(0,0,0,0.05);
-    --shadow-sm: 0 1px 3px 0 rgba(0,0,0,0.08), 0 1px 2px -1px rgba(0,0,0,0.08);
-    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -2px rgba(0,0,0,0.05);
-    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
-    --shadow-brand: 0 4px 14px -2px rgba(139,92,246,0.25);
+    /* ── Shadows ── */
+    --shadow-xs: 0 1px 2px 0 rgba(28,20,16,0.05);
+    --shadow-sm: 0 1px 3px 0 rgba(28,20,16,0.08), 0 1px 2px -1px rgba(28,20,16,0.08);
+    --shadow-md: 0 4px 6px -1px rgba(28,20,16,0.08), 0 2px 4px -2px rgba(28,20,16,0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(28,20,16,0.08), 0 4px 6px -4px rgba(28,20,16,0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(28,20,16,0.08), 0 8px 10px -6px rgba(28,20,16,0.04);
+    --shadow-brand: 0 4px 14px -2px rgba(249,115,22,0.25);
 
     /* ── Spacing scale (generous whitespace — Rule 3) ── */
     --section-py: 5rem;
@@ -68,36 +68,36 @@
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
 
     /* ── Focus ring (accessibility) ── */
-    --ring-color: rgba(139,92,246,0.5);
+    --ring-color: rgba(249,115,22,0.5);
     --ring-offset: 2px;
   }
 
   .dark {
-    --brand-50: #1a1a2e;
-    --brand-100: #1e1e3a;
-    --brand-200: #2a2a4a;
-    --brand-300: #3a3a5c;
-    --brand-400: #6366f1;
-    --brand-500: #8b5cf6;
-    --brand-600: #a78bfa;
-    --brand-700: #c4b5fd;
-    --brand-800: #ddd6fe;
-    --brand-900: #ede9fe;
+    --brand-50: #1A1510;
+    --brand-100: #231B13;
+    --brand-200: #2E2318;
+    --brand-300: #4A3628;
+    --brand-400: #C2610A;
+    --brand-500: #F97316;
+    --brand-600: #FB923C;
+    --brand-700: #FDBA74;
+    --brand-800: #FED7AA;
+    --brand-900: #FFEDD5;
 
-    --accent-pink: #f472b6;
-    --accent-blue: #60a5fa;
-    --accent-purple: #a78bfa;
-    --accent-emerald: #34d399;
-    --accent-amber: #fbbf24;
+    --accent-pink: #F43F5E;
+    --accent-blue: #60A5FA;
+    --accent-purple: #A78BFA;
+    --accent-emerald: #34D399;
+    --accent-amber: #FBBF24;
 
-    --surface-primary: #0f0f1a;
-    --surface-secondary: #1a1a2e;
-    --surface-tertiary: #252540;
-    --surface-elevated: #1e1e3a;
+    --surface-primary: #121010;
+    --surface-secondary: #1A1613;
+    --surface-tertiary: #241F1A;
+    --surface-elevated: #1E1A15;
 
-    --text-primary: #f9fafb;
-    --text-secondary: #d1d5db;
-    --text-muted: #9ca3af;
+    --text-primary: #F5F0EB;
+    --text-secondary: #C8BDB2;
+    --text-muted: #8B7D72;
 
     --border-default: rgba(255,255,255,0.08);
     --border-subtle: rgba(255,255,255,0.04);
@@ -107,9 +107,9 @@
     --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.4), 0 2px 4px -2px rgba(0,0,0,0.3);
     --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5), 0 4px 6px -4px rgba(0,0,0,0.4);
     --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.5), 0 8px 10px -6px rgba(0,0,0,0.4);
-    --shadow-brand: 0 4px 14px -2px rgba(139,92,246,0.35);
+    --shadow-brand: 0 4px 14px -2px rgba(249,115,22,0.35);
 
-    --ring-color: rgba(167,139,250,0.5);
+    --ring-color: rgba(251,146,60,0.5);
   }
 
   /* ── Smooth scroll + reduced motion respect ── */
@@ -141,11 +141,11 @@
 
   /* ── Selection ── */
   ::selection {
-    background-color: #8b5cf64d;
-    color: #1a1a2e;
+    background-color: #F9731640;
+    color: #1C1410;
   }
   .dark ::selection {
-    color: #f9fafb;
+    color: #F5F0EB;
   }
 
   /* ── Focus visible for keyboard accessibility ── */
@@ -192,7 +192,7 @@
     border: 1px solid rgba(255, 255, 255, 0.35);
   }
   .dark .glass-strong {
-    background-color: rgba(30, 30, 58, 0.92);
+    background-color: rgba(26, 22, 19, 0.92);
     border-color: rgba(255, 255, 255, 0.12);
   }
 
@@ -208,7 +208,7 @@
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue), var(--accent-pink));
+    background: linear-gradient(135deg, var(--accent-amber), var(--brand-500), var(--accent-pink));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
@@ -262,7 +262,7 @@
 
   /* ── Shimmer loading ── */
   .shimmer {
-    background: linear-gradient(90deg, transparent 25%, rgba(139,92,246,0.08) 50%, transparent 75%);
+    background: linear-gradient(90deg, transparent 25%, rgba(249,115,22,0.08) 50%, transparent 75%);
     background-size: 200% 100%;
     animation: shimmer 2s linear infinite;
   }
@@ -330,7 +330,7 @@
   /* ── Custom scrollbar ── */
   .scrollbar-thin {
     scrollbar-width: thin;
-    scrollbar-color: rgba(139,92,246,0.3) transparent;
+    scrollbar-color: rgba(249,115,22,0.3) transparent;
   }
   .scrollbar-thin::-webkit-scrollbar {
     width: 6px;
@@ -340,7 +340,7 @@
     background: transparent;
   }
   .scrollbar-thin::-webkit-scrollbar-thumb {
-    background: rgba(139,92,246,0.3);
+    background: rgba(249,115,22,0.3);
     border-radius: 3px;
   }
 
