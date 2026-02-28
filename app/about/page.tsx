@@ -54,7 +54,7 @@ export default function AboutPage() {
     <main className="min-h-screen overflow-x-hidden">
       {/* ─── Hero ──────────────────────────────────── */}
       <section className="relative py-28 md:py-36 overflow-hidden" aria-label="About hero">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-600 via-purple-600 to-brand-700 dark:from-brand-900 dark:via-purple-900 dark:to-brand-950" />
+        <div className="absolute inset-0 bg-brand-600 dark:bg-brand-900" />
         <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-purple-400/10 blur-3xl animate-pulse delay-1000" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-400/5 blur-3xl" />
@@ -67,7 +67,7 @@ export default function AboutPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight text-balance">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-300">{siteData.brand.name}</span>
+              About <span className="text-amber-300">{siteData.brand.name}</span>
             </h1>
           </Reveal>
           <Reveal delay={0.2}>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               <Card glass className="h-full relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-brand-500/10 to-transparent rounded-bl-full" />
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-500 to-purple-600 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-brand-500 flex items-center justify-center">
                     <Target className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-2xl font-bold">Our Mission</h2>
@@ -100,7 +100,7 @@ export default function AboutPage() {
               <Card glass className="h-full relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-500/10 to-transparent rounded-bl-full" />
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500 to-rose-500 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-purple-500 flex items-center justify-center">
                     <Eye className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-2xl font-bold">Our Vision</h2>
@@ -126,8 +126,8 @@ export default function AboutPage() {
 
           <div className="relative max-w-4xl mx-auto">
             {/* Vertical line */}
-            <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-500 via-purple-500 to-rose-500 hidden md:block" />
-            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-500 via-purple-500 to-rose-500 md:hidden" />
+            <div className="absolute left-1/2 -translate-x-px top-0 bottom-0 w-0.5 bg-brand-300 dark:bg-brand-700 hidden md:block" />
+            <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-brand-300 dark:bg-brand-700 md:hidden" />
 
             {MILESTONES.map((m, i) => (
               <Reveal key={m.year} delay={i * 0.1}>
@@ -251,7 +251,7 @@ export default function AboutPage() {
               <Reveal key={stat.label} delay={i * 0.1}>
                 <Card glass className="text-center group hover:scale-[1.04] transition-transform">
                   <motion.p
-                    className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-brand-500 to-purple-600 bg-clip-text text-transparent"
+                    className="text-3xl md:text-4xl font-extrabold text-brand-600 dark:text-brand-400"
                     initial={{ scale: 0.8 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ once: true }}
@@ -308,7 +308,7 @@ export default function AboutPage() {
             </Reveal>
 
             <Reveal delay={0.15}>
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-brand-500/30 via-purple-500/20 to-rose-500/30 flex items-center justify-center shadow-xl">
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-brand-100 dark:bg-brand-900/40 flex items-center justify-center shadow-xl">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(139,92,246,0.3),transparent_60%)]" />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(244,63,94,0.2),transparent_50%)]" />
                 <div className="relative text-center p-8">
@@ -324,7 +324,7 @@ export default function AboutPage() {
 
       {/* ─── CTA ───────────────────────────────────── */}
       <section className="py-20 md:py-28 relative overflow-hidden" aria-label="Call to action">
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-600 via-purple-600 to-brand-700 dark:from-brand-900 dark:via-purple-900 dark:to-brand-950" />
+        <div className="absolute inset-0 bg-brand-600 dark:bg-brand-900" />
         <div className="absolute top-0 left-1/4 w-80 h-80 bg-white/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-purple-400/10 rounded-full blur-3xl" />
 

@@ -14,7 +14,7 @@ export default function TermsPage() {
     <main className="min-h-screen overflow-x-hidden">
       {/* ─── Hero ──────────────────────────────────── */}
       <section className="relative py-24 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-600 via-purple-600 to-brand-700 dark:from-brand-900 dark:via-purple-900 dark:to-brand-950" />
+        <div className="absolute inset-0 bg-brand-600 dark:bg-brand-900" />
         <div className="absolute top-10 left-10 w-72 h-72 rounded-full bg-white/10 blur-3xl animate-pulse" />
         <div className="absolute bottom-10 right-10 w-96 h-96 rounded-full bg-purple-400/10 blur-3xl animate-pulse delay-1000" />
 

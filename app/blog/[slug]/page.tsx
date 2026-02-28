@@ -56,7 +56,7 @@ function ContentRenderer({ block, index }: { block: ContentBlock; index: number 
     case 'heading':
       return (
         <h2 className="text-2xl md:text-3xl font-bold text-text-primary mt-10 mb-4 flex items-center gap-3">
-          <span className="w-1 h-8 rounded-full bg-gradient-to-b from-brand-500 to-purple-500" />
+          <span className="w-1 h-8 rounded-full bg-brand-500" />
           {block.text}
         </h2>
       );

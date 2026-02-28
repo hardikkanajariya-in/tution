@@ -123,7 +123,7 @@ function StoryCard({ story, index }: {
             </div>
             <div className="h-2.5 rounded-full bg-surface-tertiary overflow-hidden">
               <motion.div
-                className="h-full rounded-full bg-gradient-to-r from-red-400 to-red-500"
+                className="h-full rounded-full bg-red-500"
                 initial={{ width: 0 }}
                 whileInView={{ width: `${beforePct}%` }}
                 viewport={{ once: true }}
@@ -138,7 +138,7 @@ function StoryCard({ story, index }: {
             </div>
             <div className="h-2.5 rounded-full bg-surface-tertiary overflow-hidden">
               <motion.div
-                className="h-full rounded-full bg-gradient-to-r from-emerald-400 to-emerald-500"
+                className="h-full rounded-full bg-emerald-500"
                 initial={{ width: 0 }}
                 whileInView={{ width: `${afterPct}%` }}
                 viewport={{ once: true }}
