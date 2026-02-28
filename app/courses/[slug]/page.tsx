@@ -169,8 +169,12 @@ export default function CourseDetailPage() {
       <Reveal>
         <section
           className="relative overflow-hidden rounded-none sm:rounded-3xl max-w-7xl mx-auto sm:mx-6 lg:mx-auto mt-2 mb-8"
-          style={{ background: heroGradient }}
         >
+          <img
+            src={course.thumbnail}
+            alt={course.title}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-black/30" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
           <div className="relative z-10 px-6 sm:px-10 py-14 md:py-20 max-w-4xl">
@@ -345,9 +349,12 @@ export default function CourseDetailPage() {
                 <Card glass>
                   <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-3">Instructor</p>
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-white font-bold text-sm">
-                      {getInitials(teacher.name)}
-                    </div>
+                    <img
+                      src={teacher.avatar}
+                      alt={teacher.name}
+                      className="h-12 w-12 rounded-full object-cover"
+                      loading="lazy"
+                    />
                     <div>
                       <p className="font-semibold text-text-primary">{teacher.name}</p>
                       <p className="text-xs text-text-muted">{teacher.title}</p>
@@ -376,10 +383,13 @@ export default function CourseDetailPage() {
               <Reveal key={rc.slug} delay={i * 0.08}>
                 <Link href={`/courses/${rc.slug}`}>
                   <Card tilt className="group cursor-pointer hover:shadow-elevated transition-shadow h-full">
-                    <div
-                      className="h-36 rounded-xl mb-4 relative overflow-hidden"
-                      style={{ background: CATEGORY_GRADIENTS[rc.category] ?? CATEGORY_GRADIENTS.Mathematics }}
-                    >
+                    <div className="h-36 rounded-xl mb-4 relative overflow-hidden">
+                      <img
+                        src={rc.thumbnail}
+                        alt={rc.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                       <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors" />
                       <div className="absolute bottom-3 left-3">
                         <Badge variant="brand" size="sm">{rc.category}</Badge>

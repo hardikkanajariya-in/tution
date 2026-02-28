@@ -62,11 +62,14 @@ export function PopularCoursesSection() {
                 <Card
                   className="w-[300px] flex-shrink-0 snap-start hover:shadow-elevated transition-shadow group"
                 >
-                  {/* Thumbnail placeholder */}
-                  <div className="h-40 rounded-xl bg-gradient-subtle mb-4 overflow-hidden">
-                    <div className="w-full h-full bg-brand-100 dark:bg-brand-200 flex items-center justify-center">
-                      <span className="text-2xl font-bold text-brand-500">{course.category[0]}</span>
-                    </div>
+                  {/* Thumbnail */}
+                  <div className="h-40 rounded-xl mb-4 overflow-hidden">
+                    <img
+                      src={course.thumbnail}
+                      alt={course.title}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
 
                   <div className="flex items-center justify-between mb-2">

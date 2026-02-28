@@ -2,55 +2,55 @@
   {
     "id": "t1",
     "name": "Arjun Mehta",
-    "role": "Student, Grade 12",
-    "avatar": "/images/avatar-1.jpg",
+    "role": "Student, Class 12 CBSE",
+    "avatar": "https://images.unsplash.com/photo-1599566150163-29194dcabd9c?w=200&h=200&fit=crop",
     "rating": 5,
-    "text": "PrismTutor Studio completely transformed my approach to mathematics. Dr. Chen's visual methods made calculus intuitive and even fun. I scored 98% in my board exams!",
+    "text": "PrismTutor Studio completely transformed my approach to mathematics. Dr. Kavitha's visual methods made calculus intuitive and even fun. I scored 98% in my CBSE board exams!",
     "course": "Advanced Mathematics"
   },
   {
     "id": "t2",
-    "name": "Lisa Patel",
+    "name": "Sunita Sharma",
     "role": "Parent",
-    "avatar": "/images/avatar-2.jpg",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop",
     "rating": 5,
-    "text": "As a parent, I was amazed by the weekly progress reports and personalized attention my daughter received. Her confidence in science has skyrocketed since joining.",
-    "course": "Biology — NEET Complete"
+    "text": "As a parent, I was amazed by the weekly progress reports and personalized attention my daughter received. Her confidence in science has skyrocketed since joining, and she cleared NEET in her first attempt.",
+    "course": "Biology - NEET Complete"
   },
   {
     "id": "t3",
-    "name": "Ryan Torres",
-    "role": "Student, Grade 11",
-    "avatar": "/images/avatar-3.jpg",
+    "name": "Rohit Krishnan",
+    "role": "Student, Class 11 CBSE",
+    "avatar": "https://images.unsplash.com/photo-1618835962148-cf177563c6c0?w=200&h=200&fit=crop",
     "rating": 5,
-    "text": "Prof. Wright's physics classes are next-level. The virtual lab experiments make everything click. I went from struggling with mechanics to topping my class.",
+    "text": "Prof. Rajesh Iyer's physics classes are next-level. The virtual lab experiments make everything click. I went from struggling with mechanics to scoring AIR 342 in JEE Advanced.",
     "course": "Physics: Mechanics Mastery"
   },
   {
     "id": "t4",
     "name": "Sneha Gupta",
-    "role": "Student, Grade 10",
-    "avatar": "/images/avatar-4.jpg",
+    "role": "Student, Class 10 ICSE",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
     "rating": 4,
-    "text": "The coding course with Mr. Kumar is fantastic. I built my first Python project within a month! The step-by-step approach really works for beginners like me.",
+    "text": "The coding course with Mr. Vikram is fantastic. I built my first Python project within a month and even qualified for ZIO! The step-by-step approach really works for beginners like me.",
     "course": "Computer Science: Python & DSA"
   },
   {
     "id": "t5",
-    "name": "David Kim",
+    "name": "Ramesh Verma",
     "role": "Parent",
-    "avatar": "/images/avatar-5.jpg",
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
     "rating": 5,
-    "text": "The flexible scheduling and hybrid mode options made it possible for my son to attend despite his busy extracurricular schedule. Excellent value for money.",
+    "text": "The flexible scheduling and hybrid mode options made it possible for my son to attend despite his busy schedule. He improved from 72% to 96% in his CBSE boards. Excellent value for money.",
     "course": "Mathematics Foundation"
   },
   {
     "id": "t6",
     "name": "Ananya Reddy",
-    "role": "Student, Grade 12",
-    "avatar": "/images/avatar-6.jpg",
+    "role": "Student, Class 12 CBSE",
+    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
     "rating": 5,
-    "text": "Elena's creative writing workshops unlocked something in me. I've gone from hating essays to winning inter-school writing competitions. Truly life-changing!",
+    "text": "Anjali ma'am's creative writing workshops unlocked something in me. I've gone from hating essays to winning the CBSE national-level creative writing competition. Truly life-changing!",
     "course": "English Literature & Creative Writing"
   }
 ]

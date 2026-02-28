@@ -77,6 +77,12 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-text-muted">{uiData.meta.copyright}</p>
+          <p className="text-xs text-text-muted">
+            Crafted with ❤️ by{' '}
+            <a href="https://hardikkanajariya.in" target="_blank" rel="noopener noreferrer" className="text-brand-500 hover:text-brand-600 font-medium transition-colors">
+              hardikkanajariya.in
+            </a>
+          </p>
           <p className="text-xs text-text-muted">{uiData.meta.demoNotice}</p>
         </div>
       </div>

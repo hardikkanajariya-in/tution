@@ -34,11 +34,14 @@ export function TeacherSpotlightSection() {
                   className="perspective-container"
                 >
                   <Card className="h-full group hover:shadow-elevated transition-shadow">
-                    {/* Avatar placeholder */}
-                    <div className="w-20 h-20 mx-auto rounded-full bg-gradient-brand flex items-center justify-center mb-4">
-                      <span className="text-2xl font-bold text-white">
-                        {teacher.name.split(' ').map((n) => n[0]).join('')}
-                      </span>
+                    {/* Avatar */}
+                    <div className="w-20 h-20 mx-auto rounded-full mb-4 overflow-hidden">
+                      <img
+                        src={teacher.avatar}
+                        alt={teacher.name}
+                        className="w-full h-full object-cover rounded-full"
+                        loading="lazy"
+                      />
                     </div>
 
                     <div className="text-center">

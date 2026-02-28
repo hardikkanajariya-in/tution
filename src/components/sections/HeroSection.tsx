@@ -56,16 +56,15 @@ export function HeroSection() {
                 transition={{ type: 'spring', stiffness: 200, damping: 20 }}
                 className="relative"
               >
-                {/* 3D Card Stack */}
+                {/* Hero Image Card */}
                 <div className="relative w-full aspect-[4/3] rounded-3xl bg-gradient-brand p-[2px]">
-                  <div className="w-full h-full rounded-3xl bg-surface-primary dark:bg-surface-secondary flex items-center justify-center noise-overlay">
-                    <div className="text-center p-12">
-                      <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-brand flex items-center justify-center mb-6">
-                        <span className="text-3xl font-bold text-white">P</span>
-                      </div>
-                      <h3 className="text-2xl font-bold text-text-primary">PrismTutor Studio</h3>
-                      <p className="text-text-secondary mt-2">Where learning meets design</p>
-                    </div>
+                  <div className="w-full h-full rounded-3xl overflow-hidden">
+                    <img
+                      src={hero.heroImage}
+                      alt="Students learning at PrismTutor"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
                   </div>
                 </div>
                 {/* Stacked cards behind */}

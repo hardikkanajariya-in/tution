@@ -317,17 +317,19 @@ export default function CoursesPage() {
                       view === 'list' && 'md:flex md:flex-row'
                     )}
                   >
-                    {/* Thumbnail placeholder */}
+                    {/* Thumbnail */}
                     <div
                       className={cn(
                         'relative overflow-hidden',
                         view === 'grid' ? 'h-44' : 'h-44 md:h-auto md:w-56 shrink-0',
-                        CATEGORY_COLORS[course.category] ?? 'bg-brand-500'
                       )}
                     >
-                      <div className="absolute inset-0 flex items-center justify-center opacity-30">
-                        <span className="text-6xl font-bold text-white/60">{course.category[0]}</span>
-                      </div>
+                      <img
+                        src={course.thumbnail}
+                        alt={course.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                       <div className="absolute top-3 left-3 flex gap-1.5">
                         <Badge variant={modeBadgeVariant(course.mode)} size="sm">
                           {course.mode}

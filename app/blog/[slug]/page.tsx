@@ -40,7 +40,7 @@ type ContentBlock =
   | { type: 'heading'; text: string }
   | { type: 'list'; items: string[] }
   | { type: 'quote'; text: string; author?: string }
-  | { type: 'image'; gradient?: string; caption?: string }
+  | { type: 'image'; url?: string; gradient?: string; caption?: string }
   | { type: 'callout'; text: string; icon?: string; type_variant?: string };
 
 /* ── Content block renderer ─────────────────────────────────── */
@@ -91,10 +91,19 @@ function ContentRenderer({ block, index }: { block: ContentBlock; index: number 
     case 'image':
       return (
         <figure className="my-8">
-          <div
-            className="w-full h-56 md:h-72 rounded-xl"
-            style={{ background: block.gradient ?? COVER_GRADIENTS[index % COVER_GRADIENTS.length] }}
-          />
+          {(block as { url?: string }).url ? (
+            <img
+              src={(block as { url: string }).url}
+              alt={block.caption ?? 'Article image'}
+              className="w-full h-56 md:h-72 rounded-xl object-cover"
+              loading="lazy"
+            />
+          ) : (
+            <div
+              className="w-full h-56 md:h-72 rounded-xl"
+              style={{ background: block.gradient ?? COVER_GRADIENTS[index % COVER_GRADIENTS.length] }}
+            />
+          )}
           {block.caption && (
             <figcaption className="text-center text-sm text-text-tertiary mt-3">
               {block.caption}
@@ -184,11 +193,15 @@ export default function BlogPostPage() {
         <div className="max-w-4xl mx-auto px-4 mb-8">
           <motion.div
             className="w-full h-[300px] rounded-2xl relative overflow-hidden"
-            style={{ background: coverGradient }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
+            <img
+              src={post.cover}
+              alt={post.title}
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-black/20 flex items-end p-8">
               <Badge variant="brand" size="md">{post.tags[0]}</Badge>
             </div>
@@ -205,14 +218,12 @@ export default function BlogPostPage() {
 
           <div className="flex flex-wrap items-center gap-4">
             <div className="flex items-center gap-3">
-              <div
-                className={cn(
-                  'w-11 h-11 rounded-full bg-gradient-to-br flex items-center justify-center text-white font-bold text-sm',
-                  avatarGradient,
-                )}
-              >
-                {initials}
-              </div>
+              <img
+                src={post.author.avatar}
+                alt={post.author.name}
+                className="w-11 h-11 rounded-full object-cover"
+                loading="lazy"
+              />
               <div>
                 <p className="text-sm font-semibold text-text-primary">{post.author.name}</p>
                 <p className="text-xs text-text-tertiary">Author</p>
@@ -266,14 +277,12 @@ export default function BlogPostPage() {
         <Reveal>
           <Card className="mt-12">
             <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
-              <div
-                className={cn(
-                  'w-16 h-16 rounded-full bg-gradient-to-br flex items-center justify-center text-white font-bold text-xl shrink-0',
-                  avatarGradient,
-                )}
-              >
-                {initials}
-              </div>
+              <img
+                src={post.author.avatar}
+                alt={post.author.name}
+                className="w-16 h-16 rounded-full object-cover shrink-0"
+                loading="lazy"
+              />
               <div className="text-center sm:text-left">
                 <p className="text-lg font-bold text-text-primary">{post.author.name}</p>
                 <p className="text-sm text-text-tertiary mb-2">Author</p>
@@ -301,9 +310,11 @@ export default function BlogPostPage() {
                 <Reveal key={rp.slug}>
                   <Link href={`/blog/${rp.slug}`}>
                     <Card padding="none" className="overflow-hidden group hover:shadow-lg transition-shadow">
-                      <div
-                        className="h-40 w-full transition-transform duration-300 group-hover:scale-[1.02]"
-                        style={{ background: rpGrad }}
+                      <img
+                        src={rp.cover}
+                        alt={rp.title}
+                        className="h-40 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                        loading="lazy"
                       />
                       <div className="p-5">
                         <Badge variant="brand" size="sm" className="mb-2">{rp.tags[0]}</Badge>
@@ -312,14 +323,12 @@ export default function BlogPostPage() {
                         </h3>
                         <div className="flex items-center gap-3 text-xs text-text-tertiary">
                           <div className="flex items-center gap-1.5">
-                            <div
-                              className={cn(
-                                'w-5 h-5 rounded-full bg-gradient-to-br flex items-center justify-center text-white text-[8px] font-bold',
-                                rpAvatarGrad,
-                              )}
-                            >
-                              {getInitials(rp.author.name)}
-                            </div>
+                            <img
+                              src={rp.author.avatar}
+                              alt={rp.author.name}
+                              className="w-5 h-5 rounded-full object-cover"
+                              loading="lazy"
+                            />
                             {rp.author.name}
                           </div>
                           <span className="flex items-center gap-1">

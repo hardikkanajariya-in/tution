@@ -170,12 +170,13 @@ export default function TeacherDetailPage() {
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-                className={cn(
-                  'flex h-[120px] w-[120px] items-center justify-center rounded-full bg-gradient-to-br text-4xl font-bold text-white shadow-elevated ring-4 ring-white/20',
-                  gradient,
-                )}
+                className="h-[120px] w-[120px] rounded-full shadow-elevated ring-4 ring-white/20 overflow-hidden"
               >
-                {getInitials(teacher.name)}
+                <img
+                  src={teacher.avatar}
+                  alt={teacher.name}
+                  className="w-full h-full object-cover"
+                />
               </motion.div>
 
               {/* Name & title */}
@@ -309,14 +310,14 @@ export default function TeacherDetailPage() {
                         padding="none"
                         className="flex h-full flex-col overflow-hidden hover:shadow-elevated transition-shadow"
                       >
-                        {/* Gradient thumbnail */}
-                        <div
-                          className={cn(
-                            'h-36 bg-gradient-to-br flex items-center justify-center',
-                            CATEGORY_GRADIENTS[course.category] ?? 'from-gray-400 to-gray-600',
-                          )}
-                        >
-                          <BookOpen className="h-10 w-10 text-white/60" />
+                        {/* Course thumbnail */}
+                        <div className="h-36 overflow-hidden">
+                          <img
+                            src={course.thumbnail}
+                            alt={course.title}
+                            className="w-full h-full object-cover"
+                            loading="lazy"
+                          />
                         </div>
 
                         <div className="flex flex-1 flex-col p-5">
@@ -358,11 +359,13 @@ export default function TeacherDetailPage() {
             padding="lg"
             className="mx-auto max-w-2xl text-center"
           >
-            <div className={cn(
-              'mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br text-white',
-              gradient,
-            )}>
-              <Mail className="h-6 w-6" />
+            <div className="mx-auto mb-4 h-14 w-14 rounded-full overflow-hidden">
+              <img
+                src={teacher.avatar}
+                alt={teacher.name}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
             <h2 className="text-xl font-bold text-text-primary">
               Schedule a Session with {teacher.name.split(' ').pop()}

@@ -1,75 +1,75 @@
 {
   "hero": {
-    "headline": "Master Every Subject with",
-    "headlineAccent": "3D-Inspired Learning",
-    "subtitle": "Join 10,000+ students experiencing the future of education. Our expert-crafted courses blend cutting-edge teaching with immersive visual experiences.",
+    "headline": "Crack CBSE, ICSE, JEE & NEET with",
+    "headlineAccent": "India's Best Teachers",
+    "subtitle": "Join 15,000+ students across India mastering boards and competitive exams. Expert faculty from IITs, AIIMS & top universities with a 96% success rate.",
     "ctaPrimary": { "label": "Explore Courses", "href": "/courses" },
     "ctaSecondary": { "label": "Book a Free Demo", "href": "/contact" },
-    "trustBadges": ["4.9★ Rating", "10K+ Students", "200+ Courses", "50+ Expert Teachers"],
-    "heroImage": "/images/hero-3d.png"
+    "trustBadges": ["4.9 Rating", "15K+ Students", "200+ Courses", "50+ Expert Teachers"],
+    "heroImage": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&h=800&fit=crop"
   },
   "stats": [
-    { "value": "10,000+", "label": "Students Enrolled" },
+    { "value": "15,000+", "label": "Students Enrolled" },
     { "value": "200+", "label": "Expert Courses" },
-    { "value": "98%", "label": "Success Rate" },
-    { "value": "50+", "label": "Award-Winning Teachers" }
+    { "value": "96%", "label": "Selection Rate" },
+    { "value": "50+", "label": "IIT/AIIMS Alumni Faculty" }
   ],
   "partners": [
-    { "name": "EduTech Global", "logo": "/logos/partner-1.svg" },
-    { "name": "LearnSphere", "logo": "/logos/partner-2.svg" },
-    { "name": "AcademiX", "logo": "/logos/partner-3.svg" },
-    { "name": "BrightMinds", "logo": "/logos/partner-4.svg" },
-    { "name": "FutureLearn Co", "logo": "/logos/partner-5.svg" },
-    { "name": "ScholarPath", "logo": "/logos/partner-6.svg" }
+    { "name": "FIITJEE", "logo": "/logos/partner-1.svg" },
+    { "name": "Allen Career Institute", "logo": "/logos/partner-2.svg" },
+    { "name": "Unacademy", "logo": "/logos/partner-3.svg" },
+    { "name": "PhysicsWallah", "logo": "/logos/partner-4.svg" },
+    { "name": "Vedantu", "logo": "/logos/partner-5.svg" },
+    { "name": "Byju's", "logo": "/logos/partner-6.svg" }
   ],
   "highlights": [
     {
-      "title": "Immersive Visual Learning",
-      "description": "Our 3D-inspired teaching methods transform abstract concepts into tangible, visual experiences that stick.",
+      "title": "Board & Competitive Exam Focus",
+      "description": "Comprehensive preparation for CBSE, ICSE, JEE Main, JEE Advanced, NEET, and Olympiads under one roof.",
       "icon": "Layers"
     },
     {
-      "title": "Personalized Pathways",
-      "description": "AI-driven assessments create custom learning tracks tailored to each student's pace and style.",
+      "title": "Personalized Learning Paths",
+      "description": "AI-driven assessments create custom study plans tailored to each student's strengths, weaknesses, and target exam.",
       "icon": "Route"
     },
     {
-      "title": "Expert Mentorship",
-      "description": "Learn from industry veterans and academic champions with proven track records of student success.",
+      "title": "IIT & AIIMS Alumni Faculty",
+      "description": "Learn from graduates of IIT, AIIMS, IISc, and top Indian universities with decades of teaching experience.",
       "icon": "Users"
     },
     {
-      "title": "Live & Interactive",
-      "description": "Real-time classes with instant doubt-clearing, polls, quizzes, and collaborative whiteboards.",
+      "title": "Live & Interactive Classes",
+      "description": "Real-time sessions with instant doubt-clearing, polls, quizzes, and collaborative whiteboards in Hindi and English.",
       "icon": "Video"
     },
     {
-      "title": "Exam-Ready Preparation",
-      "description": "Structured mock tests, previous year analysis, and time-management workshops for every major exam.",
+      "title": "Exam-Ready Test Series",
+      "description": "Chapter-wise tests, full-length mock exams, previous year paper analysis, and All India rank simulations.",
       "icon": "Target"
     },
     {
-      "title": "Flexible Scheduling",
-      "description": "Choose between online, offline, or hybrid modes with morning, afternoon, and weekend batches.",
+      "title": "Flexible Batches",
+      "description": "Choose between online, offline, or hybrid modes with morning, afternoon, evening, and weekend batches across India.",
       "icon": "Clock"
     }
   ],
   "learningJourney": [
-    { "step": 1, "title": "Assessment", "description": "Take a diagnostic test to identify strengths and gaps." },
-    { "step": 2, "title": "Custom Plan", "description": "Receive a personalized study roadmap aligned with your goals." },
-    { "step": 3, "title": "Learn & Practice", "description": "Attend live classes, solve problems, and access recorded sessions." },
-    { "step": 4, "title": "Track Progress", "description": "Weekly reports, parent dashboards, and milestone celebrations." },
-    { "step": 5, "title": "Excel & Achieve", "description": "Score top marks, crack competitive exams, and unlock your potential." }
+    { "step": 1, "title": "Diagnostic Test", "description": "Take a free assessment to identify your strengths and gaps across subjects." },
+    { "step": 2, "title": "Custom Study Plan", "description": "Receive a personalized roadmap aligned with your board or competitive exam goals." },
+    { "step": 3, "title": "Learn & Practice", "description": "Attend live classes, solve DPPs (Daily Practice Problems), and access recorded sessions." },
+    { "step": 4, "title": "Track Progress", "description": "Weekly progress reports, parent dashboards, and All India rank comparisons." },
+    { "step": 5, "title": "Excel & Achieve", "description": "Top your boards, crack JEE/NEET, win Olympiad medals, and unlock your dream college." }
   ],
   "cta": {
-    "headline": "Ready to Transform Your Learning?",
-    "subtitle": "Join thousands of students who've already unlocked their potential with PrismTutor Studio.",
+    "headline": "Ready to Crack Your Dream Exam?",
+    "subtitle": "Join thousands of students across India who have already achieved top ranks with PrismTutor Studio.",
     "buttonLabel": "Start Your Free Trial",
     "buttonHref": "/contact"
   },
   "newsletter": {
     "headline": "Stay in the Loop",
-    "subtitle": "Get weekly study tips, exam strategies, and exclusive offers delivered to your inbox.",
+    "subtitle": "Get weekly study tips, exam strategies, NCERT solutions, and exclusive offers delivered to your inbox.",
     "placeholder": "Enter your email",
     "buttonLabel": "Subscribe"
   }

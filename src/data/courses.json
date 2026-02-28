@@ -2,34 +2,34 @@
   {
     "slug": "advanced-mathematics-grade-12",
     "title": "Advanced Mathematics",
-    "subtitle": "Master calculus, algebra & statistics for board and competitive exams",
+    "subtitle": "Master calculus, algebra & statistics for CBSE/ICSE boards and JEE",
     "category": "Mathematics",
     "gradeLevel": "Grade 11-12",
     "mode": "hybrid",
     "duration": "12 months",
-    "schedule": "Mon, Wed, Fri · 4:00–5:30 PM",
-    "price": 299,
+    "schedule": "Mon, Wed, Fri - 4:00-5:30 PM",
+    "price": 4999,
     "popularity": 95,
     "rating": 4.9,
     "reviewCount": 284,
-    "tags": ["Calculus", "Algebra", "Statistics", "Board Prep"],
-    "thumbnail": "/images/course-math.jpg",
-    "teacherSlug": "dr-sarah-chen",
-    "description": "A comprehensive 12-month program covering all topics in advanced mathematics. From differential calculus to probability theory, this course prepares students for both board examinations and competitive entrance tests. Features weekly problem-solving workshops and monthly mock tests.",
+    "tags": ["Calculus", "Algebra", "Statistics", "JEE Mains"],
+    "thumbnail": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop",
+    "teacherSlug": "dr-kavitha-sundaram",
+    "description": "A comprehensive 12-month program covering the complete CBSE and ICSE Class 11-12 mathematics syllabus. From differential calculus to probability theory, this course prepares students for both board examinations and JEE Main/Advanced. Includes weekly DPPs, chapter tests, and monthly full-length mock exams.",
     "syllabus": [
       { "module": "Differential Calculus", "topics": ["Limits & Continuity", "Derivatives", "Applications of Derivatives", "Mean Value Theorems"] },
       { "module": "Integral Calculus", "topics": ["Indefinite Integrals", "Definite Integrals", "Applications of Integration", "Differential Equations"] },
-      { "module": "Linear Algebra", "topics": ["Matrices", "Determinants", "Systems of Equations", "Vector Spaces"] },
+      { "module": "Linear Algebra", "topics": ["Matrices", "Determinants", "Systems of Equations", "Vector Algebra"] },
       { "module": "Probability & Statistics", "topics": ["Probability Theory", "Random Variables", "Distributions", "Statistical Inference"] }
     ],
     "weeklySchedule": [
-      { "day": "Monday", "time": "4:00–5:30 PM", "type": "Lecture" },
-      { "day": "Wednesday", "time": "4:00–5:30 PM", "type": "Lecture" },
-      { "day": "Friday", "time": "4:00–5:30 PM", "type": "Problem Solving" },
-      { "day": "Saturday", "time": "10:00–11:30 AM", "type": "Doubt Session" }
+      { "day": "Monday", "time": "4:00-5:30 PM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "4:00-5:30 PM", "type": "Lecture" },
+      { "day": "Friday", "time": "4:00-5:30 PM", "type": "Problem Solving" },
+      { "day": "Saturday", "time": "10:00-11:30 AM", "type": "Doubt Session" }
     ],
     "faqs": [
-      { "question": "What is the prerequisite for this course?", "answer": "Students should have completed Grade 10 mathematics or equivalent." },
+      { "question": "What is the prerequisite for this course?", "answer": "Students should have completed Class 10 mathematics from any recognized Indian board." },
       { "question": "Are recordings available?", "answer": "Yes, all live sessions are recorded and available for 30 days." },
       { "question": "Is there a refund policy?", "answer": "Full refund within 14 days if unsatisfied." }
     ]
@@ -37,20 +37,20 @@
   {
     "slug": "physics-mechanics-mastery",
     "title": "Physics: Mechanics Mastery",
-    "subtitle": "From Newtonian mechanics to modern physics concepts",
+    "subtitle": "From Newtonian mechanics to modern physics for JEE Advanced",
     "category": "Physics",
     "gradeLevel": "Grade 11-12",
     "mode": "online",
     "duration": "10 months",
-    "schedule": "Tue, Thu · 5:00–6:30 PM",
-    "price": 279,
+    "schedule": "Tue, Thu - 5:00-6:30 PM",
+    "price": 5499,
     "popularity": 88,
     "rating": 4.8,
     "reviewCount": 198,
-    "tags": ["Mechanics", "Thermodynamics", "Waves", "JEE Prep"],
-    "thumbnail": "/images/course-physics.jpg",
-    "teacherSlug": "prof-james-wright",
-    "description": "Deep-dive into classical and modern physics with visual demonstrations, virtual labs, and exam-focused problem sets. Perfect for students targeting top engineering colleges.",
+    "tags": ["Mechanics", "Thermodynamics", "Waves", "JEE Advanced"],
+    "thumbnail": "https://images.unsplash.com/photo-1636466497217-26a8cbeaf0aa?w=600&h=400&fit=crop",
+    "teacherSlug": "prof-rajesh-iyer",
+    "description": "Deep-dive into classical and modern physics aligned with JEE Advanced and CBSE Class 11-12 syllabus. Virtual labs, HC Verma-level problem sets, and exam-focused strategies from an IIT Bombay alumnus.",
     "syllabus": [
       { "module": "Classical Mechanics", "topics": ["Kinematics", "Newton's Laws", "Work & Energy", "Rotational Motion"] },
       { "module": "Thermodynamics", "topics": ["Laws of Thermodynamics", "Kinetic Theory", "Heat Transfer", "Entropy"] },
@@ -58,32 +58,32 @@
       { "module": "Modern Physics", "topics": ["Quantum Basics", "Photoelectric Effect", "Nuclear Physics", "Semiconductors"] }
     ],
     "weeklySchedule": [
-      { "day": "Tuesday", "time": "5:00–6:30 PM", "type": "Lecture" },
-      { "day": "Thursday", "time": "5:00–6:30 PM", "type": "Lab + Problems" },
-      { "day": "Saturday", "time": "2:00–3:00 PM", "type": "Doubt Session" }
+      { "day": "Tuesday", "time": "5:00-6:30 PM", "type": "Lecture" },
+      { "day": "Thursday", "time": "5:00-6:30 PM", "type": "Lab + Problems" },
+      { "day": "Saturday", "time": "2:00-3:00 PM", "type": "Doubt Session" }
     ],
     "faqs": [
       { "question": "Do I need lab equipment at home?", "answer": "No, all experiments are conducted via our virtual lab platform." },
-      { "question": "Is this suitable for competitive exam prep?", "answer": "Absolutely. The syllabus aligns with JEE Main and Advanced." }
+      { "question": "Is this suitable for JEE Advanced prep?", "answer": "Absolutely. The syllabus covers all JEE Advanced topics with Irodov and HC Verma level problems." }
     ]
   },
   {
     "slug": "organic-chemistry-deep-dive",
     "title": "Organic Chemistry Deep Dive",
-    "subtitle": "Reaction mechanisms, synthesis & real-world applications",
+    "subtitle": "Reaction mechanisms, synthesis & NEET-focused preparation",
     "category": "Chemistry",
     "gradeLevel": "Grade 11-12",
     "mode": "offline",
     "duration": "8 months",
-    "schedule": "Mon, Wed · 3:00–4:30 PM",
-    "price": 259,
+    "schedule": "Mon, Wed - 3:00-4:30 PM",
+    "price": 4499,
     "popularity": 82,
     "rating": 4.7,
     "reviewCount": 156,
     "tags": ["Organic", "Reactions", "Synthesis", "NEET Prep"],
-    "thumbnail": "/images/course-chemistry.jpg",
-    "teacherSlug": "dr-priya-sharma",
-    "description": "Unlock the beauty of organic chemistry through 3D molecular visualization and reaction mechanism animations. This course makes even the toughest reactions intuitive.",
+    "thumbnail": "https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=600&h=400&fit=crop",
+    "teacherSlug": "dr-meera-nair",
+    "description": "Unlock the beauty of organic chemistry through 3D molecular visualization and reaction mechanism animations. Aligned with NCERT, NEET, and JEE chemistry syllabus. Makes even the toughest GOC and named reactions intuitive.",
     "syllabus": [
       { "module": "Fundamentals", "topics": ["Hybridization", "Isomerism", "IUPAC Nomenclature", "Electronic Effects"] },
       { "module": "Reaction Mechanisms", "topics": ["SN1 & SN2", "Elimination Reactions", "Addition Reactions", "Rearrangements"] },
@@ -91,8 +91,8 @@
       { "module": "Biomolecules & Polymers", "topics": ["Carbohydrates", "Amino Acids", "Polymers", "Practical Chemistry"] }
     ],
     "weeklySchedule": [
-      { "day": "Monday", "time": "3:00–4:30 PM", "type": "Lecture" },
-      { "day": "Wednesday", "time": "3:00–4:30 PM", "type": "Lab Work" }
+      { "day": "Monday", "time": "3:00-4:30 PM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "3:00-4:30 PM", "type": "Lab Work" }
     ],
     "faqs": [
       { "question": "Is this only organic chemistry?", "answer": "Yes. We have separate courses for inorganic and physical chemistry." }
@@ -101,51 +101,51 @@
   {
     "slug": "english-literature-creative-writing",
     "title": "English Literature & Creative Writing",
-    "subtitle": "Explore great works while developing your unique voice",
+    "subtitle": "Excel in CBSE/ICSE English with strong writing and comprehension skills",
     "category": "English",
     "gradeLevel": "Grade 9-12",
     "mode": "online",
     "duration": "6 months",
-    "schedule": "Tue, Thu · 6:00–7:00 PM",
-    "price": 199,
+    "schedule": "Tue, Thu - 6:00-7:00 PM",
+    "price": 2999,
     "popularity": 75,
     "rating": 4.9,
     "reviewCount": 132,
-    "tags": ["Literature", "Creative Writing", "Essay Skills", "Communication"],
-    "thumbnail": "/images/course-english.jpg",
-    "teacherSlug": "ms-elena-ross",
-    "description": "From Shakespeare to contemporary fiction, develop critical analysis skills while nurturing your creative writing abilities. Perfect for students who love stories and words.",
+    "tags": ["Literature", "Creative Writing", "Essay Skills", "Board Prep"],
+    "thumbnail": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop",
+    "teacherSlug": "ms-anjali-deshmukh",
+    "description": "From Shakespeare to R.K. Narayan, develop critical analysis skills while mastering CBSE and ICSE English literature. Build essay writing, letter writing, and comprehension skills to score full marks in board exams.",
     "syllabus": [
       { "module": "Classical Literature", "topics": ["Shakespeare", "Victorian Novels", "Poetry Analysis", "Drama"] },
-      { "module": "Modern Literature", "topics": ["20th Century Fiction", "Post-Colonial Writing", "Contemporary Poets", "Flash Fiction"] },
-      { "module": "Creative Writing", "topics": ["Narrative Techniques", "Character Development", "World Building", "Editing & Revision"] },
-      { "module": "Academic Writing", "topics": ["Essay Structure", "Argumentative Writing", "Research Skills", "Presentation"] }
+      { "module": "Indian Literature in English", "topics": ["R.K. Narayan", "Ruskin Bond", "Rabindranath Tagore", "Modern Indian Poetry"] },
+      { "module": "Creative Writing", "topics": ["Narrative Techniques", "Character Development", "Article & Report Writing", "Editing & Revision"] },
+      { "module": "Academic Writing", "topics": ["Essay Structure", "Letter Writing", "Comprehension Skills", "Presentation"] }
     ],
     "weeklySchedule": [
-      { "day": "Tuesday", "time": "6:00–7:00 PM", "type": "Literature Study" },
-      { "day": "Thursday", "time": "6:00–7:00 PM", "type": "Writing Workshop" }
+      { "day": "Tuesday", "time": "6:00-7:00 PM", "type": "Literature Study" },
+      { "day": "Thursday", "time": "6:00-7:00 PM", "type": "Writing Workshop" }
     ],
     "faqs": [
-      { "question": "Do I need to buy any books?", "answer": "We provide digital copies of all required reading materials." }
+      { "question": "Do I need to buy any books?", "answer": "We provide digital copies of all required reading materials along with NCERT textbooks." }
     ]
   },
   {
     "slug": "biology-neet-complete",
-    "title": "Biology — NEET Complete",
-    "subtitle": "Comprehensive biology course for medical entrance preparation",
+    "title": "Biology - NEET Complete",
+    "subtitle": "Comprehensive biology course for NEET UG medical entrance",
     "category": "Biology",
     "gradeLevel": "Grade 11-12",
     "mode": "hybrid",
     "duration": "14 months",
-    "schedule": "Mon, Wed, Sat · 10:00–11:30 AM",
-    "price": 349,
+    "schedule": "Mon, Wed, Sat - 10:00-11:30 AM",
+    "price": 5999,
     "popularity": 91,
     "rating": 4.8,
     "reviewCount": 267,
     "tags": ["NEET", "Botany", "Zoology", "Medical Entrance"],
-    "thumbnail": "/images/course-biology.jpg",
-    "teacherSlug": "dr-sarah-chen",
-    "description": "The most comprehensive biology course for aspiring medical students. Covers entire NEET syllabus with 3D anatomy visualizations and chapter-wise test series.",
+    "thumbnail": "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&h=400&fit=crop",
+    "teacherSlug": "dr-kavitha-sundaram",
+    "description": "The most comprehensive biology course for aspiring MBBS and BDS students. Covers the entire NEET UG syllabus from NCERT with AIIMS-level depth. 3D anatomy visualizations, chapter-wise test series, and previous year NEET paper analysis included.",
     "syllabus": [
       { "module": "Cell Biology & Genetics", "topics": ["Cell Structure", "Cell Division", "Molecular Biology", "Genetics & Evolution"] },
       { "module": "Human Physiology", "topics": ["Digestive System", "Circulatory System", "Nervous System", "Reproductive System"] },
@@ -153,31 +153,31 @@
       { "module": "Diversity & Ecology", "topics": ["Animal Kingdom", "Plant Kingdom", "Ecosystem", "Biodiversity"] }
     ],
     "weeklySchedule": [
-      { "day": "Monday", "time": "10:00–11:30 AM", "type": "Lecture" },
-      { "day": "Wednesday", "time": "10:00–11:30 AM", "type": "Lecture" },
-      { "day": "Saturday", "time": "10:00–11:30 AM", "type": "Test & Review" }
+      { "day": "Monday", "time": "10:00-11:30 AM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "10:00-11:30 AM", "type": "Lecture" },
+      { "day": "Saturday", "time": "10:00-11:30 AM", "type": "Test & Review" }
     ],
     "faqs": [
-      { "question": "Does this cover both Class 11 and 12 biology?", "answer": "Yes, the 14-month course covers the complete NEET syllabus, including Class 11 and 12." }
+      { "question": "Does this cover both Class 11 and 12 biology?", "answer": "Yes, the 14-month course covers the complete NEET syllabus including NCERT Class 11 and 12 biology." }
     ]
   },
   {
     "slug": "computer-science-python-dsa",
     "title": "Computer Science: Python & DSA",
-    "subtitle": "Learn programming fundamentals and data structures",
+    "subtitle": "Learn programming fundamentals and data structures for boards and beyond",
     "category": "Computer Science",
     "gradeLevel": "Grade 9-12",
     "mode": "online",
     "duration": "8 months",
-    "schedule": "Wed, Fri · 5:00–6:30 PM",
-    "price": 249,
+    "schedule": "Wed, Fri - 5:00-6:30 PM",
+    "price": 3999,
     "popularity": 86,
     "rating": 4.9,
     "reviewCount": 189,
-    "tags": ["Python", "DSA", "Coding", "Competitive Programming"],
-    "thumbnail": "/images/course-cs.jpg",
-    "teacherSlug": "mr-alex-kumar",
-    "description": "Start from zero and master Python programming along with essential data structures and algorithms. Includes competitive programming practice and project building.",
+    "tags": ["Python", "DSA", "Coding", "CBSE Computer Science"],
+    "thumbnail": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
+    "teacherSlug": "mr-vikram-malhotra",
+    "description": "Master Python programming and data structures aligned with CBSE Class 11-12 Computer Science syllabus. Also prepares students for coding competitions, ZIO, and INOI (Indian National Olympiad in Informatics).",
     "syllabus": [
       { "module": "Python Fundamentals", "topics": ["Variables & Types", "Control Flow", "Functions", "OOP Basics"] },
       { "module": "Data Structures", "topics": ["Arrays & Strings", "Linked Lists", "Stacks & Queues", "Trees & Graphs"] },
@@ -185,30 +185,30 @@
       { "module": "Projects", "topics": ["Web Scraper", "CLI Game", "Data Visualizer", "Portfolio Project"] }
     ],
     "weeklySchedule": [
-      { "day": "Wednesday", "time": "5:00–6:30 PM", "type": "Lecture + Coding" },
-      { "day": "Friday", "time": "5:00–6:30 PM", "type": "Practice Session" }
+      { "day": "Wednesday", "time": "5:00-6:30 PM", "type": "Lecture + Coding" },
+      { "day": "Friday", "time": "5:00-6:30 PM", "type": "Practice Session" }
     ],
     "faqs": [
-      { "question": "Do I need prior programming experience?", "answer": "No! This course starts from absolute basics." }
+      { "question": "Do I need prior programming experience?", "answer": "No! This course starts from absolute basics and is perfect for CBSE Class 11 students taking Computer Science for the first time." }
     ]
   },
   {
     "slug": "mathematics-foundation-grade-8-10",
     "title": "Mathematics Foundation",
-    "subtitle": "Build a rock-solid math foundation for middle school",
+    "subtitle": "Build a rock-solid math foundation for CBSE/ICSE Class 8-10",
     "category": "Mathematics",
     "gradeLevel": "Grade 8-10",
     "mode": "offline",
     "duration": "10 months",
-    "schedule": "Tue, Thu, Sat · 3:30–5:00 PM",
-    "price": 229,
+    "schedule": "Tue, Thu, Sat - 3:30-5:00 PM",
+    "price": 3499,
     "popularity": 79,
     "rating": 4.7,
     "reviewCount": 143,
     "tags": ["Algebra", "Geometry", "Arithmetic", "Foundation"],
-    "thumbnail": "/images/course-math-foundation.jpg",
-    "teacherSlug": "mr-alex-kumar",
-    "description": "Perfect for students who want to strengthen their mathematical foundations. Covers number theory, geometry, algebra, and introduces pre-calculus concepts.",
+    "thumbnail": "https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=600&h=400&fit=crop",
+    "teacherSlug": "mr-vikram-malhotra",
+    "description": "Perfect for CBSE and ICSE students who want to build strong mathematical foundations. Covers NCERT and RS Aggarwal level problems with special focus on NTSE and Math Olympiad preparation.",
     "syllabus": [
       { "module": "Number Theory", "topics": ["Real Numbers", "Exponents", "Surds", "Number Patterns"] },
       { "module": "Algebra", "topics": ["Polynomials", "Linear Equations", "Quadratic Equations", "Inequalities"] },
@@ -216,31 +216,31 @@
       { "module": "Pre-Calculus", "topics": ["Functions", "Trigonometry Basics", "Sequences & Series", "Sets & Logic"] }
     ],
     "weeklySchedule": [
-      { "day": "Tuesday", "time": "3:30–5:00 PM", "type": "Lecture" },
-      { "day": "Thursday", "time": "3:30–5:00 PM", "type": "Lecture" },
-      { "day": "Saturday", "time": "3:30–5:00 PM", "type": "Test + Revision" }
+      { "day": "Tuesday", "time": "3:30-5:00 PM", "type": "Lecture" },
+      { "day": "Thursday", "time": "3:30-5:00 PM", "type": "Lecture" },
+      { "day": "Saturday", "time": "3:30-5:00 PM", "type": "Test + Revision" }
     ],
     "faqs": [
-      { "question": "Can this help with Olympiad preparation?", "answer": "Yes, we include Olympiad-level problem solving in our Saturday sessions." }
+      { "question": "Can this help with NTSE and Olympiad preparation?", "answer": "Yes, we include NTSE-level and Olympiad-level problem solving in our Saturday sessions." }
     ]
   },
   {
     "slug": "economics-commerce-stream",
     "title": "Economics & Business Studies",
-    "subtitle": "Comprehensive commerce stream preparation",
+    "subtitle": "Complete commerce stream preparation for CBSE Class 11-12 boards",
     "category": "Commerce",
     "gradeLevel": "Grade 11-12",
     "mode": "online",
     "duration": "10 months",
-    "schedule": "Mon, Wed · 6:00–7:30 PM",
-    "price": 239,
+    "schedule": "Mon, Wed - 6:00-7:30 PM",
+    "price": 3999,
     "popularity": 72,
     "rating": 4.6,
     "reviewCount": 98,
-    "tags": ["Economics", "Business Studies", "Accounts", "Commerce"],
-    "thumbnail": "/images/course-economics.jpg",
-    "teacherSlug": "ms-elena-ross",
-    "description": "Master micro and macroeconomics, business studies, and accountancy with real-world case studies and interactive simulations.",
+    "tags": ["Economics", "Business Studies", "Accounts", "CA Foundation"],
+    "thumbnail": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop",
+    "teacherSlug": "ms-anjali-deshmukh",
+    "description": "Master micro and macroeconomics, business studies, and accountancy with NCERT-aligned content, real-world Indian case studies, and preparation for CA Foundation and CS exams.",
     "syllabus": [
       { "module": "Microeconomics", "topics": ["Demand & Supply", "Market Structures", "Consumer Theory", "Production Theory"] },
       { "module": "Macroeconomics", "topics": ["National Income", "Money & Banking", "Government Budget", "International Trade"] },
@@ -248,11 +248,11 @@
       { "module": "Accountancy", "topics": ["Financial Statements", "Ratio Analysis", "Partnership Accounts", "Company Accounts"] }
     ],
     "weeklySchedule": [
-      { "day": "Monday", "time": "6:00–7:30 PM", "type": "Lecture" },
-      { "day": "Wednesday", "time": "6:00–7:30 PM", "type": "Case Studies" }
+      { "day": "Monday", "time": "6:00-7:30 PM", "type": "Lecture" },
+      { "day": "Wednesday", "time": "6:00-7:30 PM", "type": "Case Studies" }
     ],
     "faqs": [
-      { "question": "Does this cover accountancy too?", "answer": "Yes, basic accountancy is included. We also offer a dedicated accountancy course." }
+      { "question": "Does this cover accountancy too?", "answer": "Yes, basic accountancy is included following the NCERT syllabus. We also offer a dedicated accountancy course for CA aspirants." }
     ]
   }
 ]

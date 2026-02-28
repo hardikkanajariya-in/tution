@@ -208,14 +208,12 @@ export default function TeachersPage() {
                 <Card className="group flex h-full flex-col hover:shadow-elevated">
                   {/* Avatar + basic info */}
                   <div className="flex items-start gap-4">
-                    <div
-                      className={cn(
-                        'flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-gradient-to-br text-lg font-bold text-white shadow-md',
-                        GRADIENTS[idx % GRADIENTS.length]
-                      )}
-                    >
-                      {getInitials(teacher.name)}
-                    </div>
+                    <img
+                      src={teacher.avatar}
+                      alt={teacher.name}
+                      className="h-16 w-16 shrink-0 rounded-full object-cover shadow-md"
+                      loading="lazy"
+                    />
 
                     <div className="min-w-0 flex-1">
                       <h3 className="truncate text-lg font-semibold text-text-primary group-hover:text-brand-600 transition-colors">

@@ -3,27 +3,27 @@
     {
       "topic": "General",
       "items": [
-        { "question": "What is PrismTutor Studio?", "answer": "PrismTutor Studio is a premium coaching academy offering expert-crafted courses across all major subjects, grades, and exam tracks. We combine cutting-edge 3D-inspired teaching methods with personalized learning paths." },
-        { "question": "How are classes conducted?", "answer": "We offer three modes: Online (live video sessions), Offline (in-person at our centers), and Hybrid (combination of both). All modes include access to recorded sessions and study materials." },
-        { "question": "What grades do you cover?", "answer": "We offer courses from Grade 6 through Grade 12, including specialized tracks for competitive exams like JEE, NEET, Olympiads, and SAT." },
-        { "question": "How do I get started?", "answer": "Simply book a free demo session through our website. Our counselors will assess your needs and recommend the best learning path." }
+        { "question": "What is PrismTutor Studio?", "answer": "PrismTutor Studio is India's premier coaching academy offering expert-crafted courses for CBSE, ICSE, JEE, NEET, and Olympiad preparation. We combine innovative teaching methods with personalized learning paths, led by faculty from IITs, AIIMS, and top Indian universities." },
+        { "question": "How are classes conducted?", "answer": "We offer three modes: Online (live video sessions in Hindi and English), Offline (in-person at our Bengaluru, Delhi NCR, and Mumbai centers), and Hybrid (combination of both). All modes include access to recorded sessions and NCERT-aligned study materials." },
+        { "question": "What classes do you cover?", "answer": "We offer courses from Class 6 through Class 12, including specialized tracks for JEE Main, JEE Advanced, NEET UG, Olympiads (INMO, INPhO, INOI), NTSE, and KVPY." },
+        { "question": "How do I get started?", "answer": "Simply book a free demo session through our website or call us at +91 80 4567 8901. Our counselors will assess your needs and recommend the best learning path for your board and target exam." }
       ]
     },
     {
       "topic": "Courses & Learning",
       "items": [
-        { "question": "Can I take multiple courses simultaneously?", "answer": "Absolutely! Our Pro and Elite plans allow access to 3 or unlimited subjects respectively. We design schedules to avoid conflicts." },
-        { "question": "Are study materials provided?", "answer": "Yes, all courses include comprehensive study materials—PDFs, video lessons, practice sets, and previous year papers (where applicable)." },
-        { "question": "What if I miss a live class?", "answer": "All live sessions are recorded and available for playback. Starter plan gets 30-day access, Pro gets 90-day, and Elite gets lifetime access." },
-        { "question": "How are doubts resolved?", "answer": "Pro and Elite students have access to dedicated doubt-clearing sessions. You can also post questions in our student portal for async support." }
+        { "question": "Can I take multiple courses simultaneously?", "answer": "Absolutely! Our Pro and Elite plans allow access to 3 or unlimited subjects respectively. We design schedules to avoid conflicts between JEE/NEET subjects." },
+        { "question": "Are study materials provided?", "answer": "Yes, all courses include comprehensive NCERT-aligned study materials - PDFs, video lessons, Daily Practice Problems (DPPs), and previous year papers for JEE, NEET, and board exams." },
+        { "question": "What if I miss a live class?", "answer": "All live sessions are recorded and available for playback. Starter plan gets 30-day access, Pro gets 90-day, and Elite gets lifetime access to recordings." },
+        { "question": "How are doubts resolved?", "answer": "Pro and Elite students have access to dedicated doubt-clearing sessions. You can also post questions on our student portal or WhatsApp groups for quick support." }
       ]
     },
     {
       "topic": "Technical",
       "items": [
-        { "question": "What device do I need for online classes?", "answer": "Any device with a stable internet connection, camera, and microphone—laptop, tablet, or smartphone. We recommend a laptop for the best experience." },
-        { "question": "Is there a mobile app?", "answer": "Our platform is fully responsive and works great on mobile browsers. A dedicated app is coming soon!" },
-        { "question": "What if I face technical issues during a class?", "answer": "Our tech support team is available during all class hours. You can also access the recorded session at no extra cost." }
+        { "question": "What device do I need for online classes?", "answer": "Any device with a stable internet connection, camera, and microphone - laptop, tablet, or smartphone. We recommend a laptop for the best experience. Works well even on 4G connections." },
+        { "question": "Is there a mobile app?", "answer": "Our platform is fully responsive and works great on mobile browsers. A dedicated Android and iOS app is coming soon!" },
+        { "question": "What if I face technical issues during a class?", "answer": "Our tech support team is available during all class hours via phone and WhatsApp. You can also access the recorded session at no extra cost if you face connectivity issues." }
       ]
     }
   ]

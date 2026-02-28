@@ -12,7 +12,7 @@ interface GalleryImage {
   id: string;
   title: string;
   category: string;
-  gradient: string;
+  image: string;
   description: string;
 }
 
@@ -137,10 +137,12 @@ export default function GalleryPage() {
                   className="group relative block w-full rounded-2xl overflow-hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
                   aria-label={`View ${img.title}`}
                 >
-                  {/* Gradient placeholder */}
-                  <div
-                    className={cn('w-full transition-transform duration-500 group-hover:scale-105', aspectByIndex(idx))}
-                    style={{ background: img.gradient }}
+                  {/* Gallery image */}
+                  <img
+                    src={img.image}
+                    alt={img.title}
+                    className={cn('w-full object-cover transition-transform duration-500 group-hover:scale-105', aspectByIndex(idx))}
+                    loading="lazy"
                   />
 
                   {/* Hover overlay */}
@@ -186,10 +188,11 @@ export default function GalleryPage() {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               className="relative z-10 w-full max-w-3xl mx-4"
             >
-              {/* Gradient display */}
-              <div
-                className="w-full aspect-[16/10] rounded-2xl shadow-2xl"
-                style={{ background: currentImage.gradient }}
+              {/* Lightbox image */}
+              <img
+                src={currentImage.image}
+                alt={currentImage.title}
+                className="w-full aspect-[16/10] rounded-2xl shadow-2xl object-cover"
               />
 
               {/* Info overlay */}

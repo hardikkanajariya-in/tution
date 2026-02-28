@@ -40,7 +40,7 @@
     "searchPlaceholder": "Search courses, teachers, blog posts...",
     "newsletterSuccess": "Successfully subscribed! Check your inbox.",
     "formSuccess": "Message sent successfully! We'll get back to you within 24 hours.",
-    "enrollSuccess": "Enrollment request submitted! Our team will contact you shortly.",
+    "enrollSuccess": "Enrollment request submitted! Our counselor will call you shortly.",
     "linkCopied": "Link copied to clipboard!",
     "compareLimit": "You can compare up to 3 courses at a time.",
     "addedToCompare": "Added to comparison",
@@ -52,19 +52,19 @@
     "email": "Email Address",
     "emailPlaceholder": "you@example.com",
     "phone": "Phone Number",
-    "phonePlaceholder": "+1 (555) 000-0000",
+    "phonePlaceholder": "+91 98765 43210",
     "message": "Message",
     "messagePlaceholder": "How can we help you?",
     "subject": "Subject",
     "subjectPlaceholder": "Select a subject",
-    "grade": "Grade Level",
-    "gradePlaceholder": "Select your grade",
+    "grade": "Class Level",
+    "gradePlaceholder": "Select your class",
     "mode": "Preferred Mode",
     "batch": "Preferred Batch"
   },
   "meta": {
-    "poweredBy": "Built with passion by PrismTutor Studio",
-    "copyright": "© 2026 PrismTutor Studio. All rights reserved.",
+    "poweredBy": "Built with passion by PrismTutor Studio, India",
+    "copyright": "2026 PrismTutor Studio. All rights reserved.",
     "demoNotice": "This is a demo website. No real enrollments or payments."
   }
 }

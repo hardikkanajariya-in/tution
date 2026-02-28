@@ -111,13 +111,13 @@ export default function BlogPage() {
           <Link href={`/blog/${featured.slug}`} className="group block">
             <Card padding="none" className="overflow-hidden mb-12">
               <div className="grid md:grid-cols-2">
-                <div
-                  className="aspect-[16/10] md:aspect-auto md:min-h-[320px]"
-                  style={{ background: COVER_GRADIENTS[0] }}
-                >
-                  <div className="flex h-full items-center justify-center">
-                    <BookOpen className="h-16 w-16 text-white/30" />
-                  </div>
+                <div className="aspect-[16/10] md:aspect-auto md:min-h-[320px] overflow-hidden">
+                  <img
+                    src={featured.cover}
+                    alt={featured.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex flex-col justify-center p-6 md:p-10">
                   <Badge variant="brand" className="mb-3 w-fit">
@@ -131,14 +131,12 @@ export default function BlogPage() {
                   </p>
                   <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-text-muted">
                     <div className="flex items-center gap-2">
-                      <div
-                        className={cn(
-                          'flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br text-xs font-bold text-white',
-                          AVATAR_GRADIENTS[0],
-                        )}
-                      >
-                        {getInitials(featured.author.name)}
-                      </div>
+                      <img
+                        src={featured.author.avatar}
+                        alt={featured.author.name}
+                        className="h-8 w-8 rounded-full object-cover"
+                        loading="lazy"
+                      />
                       <span className="font-medium text-text-primary">{featured.author.name}</span>
                     </div>
                     <span className="flex items-center gap-1">
@@ -230,14 +228,14 @@ export default function BlogPage() {
               >
                 <Link href={`/blog/${post.slug}`} className="group block h-full">
                   <Card padding="none" className="flex h-full flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                    {/* Cover gradient */}
-                    <div
-                      className="aspect-[16/9] relative"
-                      style={{ background: COVER_GRADIENTS[idx % COVER_GRADIENTS.length] }}
-                    >
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <BookOpen className="h-10 w-10 text-white/20" />
-                      </div>
+                    {/* Cover image */}
+                    <div className="aspect-[16/9] relative overflow-hidden">
+                      <img
+                        src={post.cover}
+                        alt={post.title}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                       <div className="absolute left-3 top-3">
                         <Badge variant="brand" className="backdrop-blur-sm">
                           {post.tags[0]}
@@ -258,14 +256,12 @@ export default function BlogPage() {
                       <div className="mt-auto pt-4">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-2">
-                            <div
-                              className={cn(
-                                'flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br text-[10px] font-bold text-white',
-                                AVATAR_GRADIENTS[idx % AVATAR_GRADIENTS.length],
-                              )}
-                            >
-                              {getInitials(post.author.name)}
-                            </div>
+                            <img
+                              src={post.author.avatar}
+                              alt={post.author.name}
+                              className="h-7 w-7 rounded-full object-cover"
+                              loading="lazy"
+                            />
                             <span className="text-xs font-medium text-text-primary">
                               {post.author.name}
                             </span>

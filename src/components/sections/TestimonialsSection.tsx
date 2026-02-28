@@ -63,7 +63,13 @@ export function TestimonialsSection() {
                 ))}
               </div>
 
-              <p className="mt-4 font-bold text-text-primary">{t.name}</p>
+              <img
+                src={t.avatar}
+                alt={t.name}
+                className="w-14 h-14 rounded-full object-cover mx-auto mt-4"
+                loading="lazy"
+              />
+              <p className="mt-3 font-bold text-text-primary">{t.name}</p>
               <p className="text-sm text-text-secondary">{t.role}</p>
               <p className="text-xs text-text-muted mt-1">{t.course}</p>
             </Card>

@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 import { Reveal } from '@/components/ui/Reveal';
@@ -35,13 +34,9 @@ export function PartnersSection() {
               key={`${partner.name}-${i}`}
               className="flex-shrink-0 flex items-center justify-center h-12 opacity-50 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
             >
-              <Image
-                src={partner.logo}
-                alt={partner.name}
-                width={140}
-                height={48}
-                className="h-10 w-auto object-contain"
-              />
+              <span className="text-lg font-bold tracking-wide text-text-primary whitespace-nowrap">
+                {partner.name}
+              </span>
             </div>
           ))}
         </motion.div>

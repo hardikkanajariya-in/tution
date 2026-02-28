@@ -3,14 +3,14 @@
     {
       "id": "r1",
       "studentName": "Arjun Mehta",
-      "exam": "CBSE Board Exams",
+      "exam": "CBSE Class 12 Boards",
       "year": 2025,
       "track": "Board Exams",
       "beforeScore": 72,
       "afterScore": 98,
       "rank": "School Topper",
       "subject": "Mathematics",
-      "quote": "Dr. Chen's methods made mathematics visual and intuitive."
+      "quote": "Dr. Kavitha's visual methods made calculus intuitive and scoring 98% a reality."
     },
     {
       "id": "r2",
@@ -22,61 +22,61 @@
       "afterScore": 89,
       "rank": "AIR 342",
       "subject": "Physics",
-      "quote": "Prof. Wright's conceptual approach was a game-changer for my JEE prep."
+      "quote": "Prof. Rajesh Iyer's conceptual approach was a game-changer for my JEE Advanced physics preparation."
     },
     {
       "id": "r3",
       "studentName": "Rahul Verma",
-      "exam": "NEET",
+      "exam": "NEET UG",
       "year": 2025,
       "track": "NEET",
       "beforeScore": 420,
       "afterScore": 685,
       "rank": "AIR 1,204",
       "subject": "Biology",
-      "quote": "The 3D anatomy sessions made memorization a thing of the past."
+      "quote": "The 3D anatomy sessions at PrismTutor made NCERT biology come alive. Got into AIIMS Delhi!"
     },
     {
       "id": "r4",
-      "studentName": "Kavitha Sundaram",
-      "exam": "Science Olympiad",
+      "studentName": "Deepa Krishnan",
+      "exam": "International Physics Olympiad",
       "year": 2024,
       "track": "Olympiad",
       "beforeScore": 55,
       "afterScore": 92,
       "rank": "National Gold Medalist",
       "subject": "Physics",
-      "quote": "The problem-solving workshops pushed me beyond my limits."
+      "quote": "The advanced problem-solving workshops pushed me to represent India at the international level."
     },
     {
       "id": "r5",
-      "studentName": "Marcus Johnson",
-      "exam": "SAT",
-      "year": 2024,
-      "track": "SAT / AP",
-      "beforeScore": 1180,
-      "afterScore": 1520,
-      "rank": "Top 2%",
+      "studentName": "Aditya Joshi",
+      "exam": "CBSE Class 10 Boards",
+      "year": 2025,
+      "track": "Board Exams",
+      "beforeScore": 65,
+      "afterScore": 96,
+      "rank": "District Topper",
       "subject": "Mathematics",
-      "quote": "Structured practice and mock tests made all the difference."
+      "quote": "PrismTutor's foundation course made my CBSE Class 10 boards feel easy. Scored 96% overall!"
     },
     {
       "id": "r6",
       "studentName": "Ananya Reddy",
-      "exam": "ICSE Board",
+      "exam": "ICSE Class 12 Boards",
       "year": 2025,
       "track": "Board Exams",
       "beforeScore": 68,
       "afterScore": 95,
-      "rank": "District Topper",
+      "rank": "City Topper",
       "subject": "English",
-      "quote": "Elena's classes taught me to love literature and write with confidence."
+      "quote": "Anjali ma'am's classes taught me to love literature and write with confidence. Topped ICSE English!"
     }
   ],
   "overallStats": [
     { "label": "Average Score Improvement", "value": "34%" },
     { "label": "Students in Top 10%", "value": "78%" },
-    { "label": "Competitive Exam Selections", "value": "1,200+" },
-    { "label": "Perfect Score Students", "value": "89" }
+    { "label": "JEE/NEET Selections", "value": "1,200+" },
+    { "label": "Board Exam Toppers", "value": "89" }
   ]
 }

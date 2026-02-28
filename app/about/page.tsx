@@ -195,8 +195,13 @@ export default function AboutPage() {
               <Reveal key={t.slug} delay={i * 0.12}>
                 <Link href={`/teachers/${t.slug}`} className="block group">
                   <Card glass className="text-center h-full hover:shadow-xl transition-shadow">
-                    <div className={cn('w-20 h-20 rounded-full mx-auto mb-4 bg-gradient-to-br flex items-center justify-center text-white text-2xl font-bold shadow-lg', GRADIENTS[i % GRADIENTS.length])}>
-                      {getInitials(t.name)}
+                    <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden shadow-lg">
+                      <img
+                        src={t.avatar}
+                        alt={t.name}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
                     </div>
                     <h3 className="text-lg font-bold group-hover:text-brand-500 transition-colors">{t.name}</h3>
                     <p className="text-sm text-muted-foreground mt-1">{t.title}</p>

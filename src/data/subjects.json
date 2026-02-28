@@ -9,17 +9,17 @@
     { "slug": "commerce", "name": "Commerce", "icon": "TrendingUp", "courseCount": 4 }
   ],
   "gradeLevels": [
-    { "slug": "grade-6-8", "label": "Grade 6–8", "description": "Middle School Foundation" },
-    { "slug": "grade-8-10", "label": "Grade 8–10", "description": "High School Preparation" },
-    { "slug": "grade-9-12", "label": "Grade 9–12", "description": "Senior Secondary" },
-    { "slug": "grade-11-12", "label": "Grade 11–12", "description": "Board & Competitive Exam" }
+    { "slug": "grade-6-8", "label": "Class 6-8", "description": "Middle School Foundation (CBSE/ICSE)" },
+    { "slug": "grade-8-10", "label": "Class 8-10", "description": "Board Exam Preparation" },
+    { "slug": "grade-9-12", "label": "Class 9-12", "description": "Senior Secondary" },
+    { "slug": "grade-11-12", "label": "Class 11-12", "description": "Boards & Competitive Exams" }
   ],
   "examTracks": [
     { "slug": "board-exams", "label": "Board Exams", "description": "CBSE, ICSE, State Boards" },
-    { "slug": "jee", "label": "JEE Main & Advanced", "description": "Engineering Entrance" },
-    { "slug": "neet", "label": "NEET", "description": "Medical Entrance" },
-    { "slug": "olympiad", "label": "Olympiads", "description": "National & International" },
-    { "slug": "sat-ap", "label": "SAT / AP", "description": "International Standardized Tests" }
+    { "slug": "jee", "label": "JEE Main & Advanced", "description": "IIT & NIT Engineering Entrance" },
+    { "slug": "neet", "label": "NEET UG", "description": "MBBS & BDS Medical Entrance" },
+    { "slug": "olympiad", "label": "Olympiads", "description": "INMO, INPhO, INOI, NSEJS" },
+    { "slug": "ntse-kvpy", "label": "NTSE & KVPY", "description": "National Talent & Science Scholarships" }
   ],
   "subjectChips": [
     "Algebra", "Calculus", "Geometry", "Statistics",

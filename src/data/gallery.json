@@ -2,87 +2,87 @@
   "images": [
     {
       "id": "g1",
-      "title": "Annual Science Fair 2024",
-      "category": "events",
-      "gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-      "description": "Students showcasing their innovative science projects"
+      "title": "Classroom Teaching Session",
+      "category": "classroom",
+      "image": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&h=400&fit=crop",
+      "description": "Expert faculty conducting an interactive physics lecture for JEE aspirants"
     },
     {
       "id": "g2",
-      "title": "Interactive Coding Workshop",
+      "title": "Coding Workshop for Students",
       "category": "classroom",
-      "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "description": "Hands-on coding session with real-world project exercises"
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
+      "description": "Hands-on Python coding workshop aligned with CBSE Computer Science"
     },
     {
       "id": "g3",
-      "title": "Campus Library & Study Zones",
+      "title": "Campus Library & Reading Room",
       "category": "campus",
-      "gradient": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "description": "Modern library and collaborative self-study spaces"
+      "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&h=400&fit=crop",
+      "description": "Well-stocked library with NCERT, reference books, and quiet study zones"
     },
     {
       "id": "g4",
       "title": "National Math Olympiad Winners",
       "category": "achievements",
-      "gradient": "linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)",
-      "description": "Our students swept top honors at the National Math Olympiad"
+      "image": "https://images.unsplash.com/photo-1567168539593-59673ababaae?w=600&h=400&fit=crop",
+      "description": "Our students swept top honors at the Indian National Mathematical Olympiad"
     },
     {
       "id": "g5",
       "title": "Chemistry Lab Experiments",
       "category": "classroom",
-      "gradient": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-      "description": "Students performing advanced chemistry experiments under expert guidance"
+      "image": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop",
+      "description": "Students performing organic chemistry experiments for NEET preparation"
     },
     {
       "id": "g6",
       "title": "Annual Sports & Fun Day",
       "category": "events",
-      "gradient": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
-      "description": "A day filled with athletic events, teamwork, and celebration"
+      "image": "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&h=400&fit=crop",
+      "description": "Annual sports day celebrating teamwork and holistic development"
     },
     {
       "id": "g7",
       "title": "Smart Classroom Technology",
       "category": "classroom",
-      "gradient": "linear-gradient(135deg, #fccb90 0%, #d57eeb 100%)",
-      "description": "State-of-the-art classrooms with interactive whiteboards"
+      "image": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&h=400&fit=crop",
+      "description": "State-of-the-art smart classrooms with interactive digital boards"
     },
     {
       "id": "g8",
-      "title": "Campus Aerial View",
+      "title": "Bengaluru Campus Building",
       "category": "campus",
-      "gradient": "linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)",
-      "description": "A bird's-eye view of our sprawling green campus"
+      "image": "https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop",
+      "description": "Our modern campus in Koramangala, Bengaluru with world-class facilities"
     },
     {
       "id": "g9",
-      "title": "Student Innovation Showcase",
+      "title": "Science Project Showcase",
       "category": "events",
-      "gradient": "linear-gradient(135deg, #c471f5 0%, #fa71cd 100%)",
-      "description": "Final year students presenting capstone projects and prototypes"
+      "image": "https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&h=400&fit=crop",
+      "description": "Students presenting innovative science projects at the annual science fair"
     },
     {
       "id": "g10",
-      "title": "Board Exam Toppers 2024",
+      "title": "CBSE Board Exam Toppers 2025",
       "category": "achievements",
-      "gradient": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
-      "description": "Celebrating our outstanding board exam results across all streams"
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop",
+      "description": "Celebrating our outstanding CBSE and ICSE board exam results"
     },
     {
       "id": "g11",
       "title": "Faculty Development Workshop",
       "category": "events",
-      "gradient": "linear-gradient(135deg, #0ba360 0%, #3cba92 100%)",
-      "description": "Annual workshop on modern pedagogy and teaching methodologies"
+      "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop",
+      "description": "Annual workshop on modern pedagogy and NEP 2020 teaching methodologies"
     },
     {
       "id": "g12",
-      "title": "Campus Recreation Center",
+      "title": "Campus Recreation & Sports",
       "category": "campus",
-      "gradient": "linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)",
-      "description": "Indoor sports and recreation facilities for holistic development"
+      "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=400&fit=crop",
+      "description": "Indoor sports and recreation facilities for holistic student development"
     }
   ]
 }

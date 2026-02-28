@@ -1,8 +1,8 @@
 {
   "brand": {
     "name": "PrismTutor Studio",
-    "tagline": "3D-inspired learning experiences that feel effortless.",
-    "shortDescription": "Premium coaching academy offering world-class tuition across all grades, subjects, and exam tracks.",
+    "tagline": "India's most trusted coaching academy for CBSE, ICSE, JEE & NEET.",
+    "shortDescription": "Premium coaching academy offering expert tuition across all boards, subjects, and competitive exam tracks across India.",
     "logo": "/logos/prismtutor-logo.svg",
     "logoDark": "/logos/prismtutor-logo-dark.svg"
   },
@@ -25,35 +25,35 @@
     { "platform": "linkedin", "url": "https://linkedin.com/company/prismtutor", "label": "LinkedIn" }
   ],
   "contact": {
-    "email": "hello@prismtutor.studio",
-    "phone": "+1 (555) 234-5678",
-    "address": "123 Learning Lane, Suite 400, San Francisco, CA 94105"
+    "email": "hello@prismtutor.in",
+    "phone": "+91 80 4567 8901",
+    "address": "No. 42, 3rd Cross, Koramangala 4th Block, Bengaluru, Karnataka 560034"
   },
   "locations": [
     {
-      "name": "San Francisco HQ",
-      "address": "123 Learning Lane, Suite 400, San Francisco, CA 94105",
-      "phone": "+1 (555) 234-5678",
-      "hours": "Mon–Sat 8:00 AM – 8:00 PM"
+      "name": "Bengaluru HQ",
+      "address": "No. 42, 3rd Cross, Koramangala 4th Block, Bengaluru, Karnataka 560034",
+      "phone": "+91 80 4567 8901",
+      "hours": "Mon-Sat 8:00 AM - 8:00 PM"
     },
     {
-      "name": "New York Center",
-      "address": "456 Academic Ave, Floor 12, New York, NY 10001",
-      "phone": "+1 (555) 876-5432",
-      "hours": "Mon–Sat 9:00 AM – 9:00 PM"
+      "name": "Delhi NCR Center",
+      "address": "A-12, Sector 62, Noida, Uttar Pradesh 201309",
+      "phone": "+91 120 456 7890",
+      "hours": "Mon-Sat 9:00 AM - 9:00 PM"
     },
     {
-      "name": "Online Campus",
-      "address": "Available worldwide",
-      "phone": "+1 (555) 111-2222",
-      "hours": "24/7 Self-paced + Live sessions"
+      "name": "Mumbai Center",
+      "address": "301, Andheri Trade Centre, Andheri West, Mumbai, Maharashtra 400053",
+      "phone": "+91 22 4567 8901",
+      "hours": "Mon-Sat 9:00 AM - 9:00 PM"
     }
   ],
   "seo": {
-    "defaultTitle": "PrismTutor Studio — Premium Coaching Academy",
+    "defaultTitle": "PrismTutor Studio - Best Coaching for CBSE, ICSE, JEE & NEET in India",
     "titleTemplate": "%s | PrismTutor Studio",
-    "description": "Experience 3D-inspired learning with PrismTutor Studio. Premium coaching across all subjects, grades, and exam tracks.",
-    "url": "https://prismtutor.studio",
+    "description": "India's premier coaching academy for CBSE, ICSE, JEE, NEET and Olympiad preparation. Expert faculty from IITs & AIIMS with proven results.",
+    "url": "https://prismtutor.in",
     "ogImage": "/og/default-og.png"
   }
 }
